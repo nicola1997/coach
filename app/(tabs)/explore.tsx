@@ -1,90 +1,62 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { StyleSheet, Image, Platform } from 'react-native';
+import {StyleSheet, Image, Platform, SafeAreaView, View, Text, TouchableOpacity} from 'react-native';
 
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import {useState} from "react";
 
 export default function TabTwoScreen() {
+  const [activeTab, setActiveTab] = useState('Formation');
+
+  const tabs = ['Formation', 'Shape', 'Defence', 'Attack', 'Set Pieces', 'Captain'];
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
-      headerImage={<Ionicons size={310} name="code-slash" style={styles.headerImage} />}>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
-      </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <Collapsible title="File-based routing">
-        <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
-        <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
-        </ThemedText>
-      </Collapsible>
-      <Collapsible title="Images">
-        <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
-        </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Custom fonts">
-        <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
-          </ThemedText>
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Light and dark mode components">
-        <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Animations">
-        <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText> library
-          to create a waving hand animation.
-        </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
-      </Collapsible>
-    </ParallaxScrollView>
+
+      <SafeAreaView style={{ flex: 5 }}>
+
+        <View style={styles.container}>
+          {/* Header */}
+          <View style={styles.header}>
+            <Text style={styles.headerTitle}>Arsenal</Text>
+            <Text style={styles.headerSubtitle}>Tactics - Team Instructions</Text>
+            <Text style={styles.date}>Monday 10th Oct 2024</Text>
+            <TouchableOpacity style={styles.continueButton}>
+              <Text style={styles.continueText}>CONTINUE</Text>
+            </TouchableOpacity>
+          </View>
+
+          {/* Tabs */}
+          <View style={styles.tabs}>
+            {tabs.map((tab) => (
+                <TouchableOpacity
+                    key={tab}
+                    style={[styles.tab, activeTab === tab && styles.activeTab]}
+                    onPress={() => setActiveTab(tab)}
+                >
+                  <Text style={[styles.tabText, activeTab === tab && styles.activeTabText]}>
+                    {tab}
+                  </Text>
+                </TouchableOpacity>
+            ))}
+          </View>
+
+          {/* Field and Tactics */}
+          <View style={styles.fieldContainer}>
+            <Text style={styles.fieldText}>Field goes here</Text>
+          </View>
+
+          {/* Instructions */}
+          <View style={styles.instructions}>
+            <Text style={styles.instructionTitle}>Final Third</Text>
+            <Text style={styles.instructionText}>Early Crosses</Text>
+            <Text style={styles.instructionText}>Run At Defence</Text>
+            <Text style={styles.instructionText}>Passing Style: Short</Text>
+            <Text style={styles.instructionText}>Passing Focus: Mixed</Text>
+          </View>
+        </View>
+      </SafeAreaView>
   );
 }
 
@@ -99,4 +71,97 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 8,
   },
+    container: {
+      flex: 1,
+      backgroundColor: '#3E2D65',
+    },
+    reactLogo: {
+      height: 178,
+      width: 290,
+      bottom: 0,
+      left: 0,
+      position: 'absolute',
+    },
+    header: {
+      padding: 16,
+      backgroundColor: '#4B3B71',
+      alignItems: 'center',
+    },
+    headerTitle: {
+      fontSize: 24,
+      color: '#FFF',
+      fontWeight: 'bold',
+    },
+    headerSubtitle: {
+      fontSize: 16,
+      color: '#D1C4E9',
+    },
+    date: {
+      fontSize: 14,
+      color: '#BDBDBD',
+      marginBottom: 4,
+    },
+    continueButton: {
+      backgroundColor: '#33AA55',
+      paddingVertical: 6,
+      paddingHorizontal: 12,
+      borderRadius: 4,
+      position: 'absolute',
+      right: 16,
+      top: 16,
+    },
+    continueText: {
+      color: '#fff',
+      fontWeight: 'bold',
+    },
+    tabs: {
+      flexDirection: 'row',
+      backgroundColor: '#6E5B9F',
+      paddingVertical: 8,
+    },
+    tab: {
+      flex: 1,
+      alignItems: 'center',
+      paddingVertical: 8,
+    },
+    tabText: {
+      color: '#E0E0E0',
+    },
+    activeTab: {
+      backgroundColor: '#A682E3',
+      borderRadius: 4,
+    },
+    activeTabText: {
+      color: '#FFF',
+      fontWeight: 'bold',
+    },
+    fieldContainer: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#1F1448',
+      marginVertical: 8,
+      padding: 16,
+      borderRadius: 8,
+    },
+    fieldText: {
+      fontSize: 16,
+      color: '#FFF',
+    },
+    instructions: {
+      padding: 16,
+      backgroundColor: '#4B3B71',
+    },
+    instructionTitle: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      color: '#FFF',
+      marginBottom: 8,
+    },
+    instructionText: {
+      fontSize: 14,
+      color: '#E0E0E0',
+      marginBottom: 4,
+    },
+
 });
