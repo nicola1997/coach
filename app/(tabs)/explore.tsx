@@ -1,60 +1,35 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import {StyleSheet, Image, Platform, SafeAreaView, View, Text, TouchableOpacity} from 'react-native';
+import {StyleSheet, Image, Platform, SafeAreaView, View, Text, TouchableOpacity, SectionList} from 'react-native';
 
-import { Collapsible } from '@/components/Collapsible';
-import { ExternalLink } from '@/components/ExternalLink';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
 import {useState} from "react";
 
 export default function TabTwoScreen() {
   const [activeTab, setActiveTab] = useState('Formation');
 
-  const tabs = ['Formation', 'Shape', 'Defence', 'Attack', 'Set Pieces', 'Captain'];
+  const { serieATeams, laLigaTeams, ligue1Teams, premierLeagueTeams, bundesligaTeams } = require('../../assets/teams.js');
   return (
 
       <SafeAreaView style={{ flex: 5 }}>
 
         <View style={styles.container}>
-          {/* Header */}
           <View style={styles.header}>
-            <Text style={styles.headerTitle}>Arsenal</Text>
-            <Text style={styles.headerSubtitle}>Tactics - Team Instructions</Text>
-            <Text style={styles.date}>Monday 10th Oct 2024</Text>
-            <TouchableOpacity style={styles.continueButton}>
-              <Text style={styles.continueText}>CONTINUE</Text>
-            </TouchableOpacity>
+            <Text style={styles.headerTitle}>Seleziona la tua squadra</Text>
           </View>
 
-          {/* Tabs */}
-          <View style={styles.tabs}>
-            {tabs.map((tab) => (
-                <TouchableOpacity
-                    key={tab}
-                    style={[styles.tab, activeTab === tab && styles.activeTab]}
-                    onPress={() => setActiveTab(tab)}
-                >
-                  <Text style={[styles.tabText, activeTab === tab && styles.activeTabText]}>
-                    {tab}
-                  </Text>
-                </TouchableOpacity>
-            ))}
-          </View>
-
-          {/* Field and Tactics */}
           <View style={styles.fieldContainer}>
-            <Text style={styles.fieldText}>Field goes here</Text>
-          </View>
+            <SectionList
+                sections={serieATeams}
+                keyExtractor={(item, index) => item + index}
+                renderItem={({item}) => (
+                    <View style={styles.item}>
+                      <Text style={styles.title}>{item}</Text>
+                    </View>
+                )}
+                renderSectionHeader={({section: {title}}) => (
+                    <Text style={styles.header}>{title}</Text>
+                )}
+            />          </View>
 
-          {/* Instructions */}
-          <View style={styles.instructions}>
-            <Text style={styles.instructionTitle}>Final Third</Text>
-            <Text style={styles.instructionText}>Early Crosses</Text>
-            <Text style={styles.instructionText}>Run At Defence</Text>
-            <Text style={styles.instructionText}>Passing Style: Short</Text>
-            <Text style={styles.instructionText}>Passing Focus: Mixed</Text>
-          </View>
         </View>
       </SafeAreaView>
   );
@@ -82,11 +57,6 @@ const styles = StyleSheet.create({
       left: 0,
       position: 'absolute',
     },
-    header: {
-      padding: 16,
-      backgroundColor: '#4B3B71',
-      alignItems: 'center',
-    },
     headerTitle: {
       fontSize: 24,
       color: '#FFF',
@@ -101,6 +71,18 @@ const styles = StyleSheet.create({
       color: '#BDBDBD',
       marginBottom: 4,
     },
+  item: {
+    backgroundColor: '#f9c2ff',
+    padding: 20,
+    marginVertical: 8,
+  },
+  header: {
+    fontSize: 32,
+    backgroundColor: '#fff',
+  },
+  title: {
+    fontSize: 24,
+  },
     continueButton: {
       backgroundColor: '#33AA55',
       paddingVertical: 6,
