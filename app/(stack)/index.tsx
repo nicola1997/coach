@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text, SafeAreaView, Pressable, ImageBackground } from 'react-native';
+import {StyleSheet, View, Text, SafeAreaView, Pressable, ImageBackground, StatusBar} from 'react-native';
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import {Link} from "expo-router";
@@ -6,6 +6,11 @@ import {Link} from "expo-router";
 export default function HomeScreen() {
     return (
         <SafeAreaProvider>
+            <StatusBar
+                animated={true}
+                backgroundColor="#61dafb"
+                hidden={true}
+            />
             <ImageBackground
                 source={require("../../assets/images/calma.jpg")}
                 style={styles.image}

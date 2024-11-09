@@ -3,6 +3,7 @@ import { View, FlatList, Text, Image, StyleSheet, Pressable, Alert, Modal } from
 import { serieA, laLiga, ligue1, bundesliga, premierLeague, ligaPortugal } from '@/assets/teams';
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import {Link} from "expo-router";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const renderSquad = ({ item, setModalVisible,setYourTeam }) => (
     <View style={styles.squadContainer}>
@@ -31,6 +32,15 @@ const App = () => {
     const [modalVisible, setModalVisible] = useState(false);
     const [yourTeam, setYourTeam] = useState('');
 
+    const saveData = async (key,data) => {
+        try {
+            await AsyncStorage.setItem(key, data);
+        } catch (e) {
+            alert('Error saving data');
+        }
+    };
+
+
     const leaguesData = [
         { title: "Serie A", teams: serieA },
         { title: "La Liga", teams: laLiga },
@@ -43,6 +53,7 @@ const App = () => {
 
     return (
         <SafeAreaProvider style={styles.container}>
+
             <FlatList
                 data={leaguesData}
                 renderItem={({ item }) => (
@@ -62,7 +73,7 @@ const App = () => {
                         <Text style={styles.modalText}>Confermi {yourTeam} ?</Text>
                         <Link
                             style={[styles.button, styles.buttonConferm]}
-                            onPress={() => setModalVisible(!modalVisible)}
+                            onPress={() => {setModalVisible(!modalVisible);saveData("yourTeam",yourTeam)}}
                             href={"/menu"}>
                             <Text style={styles.textStyle}>CONFERMA</Text>
                         </Link>
