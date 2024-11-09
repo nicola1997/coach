@@ -14,7 +14,11 @@ const serieA = [
     { nome: "Verona", pathImmagine: require("./images/seriea/verona.png") },
     { nome: "Empoli", pathImmagine: require("./images/seriea/empoli.png") },
     { nome: "Lecce", pathImmagine: require("./images/seriea/lecce.png") },
-    { nome: "Cagliari", pathImmagine: require("./images/seriea/cagliari.png") }
+    { nome: "Cagliari", pathImmagine: require("./images/seriea/cagliari.png")},
+    { nome: "Udinese", pathImmagine: require("./images/seriea/udinese.png")},
+    { nome: "Venezia", pathImmagine: require("./images/seriea/venezia.png") },
+    { nome: "Genoa", pathImmagine: require("./images/seriea/genoa.png") },
+    { nome: "Parma", pathImmagine: require("./images/seriea/parma.png") }
 ];
 
 const laLiga = [
@@ -42,20 +46,23 @@ const laLiga = [
 
 const ligue1 = [
     { nome: "Paris Saint-Germain", pathImmagine: require("./images/ligue1/psg.png") },
-    { nome: "Lyon", pathImmagine: require("./images/ligue1/lione.png") },
+    { nome: "Lione", pathImmagine: require("./images/ligue1/lione.png") },
     { nome: "Marseille", pathImmagine: require("./images/ligue1/marsiglia.png") },
     { nome: "Monaco", pathImmagine: require("./images/ligue1/monaco.png") },
     { nome: "Lille", pathImmagine: require("./images/ligue1/lilla.png") },
-    { nome: "Nice", pathImmagine: require("./images/ligue1/nizza.png") },
-    { nome: "Lorient", pathImmagine: require("./images/ligue1/lehavre.png") },
+    { nome: "Nizza", pathImmagine: require("./images/ligue1/nizza.png") },
+    { nome: "Angers", pathImmagine: require("./images/ligue1/angers.png") },
     { nome: "Rennes", pathImmagine: require("./images/ligue1/rennes.png") },
     { nome: "Brest", pathImmagine: require("./images/ligue1/brest.png") },
     { nome: "Strasbourg", pathImmagine: require("./images/ligue1/strasburgo.png") },
     { nome: "Toulouse", pathImmagine: require("./images/ligue1/tolosa.png") },
     { nome: "Reims", pathImmagine: require("./images/ligue1/reims.png") },
     { nome: "Nantes", pathImmagine: require("./images/ligue1/nantes.png") },
-    { nome: "Ajaccio", pathImmagine: require("./images/ligue1/auxerre.png") },
-    { nome: "Clermont", pathImmagine: require("./images/ligue1/stetienne.png") }
+    { nome: "St Etienne", pathImmagine: require("./images/ligue1/stetienne.png") },
+    { nome: "Auxerre", pathImmagine: require("./images/ligue1/auxerre.png") },
+    { nome: "Montpellier", pathImmagine: require("./images/ligue1/montpellier.png") },
+    { nome: "Le Havre", pathImmagine: require("./images/ligue1/lehavre.png") },
+    { nome: "Lens", pathImmagine: require("./images/ligue1/lens.png") }
 ];
 
 const bundesliga = [
@@ -63,7 +70,7 @@ const bundesliga = [
     { nome: "Borussia Dortmund", pathImmagine: require("./images/bundesliga/dortmund.png") },
     { nome: "RB Leipzig", pathImmagine: require("./images/bundesliga/lipsia.png") },
     { nome: "Bayer Leverkusen", pathImmagine: require("./images/bundesliga/leverkusen.png") },
-    { nome: "VfB Stuttgart", pathImmagine: require("./images/bundesliga/heidenheim.png") },
+    { nome: "VfB Stuttgart", pathImmagine: require("./images/bundesliga/stoccarda.png") },
     { nome: "Eintracht Frankfurt", pathImmagine: require("./images/bundesliga/francoforte.png") },
     { nome: "Union Berlin", pathImmagine: require("./images/bundesliga/unionberlino.png") },
     { nome: "Wolfsburg", pathImmagine: require("./images/bundesliga/wolfsburg.png") },
@@ -71,44 +78,59 @@ const bundesliga = [
     { nome: "Gladbach", pathImmagine: require("./images/bundesliga/monchengladbach.png") },
     { nome: "Werder Bremen", pathImmagine: require("./images/bundesliga/brema.png") },
     { nome: "Freiburg", pathImmagine: require("./images/bundesliga/friburgo.png") },
-    { nome: "Köln", pathImmagine: require("./images/bundesliga/kiel.png") },
+    { nome: "Holstein Kiel", pathImmagine: require("./images/bundesliga/kiel.png") },
     { nome: "Mainz", pathImmagine: require("./images/bundesliga/magonza.png") },
-    { nome: "Darmstadt", pathImmagine: require("./images/bundesliga/stpauli.png") }
+    { nome: "St Pauli", pathImmagine: require("./images/bundesliga/stpauli.png") },
+    { nome: "Heidenheim", pathImmagine: require("./images/bundesliga/heidenheim.png") },
+    { nome: "Augsburg", pathImmagine: require("./images/bundesliga/augusta.png") },
+    { nome: "Bochum", pathImmagine: require("./images/bundesliga/bochum.png") }
 ];
+
+
+
+
+
 const premierLeague = [
-    { nome: "Manchester City", pathImmagine: require("./images/premierleague/manchestercity.png") },
     { nome: "Arsenal", pathImmagine: require("./images/premierleague/arsenal.png") },
-    { nome: "Liverpool", pathImmagine: require("./images/premierleague/liverpool.png") },
-    { nome: "Tottenham Hotspur", pathImmagine: require("./images/premierleague/tottenham.png") },
     { nome: "Aston Villa", pathImmagine: require("./images/premierleague/astonvilla.png") },
-    { nome: "Manchester United", pathImmagine: require("./images/premierleague/manchesterunited.png") },
-    { nome: "Chelsea", pathImmagine: require("./images/premierleague/chelsea.png") },
-    { nome: "Newcastle United", pathImmagine: require("./images/premierleague/newcastle.png") },
+    { nome: "Bournemouth", pathImmagine: require("./images/premierleague/bournemouth.png") },
     { nome: "Brentford", pathImmagine: require("./images/premierleague/brentford.png") },
     { nome: "Brighton & Hove Albion", pathImmagine: require("./images/premierleague/brighton.png") },
-    { nome: "West Ham United", pathImmagine: require("./images/premierleague/westham.png") },
+    { nome: "Chelsea", pathImmagine: require("./images/premierleague/chelsea.png") },
     { nome: "Crystal Palace", pathImmagine: require("./images/premierleague/crystalpalace.png") },
-    { nome: "Fulham", pathImmagine: require("./images/premierleague/fulham.png") },
-    { nome: "Wolverhampton Wanderers", pathImmagine: require("./images/premierleague/wolves.png") },
     { nome: "Everton", pathImmagine: require("./images/premierleague/everton.png") },
-    { nome: "Ipswich", pathImmagine: require("./images/premierleague/ipswich.png") }
+    { nome: "Fulham", pathImmagine: require("./images/premierleague/fulham.png") },
+    { nome: "Ipswich", pathImmagine: require("./images/premierleague/ipswich.png") },
+    { nome: "Leicester City", pathImmagine: require("./images/premierleague/leicester.png") },
+    { nome: "Liverpool", pathImmagine: require("./images/premierleague/liverpool.png") },
+    { nome: "Manchester City", pathImmagine: require("./images/premierleague/manchestercity.png") },
+    { nome: "Manchester United", pathImmagine: require("./images/premierleague/manchesterunited.png") },
+    { nome: "Newcastle United", pathImmagine: require("./images/premierleague/newcastle.png") },
+    { nome: "Nottingham Forest", pathImmagine: require("./images/premierleague/nottingham.png") },
+    { nome: "Southampton", pathImmagine: require("./images/premierleague/southampton.png") },
+    { nome: "Tottenham Hotspur", pathImmagine: require("./images/premierleague/tottenham.png") },
+    { nome: "West Ham United", pathImmagine: require("./images/premierleague/westham.png") },
+    { nome: "Wolverhampton Wanderers", pathImmagine: require("./images/premierleague/wolves.png") }
 ];
 const ligaPortugal = [
-    { nome: "Benfica", pathImmagine: require("./images/ligaportugal/benfica.png") },
-    { nome: "Casapia", pathImmagine: require("./images/ligaportugal/casapia.png") },
-    { nome: "Braga", pathImmagine: require("./images/ligaportugal/braga.png") },
-    { nome: "Sporting CP", pathImmagine: require("./images/ligaportugal/sportinglisbona.png") },
-    { nome: "Porto", pathImmagine: require("./images/ligaportugal/porto.png") },
-    { nome: "Marítimo", pathImmagine: require("./images/ligaportugal/moreirense.png") },
     { nome: "Arouca", pathImmagine: require("./images/ligaportugal/arauca.png") },
+    { nome: "Benfica", pathImmagine: require("./images/ligaportugal/benfica.png") },
     { nome: "Boavista", pathImmagine: require("./images/ligaportugal/boavista.png") },
+    { nome: "Braga", pathImmagine: require("./images/ligaportugal/braga.png") },
+    { nome: "Casapia", pathImmagine: require("./images/ligaportugal/casapia.png") },
     { nome: "Estoril Praia", pathImmagine: require("./images/ligaportugal/estoril.png") },
+    { nome: "Estrela", pathImmagine: require("./images/ligaportugal/estrela.png") },
+    { nome: "Famalicão", pathImmagine: require("./images/ligaportugal/famalicao.png") },
     { nome: "Farense", pathImmagine: require("./images/ligaportugal/farense.png") },
-    { nome: "Santa Clara", pathImmagine: require("./images/ligaportugal/santaclara.png") },
+    { nome: "Glivicente", pathImmagine: require("./images/ligaportugal/glivicente.png") },
+    { nome: "Guimaraes", pathImmagine: require("./images/ligaportugal/guimaraes.png") },
     { nome: "Moreirense", pathImmagine: require("./images/ligaportugal/moreirense.png") },
     { nome: "Nacional", pathImmagine: require("./images/ligaportugal/nacional.png") },
-    { nome: "Famalicão", pathImmagine: require("./images/ligaportugal/famalicao.png") },
-    { nome: "Rio Ave", pathImmagine: require("./images/ligaportugal/rioave.png") }
+    { nome: "Porto", pathImmagine: require("./images/ligaportugal/porto.png") },
+    { nome: "Rio Ave", pathImmagine: require("./images/ligaportugal/rioave.png") },
+    { nome: "Santa Clara", pathImmagine: require("./images/ligaportugal/santaclara.png") },
+    { nome: "AVS", pathImmagine: require("./images/ligaportugal/avs.png") },
+    { nome: "Sporting CP", pathImmagine: require("./images/ligaportugal/sportinglisbona.png") }
 ];
 
 export { serieA, laLiga, ligue1, bundesliga, premierLeague ,ligaPortugal};

@@ -17,7 +17,7 @@ const LeagueGrid = ({ title, teams }) => (
           data={teams}
           renderItem={renderSquad}
           keyExtractor={(item) => item.nome}
-          numColumns={3} // Puoi regolare il numero di colonne
+          numColumns={10} // Puoi regolare il numero di colonne
           columnWrapperStyle={styles.columnWrapper}
       />
     </View>
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    backgroundColor: '#6aaced',
+    backgroundColor: '#217ad3',
   },
   leagueContainer: {
     marginBottom: 20,
@@ -61,7 +61,6 @@ const styles = StyleSheet.create({
   squadImage: {
     width: 80,
     height: 80,
-    borderRadius: 40,
     marginBottom: 5,
   },
   squadName: {
