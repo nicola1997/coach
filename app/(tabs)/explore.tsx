@@ -1,25 +1,27 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { View, FlatList, Text, Image, StyleSheet, Pressable, Alert, Modal } from 'react-native';
 import { serieA, laLiga, ligue1, bundesliga, premierLeague, ligaPortugal } from '@/assets/teams';
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import {Link} from "expo-router";
 
-const renderSquad = ({ item, setModalVisible }) => (
+const renderSquad = ({ item, setModalVisible,setYourTeam }) => (
     <View style={styles.squadContainer}>
-        <Pressable onPress={() => setModalVisible(true)}>
+        <Pressable onPress={() => {setModalVisible(true);setYourTeam(item.nome)}}>
             <Image source={item.pathImmagine} style={styles.squadImage} />
             <Text style={styles.squadName}>{item.nome}</Text>
         </Pressable>
     </View>
 );
 
-const LeagueGrid = ({ title, teams, setModalVisible }) => (
+const LeagueGrid = ({ title, teams, setModalVisible,setYourTeam }) => (
     <View style={styles.leagueContainer}>
         <Text style={styles.leagueTitle}>{title}</Text>
         <FlatList
             data={teams}
-            renderItem={(props) => renderSquad({ ...props, setModalVisible })}
+            renderItem={({ item }) => renderSquad({ item, setModalVisible,setYourTeam })}
+
             keyExtractor={(item) => item.nome}
-            numColumns={10} // You can adjust the number of columns
+            numColumns={10}
             columnWrapperStyle={styles.columnWrapper}
         />
     </View>
@@ -27,8 +29,8 @@ const LeagueGrid = ({ title, teams, setModalVisible }) => (
 
 const App = () => {
     const [modalVisible, setModalVisible] = useState(false);
+    const [yourTeam, setYourTeam] = useState('');
 
-    // Data for all leagues to be rendered in FlatList
     const leaguesData = [
         { title: "Serie A", teams: serieA },
         { title: "La Liga", teams: laLiga },
@@ -38,12 +40,13 @@ const App = () => {
         { title: "Liga Portugal", teams: ligaPortugal },
     ];
 
+
     return (
         <SafeAreaProvider style={styles.container}>
             <FlatList
                 data={leaguesData}
                 renderItem={({ item }) => (
-                    <LeagueGrid title={item.title} teams={item.teams} setModalVisible={setModalVisible} />
+                    <LeagueGrid title={item.title} teams={item.teams} setModalVisible={setModalVisible} setYourTeam={setYourTeam} />
                 )}
                 keyExtractor={(item) => item.title}
             />
@@ -52,16 +55,21 @@ const App = () => {
                 transparent={true}
                 visible={modalVisible}
                 onRequestClose={() => {
-                    Alert.alert('Modal has been closed.');
                     setModalVisible(!modalVisible);
                 }}>
                 <View style={styles.centeredView}>
                     <View style={styles.modalView}>
-                        <Text style={styles.modalText}>Confermi?</Text>
+                        <Text style={styles.modalText}>Confermi {yourTeam} ?</Text>
+                        <Link
+                            style={[styles.button, styles.buttonConferm]}
+                            onPress={() => setModalVisible(!modalVisible)}
+                            href={"/menu"}>
+                            <Text style={styles.textStyle}>CONFERMA</Text>
+                        </Link>
                         <Pressable
                             style={[styles.button, styles.buttonClose]}
                             onPress={() => setModalVisible(!modalVisible)}>
-                            <Text style={styles.textStyle}>Hide Modal</Text>
+                            <Text style={styles.textStyle}>NO</Text>
                         </Pressable>
                     </View>
                 </View>
@@ -129,8 +137,11 @@ const styles = StyleSheet.create({
     buttonOpen: {
         backgroundColor: '#F194FF',
     },
+    buttonConferm: {
+        backgroundColor: '#136329',
+    },
     buttonClose: {
-        backgroundColor: '#2196F3',
+        backgroundColor: '#e60439',
     },
     textStyle: {
         color: 'white',
