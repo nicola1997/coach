@@ -30,7 +30,7 @@ const App = () => {
 
     return (
         <SafeAreaProvider style={styles.container}>
-            <ScrollView style={styles.container}>
+            <View style={styles.container}>
                 <LeagueGrid title="Serie A" teams={serieA} setModalVisible={setModalVisible} />
                 <LeagueGrid title="La Liga" teams={laLiga} setModalVisible={setModalVisible} />
                 <LeagueGrid title="Ligue 1" teams={ligue1} setModalVisible={setModalVisible} />
@@ -48,7 +48,7 @@ const App = () => {
                     }}>
                     <View style={styles.centeredView}>
                         <View style={styles.modalView}>
-                            <Text style={styles.modalText}>Hello World!</Text>
+                            <Text style={styles.modalText}>Confermi?</Text>
                             <Pressable
                                 style={[styles.button, styles.buttonClose]}
                                 onPress={() => setModalVisible(!modalVisible)}>
@@ -57,7 +57,7 @@ const App = () => {
                         </View>
                     </View>
                 </Modal>
-            </ScrollView>
+            </View>
         </SafeAreaProvider>
     );
 };
