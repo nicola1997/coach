@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, FlatList, Text, Image, StyleSheet, ScrollView, Pressable, Alert, Modal } from 'react-native';
+import { View, FlatList, Text, Image, StyleSheet, Pressable, Alert, Modal } from 'react-native';
 import { serieA, laLiga, ligue1, bundesliga, premierLeague, ligaPortugal } from '@/assets/teams';
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
@@ -28,36 +28,44 @@ const LeagueGrid = ({ title, teams, setModalVisible }) => (
 const App = () => {
     const [modalVisible, setModalVisible] = useState(false);
 
+    // Data for all leagues to be rendered in FlatList
+    const leaguesData = [
+        { title: "Serie A", teams: serieA },
+        { title: "La Liga", teams: laLiga },
+        { title: "Ligue 1", teams: ligue1 },
+        { title: "Bundesliga", teams: bundesliga },
+        { title: "Premier League", teams: premierLeague },
+        { title: "Liga Portugal", teams: ligaPortugal },
+    ];
+
     return (
         <SafeAreaProvider style={styles.container}>
-            <View style={styles.container}>
-                <LeagueGrid title="Serie A" teams={serieA} setModalVisible={setModalVisible} />
-                <LeagueGrid title="La Liga" teams={laLiga} setModalVisible={setModalVisible} />
-                <LeagueGrid title="Ligue 1" teams={ligue1} setModalVisible={setModalVisible} />
-                <LeagueGrid title="Bundesliga" teams={bundesliga} setModalVisible={setModalVisible} />
-                <LeagueGrid title="Premier League" teams={premierLeague} setModalVisible={setModalVisible} />
-                <LeagueGrid title="Liga Portugal" teams={ligaPortugal} setModalVisible={setModalVisible} />
-
-                <Modal
-                    animationType="slide"
-                    transparent={true}
-                    visible={modalVisible}
-                    onRequestClose={() => {
-                        Alert.alert('Modal has been closed.');
-                        setModalVisible(!modalVisible);
-                    }}>
-                    <View style={styles.centeredView}>
-                        <View style={styles.modalView}>
-                            <Text style={styles.modalText}>Confermi?</Text>
-                            <Pressable
-                                style={[styles.button, styles.buttonClose]}
-                                onPress={() => setModalVisible(!modalVisible)}>
-                                <Text style={styles.textStyle}>Hide Modal</Text>
-                            </Pressable>
-                        </View>
+            <FlatList
+                data={leaguesData}
+                renderItem={({ item }) => (
+                    <LeagueGrid title={item.title} teams={item.teams} setModalVisible={setModalVisible} />
+                )}
+                keyExtractor={(item) => item.title}
+            />
+            <Modal
+                animationType="slide"
+                transparent={true}
+                visible={modalVisible}
+                onRequestClose={() => {
+                    Alert.alert('Modal has been closed.');
+                    setModalVisible(!modalVisible);
+                }}>
+                <View style={styles.centeredView}>
+                    <View style={styles.modalView}>
+                        <Text style={styles.modalText}>Confermi?</Text>
+                        <Pressable
+                            style={[styles.button, styles.buttonClose]}
+                            onPress={() => setModalVisible(!modalVisible)}>
+                            <Text style={styles.textStyle}>Hide Modal</Text>
+                        </Pressable>
                     </View>
-                </Modal>
-            </View>
+                </View>
+            </Modal>
         </SafeAreaProvider>
     );
 };
