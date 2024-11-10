@@ -26,7 +26,8 @@
       "orientation": "landscape",
       "statusBar": {
         "hidden": true
-      }
+      },
+      "package": "com.nicola1997.coach"
     },
     "web": {
       "bundler": "metro",
@@ -38,6 +39,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4d0319fb-f759-4a59-aa6b-551aa4a2936f"
+      }
     }
   }
 }

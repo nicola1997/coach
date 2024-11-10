@@ -1,81 +1,81 @@
-import React, {useEffect, useState} from 'react';
-import { View, Text, StyleSheet, Pressable } from 'react-native';
-import {SafeAreaProvider} from "react-native-safe-area-context";
-import AntDesign from '@expo/vector-icons/AntDesign';
-import Ionicons from "@expo/vector-icons/Ionicons";
-import {Link} from "expo-router";
-import {Entypo, FontAwesome, FontAwesome5} from "@expo/vector-icons";
+import React, { useEffect, useState } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { Link } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import {legacyBlobToArrayBufferAsync} from "expo/build/devtools/blobUtils";
+import { FontAwesome, FontAwesome5, Ionicons, MaterialCommunityIcons, Entypo, MaterialIcons } from "@expo/vector-icons";
+
 const Navbar = () => {
-    const [yourTeam, setYourTeam] = useState('');
+    const [leagues, setLeagues] = useState({});
 
     const loadData = async (key) => {
         try {
-            const storedValue = await AsyncStorage.getItem(key);
-            if (storedValue !== null) {
-                setYourTeam(storedValue);
-            }
+            const data = await AsyncStorage.getItem(key);
+            return data ? JSON.parse(data) : null;
         } catch (e) {
-            alert('Error loading data');
+            console.error('Error loading data:', e);
+            return null;
         }
     };
 
     useEffect(() => {
-        loadData("yourTeam")
+        const loadLeaguesData = async () => {
+            const leagueKeys = ["seriea", "premierleague", "ligue1", "laliga", "ligaportugal", "bundesliga"];
+            const leagueData = await Promise.all(leagueKeys.map(loadData));
+
+            const leaguesObj = leagueKeys.reduce((acc, key, index) => {
+                acc[key] = leagueData[index];
+                return acc;
+            }, {});
+
+            setLeagues(leaguesObj);
+        };
+
+        loadLeaguesData();
     }, []);
+
+    const navLinks = [
+        { icon: <FontAwesome name="gear" size={24} color="white" />, route: "/menu" },
+        { icon: <FontAwesome5 name="search" size={24} color="white" />, route: "/menu" },
+        { icon: <Ionicons name="earth-sharp" size={24} color="white" />, route: "/menu" },
+        { icon: <MaterialCommunityIcons name="account-tie" size={24} color="white" />, route: "/menu" },
+        { icon: <Entypo name="home" size={24} color="white" />, route: "/menu" },
+        { icon: <MaterialIcons name="email" size={24} color="white" />, route: "/menu" }
+    ];
+
     return (
-        <SafeAreaProvider >
-
-        <View style={styles.navbar}>
-            <Link style={styles.navButton} href={"/menu"}>
-                <Text style={styles.navButtonText}>{yourTeam}</Text>
-            </Link>
-            <Link style={styles.navButton} href={"/menu"}>
-                <Text style={styles.navButtonText}><AntDesign name="message1" size={24} color="white" /></Text>
-            </Link>
-            <Link style={styles.navButton} href={"/menu"}>
-                <Text style={styles.navButtonText}><Entypo name="home" size={24} color="white" /></Text>
-            </Link>
-            <Link style={styles.navButton} href={"/menu"}>
-                <Text style={styles.navButtonText}><Entypo name="man" size={24} color="white" /></Text>
-            </Link>
-            <Link style={styles.navButton} href={"/menu"}>
-                <Text style={styles.navButtonText}><Ionicons name="earth-sharp" size={24} color="white" /></Text>
-            </Link>
-            <Link style={styles.navButton} href={"/menu"}>
-                <Text style={styles.navButtonText}><FontAwesome5 name="search" size={24} color="white" /></Text>
-            </Link>
-            <Link style={styles.navButton} href={"/menu"}>
-                <Text style={styles.navButtonText}><FontAwesome name="gear" size={24} color="white" /></Text>
-            </Link>
-        </View>
+        <SafeAreaProvider>
+            <View style={styles.navbar}>
+                {navLinks.map((link, index) => (
+                    <Link key={index} style={styles.navButton} href={link.route}>
+                        <Text style={styles.navButtonText}>
+                            {link.icon || link.text}
+                        </Text>
+                    </Link>
+                ))}
+            </View>
         </SafeAreaProvider>
-
     );
 };
 
 const styles = StyleSheet.create({
     navbar: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        backgroundColor: '#361d47', // Colore di sfondo della navbar
-        height: 70, // Altezza della navbar
-        paddingTop: 20, // Spazio per il notch se necessario (su iPhone X)
-        position: 'absolute', // Posizione fissa
-        top: -10, // Al top della schermata
+        position: 'absolute',
+        top: 0,
         left: 0,
-        right: 0,
-        zIndex: 1, // Assicura che la navbar stia sopra altri contenuti
+        bottom: 0,
+        width: 60,
+        backgroundColor: '#073e75',
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+        paddingVertical: 0,
     },
     navButton: {
-        padding: 10,
+        alignItems: 'center',
     },
     navButtonText: {
-        color: '#fff',
-        fontSize: 16,
-        fontWeight: 'bold',
+        color: 'white',
+        fontSize: 18,
     },
 });
 
