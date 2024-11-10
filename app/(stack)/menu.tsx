@@ -19,19 +19,13 @@ const Navbar = () => {
     };
 
     useEffect(() => {
-        const loadLeaguesData = async () => {
-            const leagueKeys = ["seriea", "premierleague", "ligue1", "laliga", "ligaportugal", "bundesliga"];
-            const leagueData = await Promise.all(leagueKeys.map(loadData));
-
-            const leaguesObj = leagueKeys.reduce((acc, key, index) => {
-                acc[key] = leagueData[index];
-                return acc;
-            }, {});
-
-            setLeagues(leaguesObj);
+        const fetchLeaguesData = async () => {
+            const leghe = await loadData('leghe'); // Assuming 'leagues' is your key
+            setLeagues(leghe );
+            console.log(leghe.SerieA); // Log the fetched data
         };
 
-        loadLeaguesData();
+        fetchLeaguesData();
     }, []);
 
     const navLinks = [
@@ -49,7 +43,7 @@ const Navbar = () => {
                 {navLinks.map((link, index) => (
                     <Link key={index} style={styles.navButton} href={link.route}>
                         <Text style={styles.navButtonText}>
-                            {link.icon || link.text}
+                            {link.icon}
                         </Text>
                     </Link>
                 ))}

@@ -49,12 +49,7 @@ const App = () => {
     ];
 
     useEffect(() => {
-        saveData("seriea", leghe.SerieA.squadre);
-        saveData("laliga", leghe.LaLiga.squadre);
-        saveData("ligue1", leghe.Ligue1.squadre);
-        saveData("bundesliga", leghe.Bundesliga.squadre);
-        saveData("premierleague", leghe.PremierLeague.squadre);
-        saveData("ligaportugal", leghe.LigaPortugal.squadre);
+        saveData("leghe", leghe);
     }, []);
 
 
