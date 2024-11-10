@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Link } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -7,6 +7,7 @@ import { FontAwesome, FontAwesome5, Ionicons, MaterialCommunityIcons, Entypo, Ma
 
 const Navbar = () => {
     const [leagues, setLeagues] = useState({});
+    const [yourTeam, setYourTeam] = useState({});
 
     const loadData = async (key) => {
         try {
@@ -20,9 +21,10 @@ const Navbar = () => {
 
     useEffect(() => {
         const fetchLeaguesData = async () => {
-            const leghe = await loadData('leghe'); // Assuming 'leagues' is your key
-            setLeagues(leghe );
-            console.log(leghe.SerieA); // Log the fetched data
+            const leghe = await loadData('leghe');
+            const yourTeamFetch = await loadData('yourTeam');
+            setLeagues(leghe);
+            setYourTeam(yourTeamFetch)
         };
 
         fetchLeaguesData();
@@ -34,7 +36,8 @@ const Navbar = () => {
         { icon: <Ionicons name="earth-sharp" size={24} color="white" />, route: "/menu" },
         { icon: <MaterialCommunityIcons name="account-tie" size={24} color="white" />, route: "/menu" },
         { icon: <Entypo name="home" size={24} color="white" />, route: "/menu" },
-        { icon: <MaterialIcons name="email" size={24} color="white" />, route: "/menu" }
+        { icon: <MaterialIcons name="email" size={24} color="white" />, route: "/menu" },
+        { icon: <Text>{yourTeam.nome}</Text>, route: "/menu" }
     ];
 
     return (
@@ -47,6 +50,8 @@ const Navbar = () => {
                         </Text>
                     </Link>
                 ))}
+
+
             </View>
         </SafeAreaProvider>
     );

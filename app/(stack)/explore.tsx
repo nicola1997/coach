@@ -7,7 +7,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const renderSquad = ({ item, setModalVisible, setYourTeam }) => (
     <View style={styles.squadContainer}>
-        <Pressable onPress={() => { setModalVisible(true); setYourTeam(item.nome) }}>
+        <Pressable onPress={() => { setModalVisible(true); setYourTeam(item) }}>
             <Image source={item.pathImmagine} style={styles.squadImage} />
             <Text style={styles.squadName}>{item.nome}</Text>
         </Pressable>
@@ -29,7 +29,7 @@ const LeagueGrid = ({ title, teams, setModalVisible, setYourTeam }) => (
 
 const App = () => {
     const [modalVisible, setModalVisible] = useState(false);
-    const [yourTeam, setYourTeam] = useState('');
+    const [yourTeam, setYourTeam] = useState({});
 
     const saveData = async (key, data) => {
         try {
@@ -69,7 +69,7 @@ const App = () => {
                 onRequestClose={() => { setModalVisible(!modalVisible); }}>
                 <View style={styles.centeredView}>
                     <View style={styles.modalView}>
-                        <Text style={styles.modalText}>Confermi {yourTeam} ?</Text>
+                        <Text style={styles.modalText}>Confermi {yourTeam?.nome} ?</Text>
                         <Link
                             style={[styles.button, styles.buttonConferm]}
                             onPress={() => { setModalVisible(!modalVisible); saveData("yourTeam", yourTeam) }}
