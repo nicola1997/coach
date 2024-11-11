@@ -3,10 +3,6 @@ export const leghe = {
         nome: "Premier League",
         squadre: [
             {
-                nome: "Arsenal",
-                Arsenal: {
-                    nome: "Arsenal",
-                    Arsenal: {
                         nome: "Arsenal",
                         calciatori: [
                             { nome: "William Saliba", posizione: "DF", eta: 23, livelloAbilita: 86 },
@@ -34,46 +30,33 @@ export const leghe = {
                             { nome: "Myles Lewis-Skelly", posizione: "CN", eta: 18, livelloAbilita: 77 },
                             { nome: "Ethan Nwaneri", posizione: "CN", eta: 17, livelloAbilita: 75 }
                         ],
-                        pathImmagine: require("../../assets/images/arsenal.png")
-                    }
-                    ,
-                    pathImmagine: require("../../assets/images/arsenal.png")
-                },
                 pathImmagine: require("../../assets/images/arsenal.png")
+
             },
+
             {
                 nome: "Aston Villa",
-                AstonVilla: {
-                    nome: "Aston Villa",
-                    AstonVilla: {
-                        nome: "Aston Villa",
-                        calciatori: [
-                            {nome: "Emiliano Martínez", posizione: "PO", eta: 31, livelloAbilita: 86},
-                            {nome: "Robin Olsen", posizione: "PO", eta: 34, livelloAbilita: 78},
-                            {nome: "Matty Cash", posizione: "DF", eta: 26, livelloAbilita: 80},
-                            {nome: "Ezri Konsa", posizione: "DF", eta: 26, livelloAbilita: 82},
-                            {nome: "Tyrone Mings", posizione: "DF", eta: 31, livelloAbilita: 81},
-                            {nome: "Lucas Digne", posizione: "DF", eta: 30, livelloAbilita: 82},
-                            {nome: "Boubacar Kamara", posizione: "CN", eta: 24, livelloAbilita: 84},
-                            {nome: "John McGinn", posizione: "CN", eta: 30, livelloAbilita: 83},
-                            {nome: "Douglas Luiz", posizione: "CN", eta: 26, livelloAbilita: 82},
-                            {nome: "Jacob Ramsey", posizione: "CN", eta: 23, livelloAbilita: 81},
-                            {nome: "Philippe Coutinho", posizione: "CN", eta: 31, livelloAbilita: 80},
-                            {nome: "Ollie Watkins", posizione: "AT", eta: 28, livelloAbilita: 84},
-                            {nome: "Danny Ings", posizione: "AT", eta: 31, livelloAbilita: 80},
-                            {nome: "Leon Bailey", posizione: "AT", eta: 26, livelloAbilita: 82},
-                            {nome: "Emiliano Buendía", posizione: "AT", eta: 27, livelloAbilita: 81}
-                        ],
-                        pathImmagine: require("../../assets/images/astonvilla.png")
-                    },
-                    pathImmagine: require("../../assets/images/astonvilla.png")
-                },
+                calciatori: [
+                    {nome: "Emiliano Martínez", posizione: "PO", eta: 31, livelloAbilita: 86},
+                    {nome: "Robin Olsen", posizione: "PO", eta: 34, livelloAbilita: 78},
+                    {nome: "Matty Cash", posizione: "DF", eta: 26, livelloAbilita: 80},
+                    {nome: "Ezri Konsa", posizione: "DF", eta: 26, livelloAbilita: 82},
+                    {nome: "Tyrone Mings", posizione: "DF", eta: 31, livelloAbilita: 81},
+                    {nome: "Lucas Digne", posizione: "DF", eta: 30, livelloAbilita: 82},
+                    {nome: "Boubacar Kamara", posizione: "CN", eta: 24, livelloAbilita: 84},
+                    {nome: "John McGinn", posizione: "CN", eta: 30, livelloAbilita: 83},
+                    {nome: "Douglas Luiz", posizione: "CN", eta: 26, livelloAbilita: 82},
+                    {nome: "Jacob Ramsey", posizione: "CN", eta: 23, livelloAbilita: 81},
+                    {nome: "Philippe Coutinho", posizione: "CN", eta: 31, livelloAbilita: 80},
+                    {nome: "Ollie Watkins", posizione: "AT", eta: 28, livelloAbilita: 84},
+                    {nome: "Danny Ings", posizione: "AT", eta: 31, livelloAbilita: 80},
+                    {nome: "Leon Bailey", posizione: "AT", eta: 26, livelloAbilita: 82},
+                    {nome: "Emiliano Buendía", posizione: "AT", eta: 27, livelloAbilita: 81}
+                ],
                 pathImmagine: require("../../assets/images/astonvilla.png")
             },
             {
                 nome: "Bournemouth",
-                Bournemouth: {
-                    nome: "Bournemouth",
                     calciatori: [
                         {nome: "Neto", posizione: "PO", eta: 34, livelloAbilita: 80},
                         {nome: "Mark Travers", posizione: "PO", eta: 25, livelloAbilita: 75},
@@ -94,14 +77,9 @@ export const leghe = {
                         {nome: "Jordan Zemura", posizione: "DF", eta: 25, livelloAbilita: 77}
                     ],
                     pathImmagine: require("../../assets/images/bournemouth.png")
-                }
-                ,
-                pathImmagine: require("../../assets/images/bournemouth.png")
             },
             {
                 nome: "Brentford",
-                Brentford: {
-                    nome: "Brentford",
                     calciatori: [
                         {nome: "David Raya", posizione: "PO", eta: 28, livelloAbilita: 85},
                         {nome: "Mark Flekken", posizione: "PO", eta: 30, livelloAbilita: 80},
@@ -123,13 +101,9 @@ export const leghe = {
                         {nome: "Sergi Canós", posizione: "AT", eta: 26, livelloAbilita: 76}
                     ],
                     pathImmagine: require("../../assets/images/brentford.png")
-                },
-                pathImmagine: require("../../assets/images/brentford.png")
             },
             {
                 nome: "Brighton & Hove Albion",
-                Brighton: {
-                    nome: "Brighton & Hove Albion",
                     calciatori: [
                         {nome: "Robert Sánchez", posizione: "PO", eta: 26, livelloAbilita: 82},
                         {nome: "Jason Steele", posizione: "PO", eta: 33, livelloAbilita: 78},
@@ -150,13 +124,9 @@ export const leghe = {
                         {nome: "Deniz Undav", posizione: "AT", eta: 27, livelloAbilita: 77}
                     ],
                     pathImmagine: require("../../assets/images/brighton.png")
-                },
-                pathImmagine: require("../../assets/images/brighton.png")
             },
             {
                 nome: "Chelsea",
-                Chelsea: {
-                    nome: "Chelsea",
                     calciatori: [
                         { nome: "Robert Sanchez", posizione: "PO", eta: 26, livelloAbilita: 81 },
                         { nome: "Filip Jørgensen", posizione: "PO", eta: 22, livelloAbilita: 74 },
@@ -191,13 +161,9 @@ export const leghe = {
                         { nome: "Omari Kellyman", posizione: "AT", eta: 19, livelloAbilita: 72 }
                     ],
                     pathImmagine: require("../../assets/images/chelsea.png")
-                },
-                pathImmagine: require("../../assets/images/chelsea.png")
             },
             {
                 nome: "Crystal Palace",
-                CrystalPalace: {
-                    nome: "Crystal Palace",
                     calciatori: [
                         {nome: "Vicente Guaita", posizione: "PO", eta: 37, livelloAbilita: 80},
                         {nome: "Jack Butland", posizione: "PO", eta: 31, livelloAbilita: 78},
@@ -218,13 +184,9 @@ export const leghe = {
                         {nome: "Will Hughes", posizione: "CN", eta: 29, livelloAbilita: 76}
                     ],
                     pathImmagine: require("../../assets/images/crystalpalace.png")
-                },
-                pathImmagine: require("../../assets/images/crystalpalace.png")
-            },
+                 },
             {
                 nome: "Everton",
-                Everton: {
-                    nome: "Everton",
                     calciatori: [
                         {nome: "Jordan Pickford", posizione: "PO", eta: 30, livelloAbilita: 84},
                         {nome: "Asmir Begović", posizione: "PO", eta: 37, livelloAbilita: 79},
@@ -246,13 +208,10 @@ export const leghe = {
                         {nome: "Jonjoe Kenny", posizione: "DF", eta: 26, livelloAbilita: 76}
                     ],
                     pathImmagine: require("../../assets/images/everton.png")
-                },
-                pathImmagine: require("../../assets/images/everton.png")
-            },
+                 },
             {
                 nome: "Fulham",
-                Fulham: {
-                    nome: "Fulham",
+
                     calciatori: [
                         {nome: "Bernd Leno", posizione: "PO", eta: 32, livelloAbilita: 82},
                         {nome: "Marek Rodák", posizione: "PO", eta: 27, livelloAbilita: 77},
@@ -273,12 +232,9 @@ export const leghe = {
                     ],
                     pathImmagine: require("../../assets/images/fulham.png")
                 },
-                pathImmagine: require("../../assets/images/fulham.png")
-            },
             {
                 nome: "Ipswich Town",
-                Ipswich: {
-                    nome: "Ipswich Town",
+
                     calciatori: [
                         {nome: "Vaclav Hladky", posizione: "PO", eta: 33, livelloAbilita: 78},
                         {nome: "Christian W80n", posizione: "PO", eta: 28, livelloAbilita: 80},
@@ -299,14 +255,9 @@ export const leghe = {
                         {nome: "Cameron Humphreys", posizione: "CN", eta: 19, livelloAbilita: 77}
                     ],
                     pathImmagine: require("../../assets/images/ipswich.png")
-                }
-                ,
-                pathImmagine: require("../../assets/images/ipswich.png")
-            },
+               },
             {
                 nome: "Leicester City",
-                Leicester: {
-                    nome: "Leicester City",
                     calciatori: [
                         {nome: "Daniel Iversen", posizione: "PO", eta: 26, livelloAbilita: 79},
                         {nome: "Kasper Schmeichel", posizione: "PO", eta: 37, livelloAbilita: 81},
@@ -327,13 +278,10 @@ export const leghe = {
                         {nome: "Vontae Daley-Campbell", posizione: "DF", eta: 22, livelloAbilita: 77}
                     ],
                     pathImmagine: require("../../assets/images/leicester.png")
-                },
-                pathImmagine: require("../../assets/images/leicester.png")
-            },
+              },
             {
                 nome: "Liverpool",
-                Liverpool: {
-                    nome: "Liverpool",
+
                     calciatori: [
                         { nome: "Alisson Becker", posizione: "PO", eta: 31, livelloAbilita: 89 },
                         { nome: "Vitezslav Jaros", posizione: "PO", eta: 24, livelloAbilita: 75 },
@@ -360,13 +308,9 @@ export const leghe = {
                         { nome: "Diogo Jota", posizione: "AT", eta: 27, livelloAbilita: 80 }
                     ],
                     pathImmagine: require("../../assets/images/liverpool.png")
-                },
-                pathImmagine: require("../../assets/images/liverpool.png")
-            },
+               },
             {
                 nome: "Manchester City",
-                ManchesterCity: {
-                    nome: "Manchester City",
                     calciatori: [
                         { nome: "Ederson", posizione: "PO", eta: 31, livelloAbilita: 88 },
                         { nome: "Stefan Ortega", posizione: "PO", eta: 31, livelloAbilita: 75 },
@@ -389,13 +333,10 @@ export const leghe = {
                     ],
 
                     pathImmagine: require("../../assets/images/manchestercity.png")
-                },
-                pathImmagine: require("../../assets/images/manchestercity.png")
             },
             {
                 nome: "Manchester United",
-                ManchesterUnited: {
-                    nome: "Manchester United",
+
                     calciatori: [
                         { nome: "André Onana", posizione: "PO", eta: 27, livelloAbilita: 85 },
                         { nome: "Altay Bayindir", posizione: "PO", eta: 25, livelloAbilita: 80 },
@@ -422,12 +363,9 @@ export const leghe = {
                     ],
                     pathImmagine: require("../../assets/images/manchesterunited.png")
                 },
-                pathImmagine: require("../../assets/images/manchesterunited.png")
-            },
             {
                 nome: "Newcastle United",
-                NewcastleUnited: {
-                    nome: "Newcastle United",
+
                     calciatori: [
                         {nome: "Nick Pope", posizione: "PO", eta: 32, livelloAbilita: 85},
                         {nome: "Martin Dúbravka", posizione: "PO", eta: 35, livelloAbilita: 80},
@@ -448,13 +386,10 @@ export const leghe = {
                         {nome: "Ryan Fraser", posizione: "AT", eta: 30, livelloAbilita: 79}
                     ],
                     pathImmagine: require("../../assets/images/newcastle.png")
-                },
-                pathImmagine: require("../../assets/images/newcastle.png")
-            },
+                  },
             {
                 nome: "Nottingham Forest",
-                NottinghaCNorest: {
-                    nome: "Nottingham Forest",
+
                     calciatori: [
                         {nome: "Keylor Navas", posizione: "PO", eta: 37, livelloAbilita: 86},
                         {nome: "Dean Henderson", posizione: "PO", eta: 27, livelloAbilita: 81},
@@ -475,13 +410,10 @@ export const leghe = {
                         {nome: "Cheikhou Kouyaté", posizione: "CN", eta: 34, livelloAbilita: 80}
                     ],
                     pathImmagine: require("../../assets/images/nottingham.png")
-                },
-                pathImmagine: require("../../assets/images/nottingham.png")
-            },
+               },
             {
                 nome: "Southampton",
-                Southampton: {
-                    nome: "Southampton",
+
                     calciatori: [
                         {nome: "Gavin Bazunu", posizione: "PO", eta: 22, livelloAbilita: 80},
                         {nome: "Alex McCarthy", posizione: "PO", eta: 34, livelloAbilita: 77},
@@ -500,13 +432,10 @@ export const leghe = {
                         {nome: "Theo Walcott", posizione: "AT", eta: 34, livelloAbilita: 78}
                     ],
                     pathImmagine: require("../../assets/images/southampton.png")
-                },
-                pathImmagine: require("../../assets/images/southampton.png")
-            },
+                  },
             {
                 nome: "Tottenham Hotspur",
-                TottenhamHotspur: {
-                    nome: "Tottenham Hotspur",
+
                     calciatori: [
                         {nome: "Hugo Lloris", posizione: "PO", eta: 37, livelloAbilita: 88},
                         {nome: "Fraser Forster", posizione: "PO", eta: 36, livelloAbilita: 80},
@@ -525,13 +454,10 @@ export const leghe = {
                         {nome: "Bryan Gil", posizione: "AT", eta: 23, livelloAbilita: 78}
                     ],
                     pathImmagine: require("../../assets/images/tottenham.png")
-                },
-                pathImmagine: require("../../assets/images/tottenham.png")
-            },
+               },
             {
                 nome: "West Ham United",
-                WestHamUnited: {
-                    nome: "West Ham United",
+
                     calciatori: [
                         {nome: "Lukasz Fabiański", posizione: "PO", eta: 38, livelloAbilita: 83},
                         {nome: "Alphonse Areola", posizione: "PO", eta: 30, livelloAbilita: 80},
@@ -551,12 +477,9 @@ export const leghe = {
                     ],
                     pathImmagine: require("../../assets/images/westham.png")
                 },
-                pathImmagine: require("../../assets/images/westham.png")
-            },
             {
                 nome: "Wolverhampton Wanderers",
-                WolverhamptonWanderers: {
-                    nome: "Wolverhampton Wanderers",
+
                     calciatori: [
                         {nome: "José Sá", posizione: "PO", eta: 31, livelloAbilita: 82},
                         {nome: "Matija Šarkić", posizione: "PO", eta: 26, livelloAbilita: 77},
@@ -576,9 +499,7 @@ export const leghe = {
                         {nome: "Pedro Neto", posizione: "AT", eta: 23, livelloAbilita: 81}
                     ],
                     pathImmagine: require("../../assets/images/wolves.png")
-                },
-                pathImmagine: require("../../assets/images/wolves.png")
-            }
+                }
         ]
     }
     ,
