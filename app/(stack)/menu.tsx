@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
-import { SafeAreaProvider } from "react-native-safe-area-context";
-import { Link } from "expo-router";
+import React, {useEffect, useState} from 'react';
+import {View, Text, StyleSheet, Image, Animated} from 'react-native';
+import {SafeAreaProvider} from "react-native-safe-area-context";
+import {Link} from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { FontAwesome, FontAwesome5, Ionicons, MaterialCommunityIcons, Entypo, MaterialIcons } from "@expo/vector-icons";
+import {FontAwesome, FontAwesome5, Ionicons, MaterialCommunityIcons, Entypo, MaterialIcons} from "@expo/vector-icons";
+import ScrollView = Animated.ScrollView;
 
 const Navbar = () => {
     const [leagues, setLeagues] = useState({});
@@ -30,47 +31,61 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { icon: <FontAwesome name="gear" size={24} color="white" />, route: "/menu" },
-        { icon: <FontAwesome5 name="search" size={24} color="white" />, route: "/menu" },
-        { icon: <Ionicons name="earth-sharp" size={24} color="white" />, route: "/menu" },
-        { icon: <MaterialCommunityIcons name="account-tie" size={24} color="white" />, route: "/menu" },
-        { icon: <Entypo name="home" size={24} color="white" />, route: "/menu" },
-        { icon: <MaterialIcons name="email" size={24} color="white" />, route: "/menu" },
+        {icon: <FontAwesome name="gear" size={24} color="white"/>, route: "/menu"},
+        {icon: <FontAwesome5 name="search" size={24} color="white"/>, route: "/menu"},
+        {icon: <Ionicons name="earth-sharp" size={24} color="white"/>, route: "/menu"},
+        {icon: <MaterialCommunityIcons name="account-tie" size={24} color="white"/>, route: "/menu"},
+        {icon: <Entypo name="home" size={24} color="white"/>, route: "/menu"},
+        {icon: <MaterialIcons name="email" size={24} color="white"/>, route: "/menu"},
     ];
 
     return (
         <SafeAreaProvider>
-            <View style={styles.navbar}>
-                {navLinks.map((link, index) => (
-                    <Link key={index} style={styles.navButton} href={link.route}>
-                        <Text style={styles.navButtonText}>
-                            {link.icon}
-                        </Text>
-                    </Link>
-                ))}
-                {yourTeam.pathImmagine ? (
-                    <Image source={yourTeam.pathImmagine} style={styles.squadImage} />
-                ) : null}
-            </View>
+            <View style={styles.container}>
+                <View style={styles.navbar}>
+                    {navLinks.map((link, index) => (
+                        <Link key={index} style={styles.navButton} href={link.route}>
+                            <Text style={styles.navButtonText}>
+                                {link.icon}
+                            </Text>
+                        </Link>
+                    ))}
+                    {yourTeam.pathImmagine ? (
+                        <Image source={yourTeam.pathImmagine} style={styles.squadImage}/>
+                    ) : null}
+                </View>
 
-            <View>
-                {Array.isArray(yourTeam.calciatori) && yourTeam.calciatori.length > 0 ? (
-                    yourTeam.calciatori.map((calciatore, index) => (
-                        <View key={index} style={{ marginBottom: 10 }}>
-                            <Text style={{ fontWeight: 'bold' }}>{calciatore.nome}</Text>
-                            <Text>Età: {calciatore.eta}</Text>
-                            <Text>Posizione: {calciatore.posizione}</Text>
-                        </View>
-                    ))
-                ) : (
-                    <Text>Nessun calciatore disponibile.</Text>
-                )}
+                <ScrollView style={styles.scrollView}>
+
+                    <View style={styles.scrollContent}>
+                        {Array.isArray(yourTeam.calciatori) && yourTeam.calciatori.length > 0 ? (
+                            yourTeam.calciatori.map((calciatore, index) => (
+                                <View key={index} style={styles.calciatoreContainer}>
+                                    <View style={styles.calciatoreDetails}>
+                                        <Text style={styles.calciatoreName}>{calciatore.nome}</Text>
+                                        <Text style={styles.calciatoreAge}>Età: {calciatore.eta}</Text>
+                                        <Text style={styles.calciatorePosition}>Posizione: {calciatore.posizione}</Text>
+                                    </View>
+                                </View>
+                            ))
+                        ) : (
+                            <Text>Nessun calciatore disponibile.</Text>
+                        )}
+                    </View>
+                </ScrollView>
+
+
+
             </View>
         </SafeAreaProvider>
     );
 };
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        flexDirection: 'row', // Keeps navbar fixed on the left and scrollable content on the right
+    },
     navbar: {
         position: 'absolute',
         top: 0,
@@ -81,7 +96,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-evenly',
         alignItems: 'center',
         paddingVertical: 0,
-        paddingTop: 10, // Adjust top padding to ensure enough space
+        paddingTop: 10,
     },
     navButton: {
         alignItems: 'center',
@@ -97,6 +112,42 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         resizeMode: 'contain',
         overflow: 'hidden',
+    },
+    text: {
+        fontSize: 42,
+        padding: 12,
+    },
+
+    scrollView: {
+        flex: 1,
+        marginLeft: 60,
+        backgroundColor: '#032143',
+    },
+    scrollContent: {
+        padding: 12,
+    },
+    calciatoreContainer: {
+        marginBottom: 10,
+    },
+    calciatoreDetails: {
+        flexDirection: 'row', // Dispone gli elementi in orizzontale
+        justifyContent: 'flex-start', // Allinea gli elementi all'inizio
+        alignItems: 'center', // Centra verticalmente gli elementi
+        padding: 10, // Aggiunge un po' di spazio interno
+        borderWidth: 1, // Aggiunge il bordo
+        borderColor: 'black', // Colore del bordo
+        borderRadius: 5, // Rende gli angoli arrotondati
+        backgroundColor: 'white', // Imposta lo sfondo bianco per il bordo
+    },
+    calciatoreName: {
+        fontWeight: 'bold',
+        marginRight: 5, // Spazio tra il nome e gli altri dettagli
+    },
+    calciatoreAge: {
+        marginRight: 5, // Spazio tra età e posizione
+    },
+    calciatorePosition: {
+        flexShrink: 1, // Impedisce che il testo vada fuori dal layout
     },
 });
 
