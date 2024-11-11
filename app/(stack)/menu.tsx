@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Link } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -24,9 +24,8 @@ const Navbar = () => {
             const leghe = await loadData('leghe');
             const yourTeamFetch = await loadData('yourTeam');
             setLeagues(leghe);
-            setYourTeam(yourTeamFetch)
+            setYourTeam(yourTeamFetch || {});
         };
-
         fetchLeaguesData();
     }, []);
 
@@ -37,7 +36,6 @@ const Navbar = () => {
         { icon: <MaterialCommunityIcons name="account-tie" size={24} color="white" />, route: "/menu" },
         { icon: <Entypo name="home" size={24} color="white" />, route: "/menu" },
         { icon: <MaterialIcons name="email" size={24} color="white" />, route: "/menu" },
-        { icon: <Text>{yourTeam.nome}</Text>, route: "/menu" }
     ];
 
     return (
@@ -50,8 +48,23 @@ const Navbar = () => {
                         </Text>
                     </Link>
                 ))}
+                {yourTeam.pathImmagine ? (
+                    <Image source={yourTeam.pathImmagine} style={styles.squadImage} />
+                ) : null}
+            </View>
 
-
+            <View>
+                {Array.isArray(yourTeam.calciatori) && yourTeam.calciatori.length > 0 ? (
+                    yourTeam.calciatori.map((calciatore, index) => (
+                        <View key={index} style={{ marginBottom: 10 }}>
+                            <Text style={{ fontWeight: 'bold' }}>{calciatore.nome}</Text>
+                            <Text>Età: {calciatore.eta}</Text>
+                            <Text>Posizione: {calciatore.posizione}</Text>
+                        </View>
+                    ))
+                ) : (
+                    <Text>Nessun calciatore disponibile.</Text>
+                )}
             </View>
         </SafeAreaProvider>
     );
@@ -68,6 +81,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-evenly',
         alignItems: 'center',
         paddingVertical: 0,
+        paddingTop: 10, // Adjust top padding to ensure enough space
     },
     navButton: {
         alignItems: 'center',
@@ -75,6 +89,14 @@ const styles = StyleSheet.create({
     navButtonText: {
         color: 'white',
         fontSize: 18,
+    },
+    squadImage: {
+        width: 50,
+        height: 50,
+        marginBottom: 5,
+        borderRadius: 20,
+        resizeMode: 'contain',
+        overflow: 'hidden',
     },
 });
 
