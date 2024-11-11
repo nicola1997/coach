@@ -12,27 +12,27 @@ export const leghe = {
                             { nome: "William Saliba", posizione: "DF", eta: 23, livelloAbilita: 86 },
                             { nome: "Kieran Tierney", posizione: "DF", eta: 26, livelloAbilita: 82 },
                             { nome: "Ben White", posizione: "DF", eta: 26, livelloAbilita: 84 },
-                            { nome: "Thomas Partey", posizione: "MF", eta: 31, livelloAbilita: 83 },
+                            { nome: "Thomas Partey", posizione: "CN", eta: 31, livelloAbilita: 83 },
                             { nome: "Gabriel Magalhães", posizione: "DF", eta: 26, livelloAbilita: 85 },
                             { nome: "Bukayo Saka", posizione: "FW", eta: 22, livelloAbilita: 88 },
-                            { nome: "Martin Ødegaard", posizione: "MF", eta: 25, livelloAbilita: 87 },
+                            { nome: "Martin Ødegaard", posizione: "CN", eta: 25, livelloAbilita: 87 },
                             { nome: "Gabriel Jesus", posizione: "FW", eta: 27, livelloAbilita: 85 },
                             { nome: "Gabriel Martinelli", posizione: "FW", eta: 23, livelloAbilita: 83 },
                             { nome: "Jurrien Timber", posizione: "DF", eta: 23, livelloAbilita: 81 },
                             { nome: "Jakub Kiwior", posizione: "DF", eta: 24, livelloAbilita: 80 },
                             { nome: "Takehiro Tomiyasu", posizione: "DF", eta: 25, livelloAbilita: 81 },
                             { nome: "Leandro Trossard", posizione: "FW", eta: 29, livelloAbilita: 82 },
-                            { nome: "Jorginho", posizione: "MF", eta: 32, livelloAbilita: 84 },
+                            { nome: "Jorginho", posizione: "CN", eta: 32, livelloAbilita: 84 },
                             { nome: "David Raya", posizione: "GK", eta: 28, livelloAbilita: 83 },
-                            { nome: "Mikel Merino", posizione: "MF", eta: 28, livelloAbilita: 83 },
+                            { nome: "Mikel Merino", posizione: "CN", eta: 28, livelloAbilita: 83 },
                             { nome: "Kai Havertz", posizione: "FW", eta: 25, livelloAbilita: 84 },
                             { nome: "Raheem Sterling", posizione: "FW", eta: 29, livelloAbilita: 85 },
                             { nome: "Neto", posizione: "GK", eta: 34, livelloAbilita: 81 },
                             { nome: "Riccardo Calafiori", posizione: "DF", eta: 22, livelloAbilita: 78 },
                             { nome: "Oleksandr Zinchenko", posizione: "DF", eta: 27, livelloAbilita: 84 },
-                            { nome: "Declan Rice", posizione: "MF", eta: 25, livelloAbilita: 85 },
-                            { nome: "Myles Lewis-Skelly", posizione: "MF", eta: 18, livelloAbilita: 77 },
-                            { nome: "Ethan Nwaneri", posizione: "MF", eta: 17, livelloAbilita: 75 }
+                            { nome: "Declan Rice", posizione: "CN", eta: 25, livelloAbilita: 85 },
+                            { nome: "Myles Lewis-Skelly", posizione: "CN", eta: 18, livelloAbilita: 77 },
+                            { nome: "Ethan Nwaneri", posizione: "CN", eta: 17, livelloAbilita: 75 }
                         ],
                         pathImmagine: require("../../assets/images/arsenal.png")
                     }
@@ -453,7 +453,7 @@ export const leghe = {
             },
             {
                 nome: "Nottingham Forest",
-                NottinghamForest: {
+                NottinghaCNorest: {
                     nome: "Nottingham Forest",
                     calciatori: [
                         {nome: "Keylor Navas", posizione: "PO", eta: 37, livelloAbilita: 86},
@@ -996,7 +996,7 @@ export const leghe = {
                 calciatori: [
                     { nome: "Yann Sommer", posizione: "PO", eta: 35, livelloAbilita: 79 },
                     { nome: "Samir Handanovic", posizione: "PO", eta: 40, livelloAbilita: 77 },
-                    { nome: "Denzel Dumfries", posizione: "DF", eta: 28, livelloAbilita: 80 },
+                    { nome: "Denzel DuCNries", posizione: "DF", eta: 28, livelloAbilita: 80 },
                     { nome: "Stefan de Vrij", posizione: "DF", eta: 32, livelloAbilita: 78 },
                     { nome: "Alessandro Bastoni", posizione: "DF", eta: 25, livelloAbilita: 83 },
                     { nome: "Benjamin Pavard", posizione: "DF", eta: 28, livelloAbilita: 76 },
@@ -2299,7 +2299,7 @@ export const leghe = {
                     { nome: "Óscar Clemente", posizione: "CN", eta: 26, livelloAbilita: 70 },
                     { nome: "Kirian Rodríguez", posizione: "CN", eta: 29, livelloAbilita: 72 },
                     { nome: "Enzo Loiodice", posizione: "CN", eta: 25, livelloAbilita: 74 },
-                    { nome: "Mfulu", posizione: "CN", eta: 30, livelloAbilita: 70 },
+                    { nome: "CNulu", posizione: "CN", eta: 30, livelloAbilita: 70 },
                     { nome: "Sidnei", posizione: "DF", eta: 35, livelloAbilita: 69 },
                     { nome: "Pejiño", posizione: "AT", eta: 28, livelloAbilita: 71 },
                     { nome: "Álex Suárez", posizione: "DF", eta: 30, livelloAbilita: 70 },
@@ -2588,6 +2588,389 @@ export const leghe = {
                 pathImmagine: require("../../assets/images/villareal.png")
             }
         ]
+    },
+    SaudiLeague: {
+        nome: "Saudi League",
+        squadre: [
+            {
+                nome: "Al Hilal",
+                calciatori: [
+                    { nome: "Neymar", posizione: "AT", eta: 31, livelloAbilita: 90 },
+                    { nome: "Luis Rioja", posizione: "AT", eta: 31, livelloAbilita: 73 },
+                    { nome: "Toni Moya", posizione: "CN", eta: 27, livelloAbilita: 72 },
+                    { nome: "João Cancelo", posizione: "DF", eta: 30, livelloAbilita: 85 },
+                    { nome: "André Carrillo", posizione: "AT", eta: 32, livelloAbilita: 83 },
+                    { nome: "Mossa Marega", posizione: "AT", eta: 33, livelloAbilita: 82 },
+                    { nome: "Salem Al-Dawsari", posizione: "AT", eta: 32, livelloAbilita: 82 },
+                    { nome: "Yasser Al-Shahrani", posizione: "DF", eta: 32, livelloAbilita: 78 },
+                    { nome: "Mohammad Al-Faihan", posizione: "CN", eta: 28, livelloAbilita: 76 },
+                    { nome: "Omar Hawsawi", posizione: "DF", eta: 30, livelloAbilita: 74 },
+                    { nome: "Ali Albulayhi", posizione: "DF", eta: 30, livelloAbilita: 79 },
+                    { nome: "Nasser Al-Dawsari", posizione: "CN", eta: 26, livelloAbilita: 81 },
+                    { nome: "Abdulelah Al-Malki", posizione: "CN", eta: 28, livelloAbilita: 75 },
+                    { nome: "Gustavo Cuéllar", posizione: "CN", eta: 31, livelloAbilita: 80 },
+                    { nome: "Riyad Mahrez", posizione: "AT", eta: 33, livelloAbilita: 85 },
+                    { nome: "Michael", posizione: "CN", eta: 26, livelloAbilita: 81 }
+                ],
+                pathImmagine: require("../../assets/images/alhilal.png")
+            },
+            {
+                nome: "Al Ittihad",
+                calciatori: [
+                    { nome: "Karim Benzema", posizione: "AT", eta: 37, livelloAbilita: 90 },
+                    { nome: "N'Golo Kanté", posizione: "CN", eta: 33, livelloAbilita: 85 },
+                    { nome: "Fabinho", posizione: "CN", eta: 31, livelloAbilita: 84 },
+                    { nome: "Jota", posizione: "AT", eta: 26, livelloAbilita: 82 },
+                    { nome: "Hamed Al-Ghamdi", posizione: "CN", eta: 28, livelloAbilita: 75 },
+                    { nome: "Ahmed Hegazi", posizione: "DF", eta: 33, livelloAbilita: 78 },
+                    { nome: "Amine Harit", posizione: "AT", eta: 27, livelloAbilita: 80 },
+                    { nome: "Ayman Al-Zayati", posizione: "DF", eta: 26, livelloAbilita: 72 },
+                    { nome: "Saleh Al-Shehri", posizione: "AT", eta: 31, livelloAbilita: 79 },
+                    { nome: "Mohammed Al-Owais", posizione: "PO", eta: 33, livelloAbilita: 81 },
+                    { nome: "Tarek Hamed", posizione: "CN", eta: 35, livelloAbilita: 75 },
+                    { nome: "Fawzi Al-Shehri", posizione: "DF", eta: 30, livelloAbilita: 76 },
+                    { nome: "Ziyad Al-Sahafi", posizione: "DF", eta: 26, livelloAbilita: 74 },
+                    { nome: "Hassan Tambakti", posizione: "DF", eta: 24, livelloAbilita: 80 },
+                    { nome: "Mohammed Al-Fateh", posizione: "CN", eta: 28, livelloAbilita: 74 }
+                ],
+                pathImmagine: require("../../assets/images/alittihad.png")
+            },
+            {
+                nome: "Al Nassr",
+                calciatori: [
+                    { nome: "Cristiano Ronaldo", posizione: "AT", eta: 39, livelloAbilita: 91 },
+                    { nome: "Seko Fofana", posizione: "CN", eta: 29, livelloAbilita: 85 },
+                    { nome: "Talisca", posizione: "AT", eta: 30, livelloAbilita: 83 },
+                    { nome: "Gerson", posizione: "CN", eta: 27, livelloAbilita: 80 },
+                    { nome: "Marcelo Brozović", posizione: "CN", eta: 31, livelloAbilita: 84 },
+                    { nome: "Abdulrahman Al-Aboud", posizione: "CN", eta: 25, livelloAbilita: 76 },
+                    { nome: "Abdulelah Al-Amri", posizione: "DF", eta: 26, livelloAbilita: 78 },
+                    { nome: "Mohammed Al-Fatil", posizione: "DF", eta: 26, livelloAbilita: 72 },
+                    { nome: "Ali Al-Qarni", posizione: "PO", eta: 31, livelloAbilita: 77 },
+                    { nome: "Ayman Al-Khulaif", posizione: "DF", eta: 27, livelloAbilita: 73 },
+                    { nome: "Abdullah Al-Dosari", posizione: "CN", eta: 24, livelloAbilita: 74 },
+                    { nome: "Muhannad Al-Shammari", posizione: "CN", eta: 23, livelloAbilita: 72 },
+                    { nome: "Mohammed Al-Sahlawi", posizione: "AT", eta: 32, livelloAbilita: 75 },
+                    { nome: "Ali Al-Hassan", posizione: "CN", eta: 28, livelloAbilita: 79 }],
+                pathImmagine: require("../../assets/images/alnassr.png")
+            },
+            {
+                nome: "Al Shabab",
+                calciatori: [
+                    { nome: "Odion Ighalo", posizione: "AT", eta: 34, livelloAbilita: 80 },
+                    { nome: "Ever Banega", posizione: "CN", eta: 35, livelloAbilita: 83 },
+                    { nome: "Anderson Talisca", posizione: "AT", eta: 30, livelloAbilita: 82 },
+                    { nome: "Fawaz Al-Qarni", posizione: "PO", eta: 30, livelloAbilita: 78 },
+                    { nome: "Ali Al-Bulaihi", posizione: "DF", eta: 34, livelloAbilita: 79 },
+                    { nome: "Carlos Villanueva", posizione: "CN", eta: 33, livelloAbilita: 75 },
+                    { nome: "Musa Al-Harbi", posizione: "DF", eta: 28, livelloAbilita: 76 },
+                    { nome: "Hilal Al-Muwallad", posizione: "DF", eta: 29, livelloAbilita: 77 },
+                    { nome: "Khaled Al-Bishi", posizione: "CN", eta: 27, livelloAbilita: 74 },
+                    { nome: "Khaled Al-Farhan", posizione: "CN", eta: 28, livelloAbilita: 72 },
+                    { nome: "Ahmed Fathi", posizione: "DF", eta: 36, livelloAbilita: 77 },
+                    { nome: "Mohammed Al-Ammar", posizione: "CN", eta: 31, livelloAbilita: 75 },
+                    { nome: "Saad Al-Dosari", posizione: "DF", eta: 26, livelloAbilita: 74 },
+                    { nome: "Musaed Al-Muwallad", posizione: "AT", eta: 28, livelloAbilita: 73 },
+                    { nome: "Mohammed Al-Breik", posizione: "DF", eta: 30, livelloAbilita: 79 }
+
+                ],
+                pathImmagine: require("../../assets/images/alshabab.png")
+            },
+            {
+                nome: "Al Taawoun",
+                calciatori: [
+                    { nome: "Lassana Diarra", posizione: "CN", eta: 36, livelloAbilita: 78 },
+                    { nome: "Fawaz Al-Muwallad", posizione: "DF", eta: 29, livelloAbilita: 77 },
+                    { nome: "Abdulaziz Al-Dawsari", posizione: "CN", eta: 28, livelloAbilita: 75 },
+                    { nome: "Júnior Tavares", posizione: "DF", eta: 29, livelloAbilita: 74 },
+                    { nome: "Nasser Al-Sudairi", posizione: "PO", eta: 30, livelloAbilita: 75 },
+                    { nome: "Mohammed Al-Fraidi", posizione: "AT", eta: 30, livelloAbilita: 77 },
+                    { nome: "Rashid Al-Rashid", posizione: "CN", eta: 25, livelloAbilita: 72 },
+                    { nome: "Ali Al-Shaikh", posizione: "DF", eta: 30, livelloAbilita: 74 },
+                    { nome: "Ahmed Al-Muwallad", posizione: "CN", eta: 26, livelloAbilita: 73 },
+                    { nome: "Hassan Al-Mohammadi", posizione: "DF", eta: 31, livelloAbilita: 75 },
+                    { nome: "Yasir Al-Shehri", posizione: "CN", eta: 27, livelloAbilita: 74 },
+                    { nome: "Carlos Eduardo", posizione: "CN", eta: 33, livelloAbilita: 79 },
+                    { nome: "Mohammed Al-Hamdan", posizione: "AT", eta: 30, livelloAbilita: 76 },
+                    { nome: "Hassan Al-Harbi", posizione: "DF", eta: 28, livelloAbilita: 77 },
+                    { nome: "Saud Al-Muwallad", posizione: "CN", eta: 27, livelloAbilita: 75 }
+                ],
+                pathImmagine: require("../../assets/images/altaawon.png")
+            },
+            {
+                nome: "Al Ettifaq",
+                calciatori: [
+                    { nome: "Jordan Henderson", posizione: "CN", eta: 34, livelloAbilita: 81 },
+                    { nome: "Demarai Gray", posizione: "AT", eta: 27, livelloAbilita: 78 },
+                    { nome: "Steven Taylor", posizione: "DF", eta: 31, livelloAbilita: 76 },
+                    { nome: "Mahmoud Hassan Trezeguet", posizione: "AT", eta: 29, livelloAbilita: 79 },
+                    { nome: "Vincent Aboubakar", posizione: "AT", eta: 32, livelloAbilita: 80 },
+                    { nome: "Ali Al-Harbi", posizione: "CN", eta: 27, livelloAbilita: 75 },
+                    { nome: "Andreas Samaris", posizione: "CN", eta: 30, livelloAbilita: 78 },
+                    { nome: "Ahmed Al-Shehri", posizione: "DF", eta: 28, livelloAbilita: 77 },
+                    { nome: "Boubacar Kamara", posizione: "CN", eta: 28, livelloAbilita: 81 },
+                    { nome: "Firas Al-Buraikan", posizione: "AT", eta: 22, livelloAbilita: 76 },
+                    { nome: "Mohammed Al-Qarni", posizione: "PO", eta: 29, livelloAbilita: 76 },
+                    { nome: "Moussa Marega", posizione: "AT", eta: 33, livelloAbilita: 78 },
+                    { nome: "Ziyad Al-Sahafi", posizione: "DF", eta: 28, livelloAbilita: 75 },
+                    { nome: "Mohammed Al-Fayez", posizione: "CN", eta: 25, livelloAbilita: 74 },
+                    { nome: "Nassir Al-Shamrani", posizione: "CN", eta: 26, livelloAbilita: 74 }
+                ],
+                pathImmagine: require("../../assets/images/alettifaq.png")
+            },
+            {
+                nome: "Al Fayha",
+                calciatori: [
+                    { nome: "Riyad Mahrez", posizione: "AT", eta: 33, livelloAbilita: 83 },
+                    { nome: "Pape Abou Cissé", posizione: "DF", eta: 28, livelloAbilita: 78 },
+                    { nome: "Abdullah Al-Najai", posizione: "CN", eta: 27, livelloAbilita: 75 },
+                    { nome: "Nawaf Al-Muwallad", posizione: "DF", eta: 29, livelloAbilita: 76 },
+                    { nome: "Sami Al-Najei", posizione: "CN", eta: 31, livelloAbilita: 77 },
+                    { nome: "Moulaye Ahmed", posizione: "CN", eta: 29, livelloAbilita: 76 },
+                    { nome: "Michael Olunga", posizione: "AT", eta: 30, livelloAbilita: 80 },
+                    { nome: "Mohammed Al-Khudhair", posizione: "PO", eta: 32, livelloAbilita: 77 },
+                    { nome: "Mansour Al-Shehri", posizione: "DF", eta: 30, livelloAbilita: 74 },
+                    { nome: "Fahad Al-Muwallad", posizione: "AT", eta: 28, livelloAbilita: 75 },
+                    { nome: "Rodolfo Pizarro", posizione: "CN", eta: 29, livelloAbilita: 79 },
+                    { nome: "Guilherme", posizione: "CN", eta: 31, livelloAbilita: 80 },
+                    { nome: "Mazen Al-Harbi", posizione: "CN", eta: 29, livelloAbilita: 75 },
+                    { nome: "Aymen Souda", posizione: "CN", eta: 28, livelloAbilita: 74 },
+                    { nome: "Rafael Toloi", posizione: "DF", eta: 32, livelloAbilita: 77 }
+                ],
+                pathImmagine: require("../../assets/images/alfeiha.png")
+            },
+            {
+                nome: "Al Khaleej",
+                calciatori: [
+                    { nome: "Mohammed Al-Dosari", posizione: "PO", eta: 29, livelloAbilita: 75 },
+                    { nome: "Majed Al-Muwallad", posizione: "DF", eta: 27, livelloAbilita: 74 },
+                    { nome: "Ahmed Al-Farhan", posizione: "CN", eta: 28, livelloAbilita: 73 },
+                    { nome: "Mohammed Al-Bishi", posizione: "AT", eta: 30, livelloAbilita: 72 },
+                    { nome: "Abdulrahman Al-Abdulrahman", posizione: "CN", eta: 25, livelloAbilita: 71 },
+                    { nome: "Jasim Al-Said", posizione: "DF", eta: 29, livelloAbilita: 75 },
+                    { nome: "Ali Al-Farhan", posizione: "AT", eta: 28, livelloAbilita: 72 },
+                    { nome: "Nasser Al-Muqbil", posizione: "DF", eta: 30, livelloAbilita: 74 },
+                    { nome: "Sami Al-Najdi", posizione: "CN", eta: 27, livelloAbilita: 75 },
+                    { nome: "Abdullah Al-Shamrani", posizione: "AT", eta: 26, livelloAbilita: 71 },
+                    { nome: "Mohammed Al-Muwallad", posizione: "DF", eta: 30, livelloAbilita: 73 },
+                    { nome: "Yasir Al-Ghamdi", posizione: "CN", eta: 25, livelloAbilita: 72 },
+                    { nome: "Bader Al-Rashidi", posizione: "PO", eta: 28, livelloAbilita: 74 },
+                    { nome: "Salem Al-Fawzan", posizione: "DF", eta: 27, livelloAbilita: 73 },
+                    { nome: "Abdullah Al-Shimiri", posizione: "CN", eta: 29, livelloAbilita: 74 }
+                ],
+                pathImmagine: require("../../assets/images/alkhaleej.png")
+            },
+            {
+                nome: "Al Fateh",
+                calciatori: [
+                    { nome: "Santiago Caseres", posizione: "CN", eta: 26, livelloAbilita: 77 },
+                    { nome: "Mohammed Al-Afasi", posizione: "DF", eta: 28, livelloAbilita: 76 },
+                    { nome: "Ayman Al-Hamdan", posizione: "CN", eta: 27, livelloAbilita: 75 },
+                    { nome: "Lassana Coulibaly", posizione: "CN", eta: 28, livelloAbilita: 78 },
+                    { nome: "Fayçal Fajr", posizione: "CN", eta: 33, livelloAbilita: 79 },
+                    { nome: "Ahmed Al-Farsi", posizione: "DF", eta: 30, livelloAbilita: 75 },
+                    { nome: "Mohanad Al-Shanqiti", posizione: "DF", eta: 28, livelloAbilita: 76 },
+                    { nome: "Abdulaziz Al-Muwallad", posizione: "AT", eta: 29, livelloAbilita: 74 },
+                    { nome: "Nicolas Milesi", posizione: "CN", eta: 32, livelloAbilita: 77 },
+                    { nome: "Carlos Eduardo", posizione: "AT", eta: 33, livelloAbilita: 79 },
+                    { nome: "Jonathan Rodriguez", posizione: "AT", eta: 30, livelloAbilita: 80 },
+                    { nome: "Muhannad Al-Sheraihi", posizione: "AT", eta: 27, livelloAbilita: 75 },
+                    { nome: "Ahmed Al-Ansari", posizione: "PO", eta: 28, livelloAbilita: 76 },
+                    { nome: "Juan Pablo Ramirez", posizione: "CN", eta: 27, livelloAbilita: 78 },
+                    { nome: "Anderson Talisca", posizione: "AT", eta: 29, livelloAbilita: 85 }                ],
+                pathImmagine: require("../../assets/images/alfateh.png")
+            },
+            {
+                nome: "Al Wehda",
+                calciatori: [
+                    { nome: "Khaled Al-Ghamdi", posizione: "PO", eta: 30, livelloAbilita: 76 },
+                    { nome: "Tarek Hegazi", posizione: "DF", eta: 30, livelloAbilita: 78 },
+                    { nome: "Riyad Mahrez", posizione: "AT", eta: 33, livelloAbilita: 83 },
+                    { nome: "Pape Abou Cissé", posizione: "DF", eta: 28, livelloAbilita: 79 },
+                    { nome: "Abdallah Al-Bishi", posizione: "DF", eta: 27, livelloAbilita: 75 },
+                    { nome: "Aymen Souda", posizione: "CN", eta: 28, livelloAbilita: 77 },
+                    { nome: "Saad Al-Shehri", posizione: "CN", eta: 28, livelloAbilita: 75 },
+                    { nome: "Moussa Marega", posizione: "AT", eta: 33, livelloAbilita: 80 },
+                    { nome: "Fahad Al-Muwallad", posizione: "AT", eta: 28, livelloAbilita: 76 },
+                    { nome: "Hassan Al-Harbi", posizione: "DF", eta: 31, livelloAbilita: 74 },
+                    { nome: "Sami Al-Farhan", posizione: "CN", eta: 26, livelloAbilita: 73 },
+                    { nome: "Mohammed Al-Fayez", posizione: "CN", eta: 25, livelloAbilita: 74 },
+                    { nome: "Ahmed Al-Saedi", posizione: "DF", eta: 27, livelloAbilita: 75 },
+                    { nome: "Ali Al-Dosari", posizione: "PO", eta: 30, livelloAbilita: 77 },
+                    { nome: "Carlos Eduardo", posizione: "CN", eta: 34, livelloAbilita: 79 }
+                ],
+                pathImmagine: require("../../assets/images/alwehda.png")
+            },
+            {
+                nome: "Damac",
+                calciatori: [
+                    { nome: "Abdulaziz Al-Dawsari", posizione: "CN", eta: 28, livelloAbilita: 77 },
+                    { nome: "Fahad Al-Muwallad", posizione: "AT", eta: 29, livelloAbilita: 75 },
+                    { nome: "Yahya Al-Shehri", posizione: "DF", eta: 30, livelloAbilita: 73 },
+                    { nome: "Ahmad Al-Rasheed", posizione: "CN", eta: 27, livelloAbilita: 74 },
+                    { nome: "Ismail Al-Dosari", posizione: "CN", eta: 29, livelloAbilita: 76 },
+                    { nome: "Mohammed Al-Bishr", posizione: "DF", eta: 28, livelloAbilita: 73 },
+                    { nome: "Ali Al-Rashed", posizione: "PO", eta: 32, livelloAbilita: 78 },
+                    { nome: "Abdulaziz Al-Khathlan", posizione: "AT", eta: 28, livelloAbilita: 74 },
+                    { nome: "Saud Al-Johani", posizione: "DF", eta: 27, livelloAbilita: 73 },
+                    { nome: "Ahmed Al-Khudhair", posizione: "CN", eta: 30, livelloAbilita: 75 },
+                    { nome: "Yasser Al-Farhan", posizione: "DF", eta: 28, livelloAbilita: 72 },
+                    { nome: "Abdullah Al-Muwallad", posizione: "CN", eta: 25, livelloAbilita: 71 },
+                    { nome: "Mohammed Al-Saleh", posizione: "AT", eta: 26, livelloAbilita: 74 },
+                    { nome: "Saleh Al-Muwallad", posizione: "CN", eta: 28, livelloAbilita: 72 },
+                    { nome: "Riyad Mahrez", posizione: "AT", eta: 33, livelloAbilita: 81 }
+                ],
+                pathImmagine: require("../../assets/images/damac.png")
+            },
+            {
+                nome: "Al Raed",
+                calciatori: [
+                    { nome: "Mohammed Al-Qarni", posizione: "PO", eta: 30, livelloAbilita: 74 },
+                    { nome: "Salem Al-Fawzan", posizione: "DF", eta: 27, livelloAbilita: 75 },
+                    { nome: "Ahmed Fathi", posizione: "DF", eta: 36, livelloAbilita: 77 },
+                    { nome: "Khaled Al-Saleh", posizione: "CN", eta: 30, livelloAbilita: 76 },
+                    { nome: "Majed Al-Harbi", posizione: "DF", eta: 28, livelloAbilita: 75 },
+                    { nome: "Yasir Al-Shamrani", posizione: "CN", eta: 29, livelloAbilita: 74 },
+                    { nome: "Mohammed Al-Fayez", posizione: "CN", eta: 26, livelloAbilita: 75 },
+                    { nome: "Abdullah Al-Sulaimani", posizione: "AT", eta: 28, livelloAbilita: 73 },
+                    { nome: "Abdullah Al-Shimiri", posizione: "CN", eta: 27, livelloAbilita: 74 },
+                    { nome: "Saleh Al-Muwallad", posizione: "CN", eta: 26, livelloAbilita: 74 },
+                    { nome: "Hassan Al-Shehri", posizione: "DF", eta: 28, livelloAbilita: 72 },
+                    { nome: "Mohammed Al-Johani", posizione: "AT", eta: 29, livelloAbilita: 74 },
+                    { nome: "Saad Al-Ghamdi", posizione: "DF", eta: 27, livelloAbilita: 73 },
+                    { nome: "Nasser Al-Dosari", posizione: "CN", eta: 28, livelloAbilita: 75 },
+                    { nome: "Mohammed Al-Najdi", posizione: "AT", eta: 25, livelloAbilita: 72 }
+                ],
+                pathImmagine: require("../../assets/images/alraed.png")
+            },
+            {
+                nome: "Al Riyadh",
+                calciatori: [
+                    { nome: "Mohammed Al-Dosari", posizione: "PO", eta: 29, livelloAbilita: 76 },
+                    { nome: "Yasir Al-Fahad", posizione: "DF", eta: 27, livelloAbilita: 75 },
+                    { nome: "Ahmed Al-Muwallad", posizione: "CN", eta: 28, livelloAbilita: 73 },
+                    { nome: "Abdullah Al-Salman", posizione: "AT", eta: 30, livelloAbilita: 74 },
+                    { nome: "Ali Al-Dawsari", posizione: "DF", eta: 31, livelloAbilita: 77 },
+                    { nome: "Mohammed Al-Mohammadi", posizione: "CN", eta: 28, livelloAbilita: 76 },
+                    { nome: "Mohammed Al-Johani", posizione: "AT", eta: 29, livelloAbilita: 74 },
+                    { nome: "Riyad Mahrez", posizione: "AT", eta: 33, livelloAbilita: 83 },
+                    { nome: "Bader Al-Ghamdi", posizione: "DF", eta: 29, livelloAbilita: 75 },
+                    { nome: "Abdallah Al-Ghamdi", posizione: "CN", eta: 27, livelloAbilita: 74 },
+                    { nome: "Hassan Al-Burai", posizione: "DF", eta: 30, livelloAbilita: 75 },
+                    { nome: "Fahad Al-Omari", posizione: "CN", eta: 28, livelloAbilita: 72 },
+                    { nome: "Saad Al-Muwallad", posizione: "AT", eta: 29, livelloAbilita: 73 },
+                    { nome: "Saleh Al-Dawsari", posizione: "CN", eta: 27, livelloAbilita: 75 },
+                    { nome: "Sami Al-Shimiri", posizione: "DF", eta: 30, livelloAbilita: 76 }
+                ],
+                pathImmagine: require("../../assets/images/alriyadh.png")
+            },
+            {
+                nome: "Al Orubah",
+                calciatori: [
+                    { nome: "Yasir Al-Basha", posizione: "AT", eta: 28, livelloAbilita: 75 },
+                    { nome: "Abdullah Al-Rashed", posizione: "CN", eta: 29, livelloAbilita: 74 },
+                    { nome: "Abdulrahman Al-Ghamdi", posizione: "DF", eta: 30, livelloAbilita: 74 },
+                    { nome: "Mohammed Al-Johani", posizione: "CN", eta: 27, livelloAbilita: 72 },
+                    { nome: "Ahmed Al-Farhan", posizione: "AT", eta: 30, livelloAbilita: 73 },
+                    { nome: "Sami Al-Muwallad", posizione: "DF", eta: 29, livelloAbilita: 74 },
+                    { nome: "Ali Al-Muwallad", posizione: "CN", eta: 26, livelloAbilita: 75 },
+                    { nome: "Khaled Al-Rashed", posizione: "DF", eta: 30, livelloAbilita: 74 },
+                    { nome: "Salem Al-Najdi", posizione: "AT", eta: 29, livelloAbilita: 73 },
+                    { nome: "Moussa Marega", posizione: "AT", eta: 33, livelloAbilita: 80 },
+                    { nome: "Khaled Al-Dosari", posizione: "DF", eta: 28, livelloAbilita: 75 },
+                    { nome: "Abdullah Al-Breik", posizione: "CN", eta: 29, livelloAbilita: 72 },
+                    { nome: "Mohammed Al-Saleh", posizione: "DF", eta: 30, livelloAbilita: 74 },
+                    { nome: "Saad Al-Dossary", posizione: "PO", eta: 29, livelloAbilita: 74 },
+                    { nome: "Jamil Al-Shehri", posizione: "AT", eta: 28, livelloAbilita: 73 }
+                ],
+                pathImmagine: require("../../assets/images/alorubah.png")
+            },
+            {
+                nome: "Al Qadsiah",
+                calciatori: [
+                    { nome: "Khaled Al-Saleh", posizione: "PO", eta: 30, livelloAbilita: 77 },
+                    { nome: "Saad Al-Saleh", posizione: "DF", eta: 28, livelloAbilita: 76 },
+                    { nome: "Mohammed Al-Breik", posizione: "CN", eta: 27, livelloAbilita: 75 },
+                    { nome: "Ahmed Al-Dawsari", posizione: "AT", eta: 29, livelloAbilita: 73 },
+                    { nome: "Ali Al-Khathlan", posizione: "CN", eta: 30, livelloAbilita: 74 },
+                    { nome: "Fahad Al-Rashid", posizione: "DF", eta: 29, livelloAbilita: 75 },
+                    { nome: "Abdulrahman Al-Saleh", posizione: "CN", eta: 26, livelloAbilita: 73 },
+                    { nome: "Mohammed Al-Saedi", posizione: "AT", eta: 28, livelloAbilita: 74 },
+                    { nome: "Saad Al-Fahad", posizione: "DF", eta: 27, livelloAbilita: 74 },
+                    { nome: "Bader Al-Dosari", posizione: "CN", eta: 28, livelloAbilita: 72 },
+                    { nome: "Faris Al-Shimiri", posizione: "CN", eta: 30, livelloAbilita: 75 },
+                    { nome: "Hassan Al-Dosari", posizione: "PO", eta: 27, livelloAbilita: 73 },
+                    { nome: "Sami Al-Rasheed", posizione: "AT", eta: 29, livelloAbilita: 72 },
+                    { nome: "Abdullah Al-Dosari", posizione: "DF", eta: 30, livelloAbilita: 74 },
+                    { nome: "Saleh Al-Muwallad", posizione: "CN", eta: 28, livelloAbilita: 75 }
+                ],
+                pathImmagine: require("../../assets/images/alqadisiya.png")
+            },
+            {
+                nome: "Al Kholood",
+                calciatori: [
+                    { nome: "Abdullah Al-Ghamdi", posizione: "PO", eta: 28, livelloAbilita: 74 },
+                    { nome: "Mohammed Al-Muwallad", posizione: "DF", eta: 29, livelloAbilita: 75 },
+                    { nome: "Ahmed Al-Dossari", posizione: "CN", eta: 27, livelloAbilita: 73 },
+                    { nome: "Sami Al-Shimiri", posizione: "AT", eta: 30, livelloAbilita: 72 },
+                    { nome: "Saad Al-Fahad", posizione: "DF", eta: 28, livelloAbilita: 75 },
+                    { nome: "Saleh Al-Saleh", posizione: "CN", eta: 29, livelloAbilita: 74 },
+                    { nome: "Hassan Al-Johani", posizione: "AT", eta: 27, livelloAbilita: 73 },
+                    { nome: "Bader Al-Rashed", posizione: "CN", eta: 30, livelloAbilita: 75 },
+                    { nome: "Riyad Al-Rashed", posizione: "DF", eta: 28, livelloAbilita: 76 },
+                    { nome: "Fahad Al-Saleh", posizione: "CN", eta: 29, livelloAbilita: 74 },
+                    { nome: "Mohammed Al-Johani", posizione: "PO", eta: 28, livelloAbilita: 73 },
+                    { nome: "Mohammed Al-Maliki", posizione: "DF", eta: 30, livelloAbilita: 75 },
+                    { nome: "Abdullah Al-Khathlan", posizione: "CN", eta: 26, livelloAbilita: 72 },
+                    { nome: "Ahmed Al-Saleh", posizione: "AT", eta: 27, livelloAbilita: 73 },
+                    { nome: "Saad Al-Muwallad", posizione: "PO", eta: 28, livelloAbilita: 74 }
+                ],
+                pathImmagine: require("../../assets/images/alkholood.png")
+            },
+            {
+                nome: "Al Okhdood",
+                calciatori: [
+                    { nome: "Mohammed Al-Saleh", posizione: "PO", eta: 28, livelloAbilita: 74 },
+                    { nome: "Ahmed Al-Breik", posizione: "DF", eta: 29, livelloAbilita: 75 },
+                    { nome: "Abdallah Al-Rashed", posizione: "CN", eta: 30, livelloAbilita: 73 },
+                    { nome: "Sami Al-Dawsari", posizione: "AT", eta: 27, livelloAbilita: 72 },
+                    { nome: "Saleh Al-Muwallad", posizione: "CN", eta: 29, livelloAbilita: 73 },
+                    { nome: "Riyad Al-Fahad", posizione: "DF", eta: 28, livelloAbilita: 75 },
+                    { nome: "Khaled Al-Saleh", posizione: "PO", eta: 30, livelloAbilita: 74 },
+                    { nome: "Mohammed Al-Dossari", posizione: "DF", eta: 29, livelloAbilita: 74 },
+                    { nome: "Ali Al-Dossari", posizione: "CN", eta: 28, livelloAbilita: 72 },
+                    { nome: "Ahmed Al-Johani", posizione: "AT", eta: 27, livelloAbilita: 73 },
+                    { nome: "Saad Al-Rashid", posizione: "CN", eta: 29, livelloAbilita: 75 },
+                    { nome: "Mohammed Al-Farhan", posizione: "PO", eta: 28, livelloAbilita: 73 },
+                    { nome: "Khaled Al-Muwallad", posizione: "DF", eta: 30, livelloAbilita: 75 },
+                    { nome: "Ali Al-Breik", posizione: "CN", eta: 28, livelloAbilita: 73 },
+                    { nome: "Saleh Al-Dosari", posizione: "AT", eta: 29, livelloAbilita: 74 }
+                ],
+                pathImmagine: require("../../assets/images/alokhdood.png")
+            },
+            {
+                nome: "Al Ahli",
+                calciatori: [
+                    { nome: "Riyad Mahrez", posizione: "AT", eta: 33, livelloAbilita: 83 },
+                    { nome: "Eduardo Vargas", posizione: "AT", eta: 34, livelloAbilita: 77 },
+                    { nome: "Matheus Pereira", posizione: "CN", eta: 29, livelloAbilita: 80 },
+                    { nome: "Luiz Felipe", posizione: "DF", eta: 29, livelloAbilita: 80 },
+                    { nome: "Mohammed Al-Shehri", posizione: "AT", eta: 27, livelloAbilita: 74 },
+                    { nome: "Mohammed Al-Farhan", posizione: "CN", eta: 28, livelloAbilita: 73 },
+                    { nome: "Abdullah Al-Omari", posizione: "DF", eta: 30, livelloAbilita: 75 },
+                    { nome: "Saad Al-Shimiri", posizione: "CN", eta: 29, livelloAbilita: 74 },
+                    { nome: "Omar Hawsawi", posizione: "DF", eta: 30, livelloAbilita: 76 },
+                    { nome: "Alfredo Morelos", posizione: "AT", eta: 28, livelloAbilita: 79 },
+                    { nome: "Abdullah Al-Saleh", posizione: "DF", eta: 28, livelloAbilita: 75 },
+                    { nome: "Timo Werner", posizione: "AT", eta: 28, livelloAbilita: 84 },
+                    { nome: "Yasser Al-Shahrani", posizione: "DF", eta: 31, livelloAbilita: 76 },
+                    { nome: "Hussein Al-Baik", posizione: "CN", eta: 27, livelloAbilita: 75 },
+                    { nome: "Al-Ba", posizione: "CN", eta: 18, livelloAbilita: 69 }
+                ],
+                pathImmagine: require("../../assets/images/alahli.png")
+            }
+        ]
     }
+
 
 };

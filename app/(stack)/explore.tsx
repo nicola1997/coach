@@ -46,6 +46,7 @@ const App = () => {
         { title: "Bundesliga", teams: leghe.Bundesliga.squadre },
         { title: "Premier League", teams: leghe.PremierLeague.squadre },
         { title: "Liga Portugal", teams: leghe.LigaPortugal.squadre },
+        { title: "Saudi League", teams: leghe.SaudiLeague.squadre },
     ];
 
     useEffect(() => {
