@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     scrollView: {
         flex: 1,
         marginLeft: 60,
-        backgroundColor: '#032143',
+        backgroundColor: '#161717',
     },
     tableContainer: {
         padding: 12,

@@ -20,7 +20,7 @@ const manager = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#032143', // colore di sfondo per il contenitore
+        backgroundColor: '#161717', // colore di sfondo per il contenitore
     },
     navbar: {
         flexDirection: 'row', // Allinea gli elementi orizzontalmente
