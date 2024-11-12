@@ -103,7 +103,7 @@ export const leghe = {
                     pathImmagine: require("../../assets/images/brentford.png")
             },
             {
-                nome: "Brighton & Hove Albion",
+                nome: "Brighton",
                     calciatori: [
                         {nome: "Robert Sánchez", posizione: "PO", eta: 26, livelloAbilita: 82},
                         {nome: "Jason Steele", posizione: "PO", eta: 33, livelloAbilita: 78},
@@ -364,7 +364,7 @@ export const leghe = {
                     pathImmagine: require("../../assets/images/manchesterunited.png")
                 },
             {
-                nome: "Newcastle United",
+                nome: "Newcastle",
 
                     calciatori: [
                         {nome: "Nick Pope", posizione: "PO", eta: 32, livelloAbilita: 85},
@@ -434,7 +434,7 @@ export const leghe = {
                     pathImmagine: require("../../assets/images/southampton.png")
                   },
             {
-                nome: "Tottenham Hotspur",
+                nome: "Tottenham",
 
                     calciatori: [
                         {nome: "Hugo Lloris", posizione: "PO", eta: 37, livelloAbilita: 88},
@@ -456,7 +456,7 @@ export const leghe = {
                     pathImmagine: require("../../assets/images/tottenham.png")
                },
             {
-                nome: "West Ham United",
+                nome: "West Ham",
 
                     calciatori: [
                         {nome: "Lukasz Fabiański", posizione: "PO", eta: 38, livelloAbilita: 83},
@@ -478,7 +478,7 @@ export const leghe = {
                     pathImmagine: require("../../assets/images/westham.png")
                 },
             {
-                nome: "Wolverhampton Wanderers",
+                nome: "Wolverhampton",
 
                     calciatori: [
                         {nome: "José Sá", posizione: "PO", eta: 31, livelloAbilita: 82},
@@ -658,7 +658,7 @@ export const leghe = {
                 pathImmagine: require("../../assets/images/friburgo.png")
             },
             {
-                nome: "1. FC Heidenheim",
+                nome: "FC Heidenheim",
                 calciatori: [
                     { nome: "Tim Kleindienst", posizione: "AT", eta: 27, livelloAbilita: 78 },
                     { nome: "Marten Schmidt", posizione: "DF", eta: 28, livelloAbilita: 75 },
@@ -678,7 +678,7 @@ export const leghe = {
                 pathImmagine: require("../../assets/images/heidenheim.png")
             },
             {
-                nome: "TSG 1899 Hoffenheim",
+                nome: "Hoffenheim",
                 calciatori: [
                     { nome: "Andrej Kramaric", posizione: "AT", eta: 33, livelloAbilita: 84 },
                     { nome: "Florian Grillitsch", posizione: "CN", eta: 29, livelloAbilita: 80 },
@@ -778,7 +778,7 @@ export const leghe = {
                 pathImmagine: require("../../assets/images/magonza.png")
             },
             {
-                nome: "Borussia Mönchengladbach",
+                nome: "Mönchengladbach",
                 calciatori: [
                     { nome: "Alassane Pléa", posizione: "AT", eta: 30, livelloAbilita: 82 },
                     { nome: "Lars Stindl", posizione: "CN", eta: 35, livelloAbilita: 80 },
@@ -838,7 +838,7 @@ export const leghe = {
                 pathImmagine: require("../../assets/images/stpauli.png")
             },
             {
-                nome: "1. FC Union Berlino",
+                nome: "Union Berlino",
                 calciatori: [
                     { nome: "Taiwo Awoniyi", posizione: "AT", eta: 26, livelloAbilita: 80 },
                     { nome: "Christopher Trimmel", posizione: "DF", eta: 33, livelloAbilita: 79 },

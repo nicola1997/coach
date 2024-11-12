@@ -23,7 +23,7 @@ const LeagueGrid = ({ title, teams, setModalVisible, setYourTeam }) => (
             data={teams}
             renderItem={({ item }) => <Squad item={item} setModalVisible={setModalVisible} setYourTeam={setYourTeam} />}
             keyExtractor={(item) => item.nome}
-            numColumns={5}  // Modificato il numero di colonne
+            numColumns={10}  // Modificato il numero di colonne
             columnWrapperStyle={styles.columnWrapper}
         />
     </View>
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 10,
-        backgroundColor: '#070707',
+        backgroundColor: '#161717',
     },
     leagueContainer: {
         marginBottom: 20,
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
         color: 'white',  // Aggiunto colore per la leggibilità
     },
     columnWrapper: {
-        justifyContent: 'space-between',
+        justifyContent: 'space-between', // Spaziatura tra le colonne
     },
     centeredView: {
         flex: 1,
