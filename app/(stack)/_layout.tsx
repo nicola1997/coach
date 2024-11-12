@@ -38,6 +38,12 @@ export default function StackLayout() {
                     title: 'Menu',
                 }}
             />
+            <Stack.Screen
+                name="msg"
+                options={{
+                    title: 'Msg',
+                }}
+            />
         </Stack>
     );
 }

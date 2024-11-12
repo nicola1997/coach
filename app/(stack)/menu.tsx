@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Image, FlatList } from 'react-native';
-import { SafeAreaProvider } from "react-native-safe-area-context";
-import { Link } from "expo-router";
+import React, {useEffect, useState} from 'react';
+import {FlatList, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaProvider} from "react-native-safe-area-context";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { FontAwesome, FontAwesome5, Ionicons, MaterialCommunityIcons, Entypo, MaterialIcons } from "@expo/vector-icons";
-
-const Navbar = () => {
+import Navbar from "./Navbar"
+const playersFlatList = () => {
     const [leagues, setLeagues] = useState({});
     const [yourTeam, setYourTeam] = useState({});
 
@@ -29,16 +27,7 @@ const Navbar = () => {
         fetchLeaguesData();
     }, []);
 
-    const navLinks = [
-        { icon: <FontAwesome name="gear" size={24} color="white" />, route: "/menu" },
-        { icon: <FontAwesome5 name="search" size={24} color="white" />, route: "/menu" },
-        { icon: <Ionicons name="earth-sharp" size={24} color="white" />, route: "/menu" },
-        { icon: <MaterialCommunityIcons name="account-tie" size={24} color="white" />, route: "/menu" },
-        { icon: <Entypo name="home" size={24} color="white" />, route: "/menu" },
-        { icon: <MaterialIcons name="email" size={24} color="white" />, route: "/menu" },
-    ];
-
-    const renderCalciatore = ({ item }) => (
+    const renderCalciatore = ({item}) => (
         <View style={styles.calciatoreRow}>
             <Text style={styles.calciatoreCell}>{item.nome}</Text>
             <Text style={styles.calciatoreCell}>{item.eta}</Text>
@@ -50,18 +39,9 @@ const Navbar = () => {
     return (
         <SafeAreaProvider>
             <View style={styles.container}>
-                <View style={styles.navbar}>
-                    {navLinks.map((link, index) => (
-                        <Link key={index} style={styles.navButton} href={link.route}>
-                            <Text style={styles.navButtonText}>{link.icon}</Text>
-                        </Link>
-                    ))}
-                    {yourTeam.pathImmagine ? (
-                        <Image source={yourTeam.pathImmagine} style={styles.squadImage} />
-                    ) : null}
-                </View>
+                <Navbar/>
 
-                <View style={styles.scrollView}>
+                    <View style={styles.scrollView}>
                     {yourTeam.calciatori && yourTeam.calciatori.length > 0 ? (
                         <FlatList
                             data={yourTeam.calciatori}
@@ -82,18 +62,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: 'row',
-    },
-    navbar: {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        bottom: 0,
-        width: 60,
-        backgroundColor: '#073e75',
-        justifyContent: 'space-evenly',
-        alignItems: 'center',
-        paddingVertical: 0,
-        paddingTop: 10,
     },
     navButton: {
         alignItems: 'center',
@@ -138,4 +106,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Navbar;
+export default playersFlatList;

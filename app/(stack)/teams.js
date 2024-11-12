@@ -1307,8 +1307,7 @@ export const leghe = {
                 pathImmagine: require("../../assets/images/angers.png")
             },
             {
-                nome: "Auxerre",
-                AJAuxerre: {
+
                     nome: "AJ Auxerre",
                     calciatori: [
                         {nome: "Rémy Riou", posizione: "PO", eta: 36, livelloAbilita: 77},
@@ -1329,12 +1328,8 @@ export const leghe = {
                     ],
                     pathImmagine: require("../../assets/images/auxerre.png")
                 },
-                pathImmagine: require("../../assets/images/auxerre.png")
-            },
             {
                 nome: "Brest",
-                StadeBrestois: {
-                    nome: "Stade Brestois",
                     calciatori: [
                         {nome: "Gautier Larsonneur", posizione: "PO", eta: 26, livelloAbilita: 80},
                         {nome: "Pierre-Gabriel", posizione: "DF", eta: 26, livelloAbilita: 79},
@@ -1354,12 +1349,10 @@ export const leghe = {
                     ],
                     pathImmagine: require("../../assets/images/brest.png")
                 },
-                pathImmagine: require("../../assets/images/brest.png")
-            },
+
             {
                 nome: "Le Havre",
-                LeHavreAC: {
-                    nome: "Le Havre AC",
+
                     calciatori: [
                         {nome: "Mathieu Gorgelin", posizione: "PO", eta: 31, livelloAbilita: 78},
                         {nome: "Cedric Yambere", posizione: "DF", eta: 30, livelloAbilita: 79},
@@ -1379,8 +1372,7 @@ export const leghe = {
                     ],
                     pathImmagine: require("../../assets/images/lehavre.png")
                 },
-                pathImmagine: require("../../assets/images/lehavre.png")
-            },
+
             {
                 nome: "Lens",
                 calciatori: [
