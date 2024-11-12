@@ -1,27 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, FlatList, Text, Image, StyleSheet, Pressable, Modal } from 'react-native';
-import {leghe} from "./teams"
+import { leghe } from "./teams";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Link } from "expo-router";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const renderSquad = ({ item, setModalVisible, setYourTeam }) => (
+// Componente per il rendering di una squadra
+const Squad = ({ item, setModalVisible, setYourTeam }) => (
     <View style={styles.squadContainer}>
-        <Pressable onPress={() => { setModalVisible(true); setYourTeam(item) }}>
+        <Pressable onPress={() => { setModalVisible(true); setYourTeam(item); }}>
             <Image source={item.pathImmagine} style={styles.squadImage} />
             <Text style={styles.squadName}>{item.nome}</Text>
         </Pressable>
     </View>
 );
 
+// Componente per il rendering delle leghe
 const LeagueGrid = ({ title, teams, setModalVisible, setYourTeam }) => (
     <View style={styles.leagueContainer}>
         <Text style={styles.leagueTitle}>{title}</Text>
         <FlatList
             data={teams}
-            renderItem={({ item }) => renderSquad({ item, setModalVisible, setYourTeam })}
+            renderItem={({ item }) => <Squad item={item} setModalVisible={setModalVisible} setYourTeam={setYourTeam} />}
             keyExtractor={(item) => item.nome}
-            numColumns={10}
+            numColumns={5}  // Modificato il numero di colonne
             columnWrapperStyle={styles.columnWrapper}
         />
     </View>
@@ -31,11 +33,12 @@ const App = () => {
     const [modalVisible, setModalVisible] = useState(false);
     const [yourTeam, setYourTeam] = useState({});
 
+    // Funzione per salvare i dati su AsyncStorage
     const saveData = async (key, data) => {
         try {
             await AsyncStorage.setItem(key, JSON.stringify(data));
         } catch (e) {
-            alert('Error saving data');
+            console.error('Error saving data', e);
         }
     };
 
@@ -49,10 +52,10 @@ const App = () => {
         { title: "Saudi League", teams: leghe.SaudiLeague.squadre },
     ];
 
+    // Carica i dati delle leghe all'avvio
     useEffect(() => {
         saveData("leghe", leghe);
     }, []);
-
 
     return (
         <SafeAreaProvider style={styles.container}>
@@ -63,23 +66,28 @@ const App = () => {
                 )}
                 keyExtractor={(item) => item.title}
             />
+
+            {/* Modal di conferma */}
             <Modal
                 animationType="slide"
                 transparent={true}
                 visible={modalVisible}
-                onRequestClose={() => { setModalVisible(!modalVisible); }}>
+                onRequestClose={() => setModalVisible(false)}
+            >
                 <View style={styles.centeredView}>
                     <View style={styles.modalView}>
-                        <Text style={styles.modalText}>Confermi {yourTeam?.nome} ?</Text>
+                        <Text style={styles.modalText}>Confermi {yourTeam?.nome}?</Text>
                         <Link
                             style={[styles.button, styles.buttonConferm]}
-                            onPress={() => { setModalVisible(!modalVisible); saveData("yourTeam", yourTeam) }}
-                            href={"/menu"}>
+                            onPress={() => { setModalVisible(false); saveData("yourTeam", yourTeam); }}
+                            href="/menu"
+                        >
                             <Text style={styles.textStyle}>CONFERMA</Text>
                         </Link>
                         <Pressable
                             style={[styles.button, styles.buttonClose]}
-                            onPress={() => setModalVisible(!modalVisible)}>
+                            onPress={() => setModalVisible(false)}
+                        >
                             <Text style={styles.textStyle}>NO</Text>
                         </Pressable>
                     </View>
@@ -89,11 +97,12 @@ const App = () => {
     );
 };
 
+// Stili
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 10,
-        backgroundColor: '#217ad3',
+        backgroundColor: '#070707',
     },
     leagueContainer: {
         marginBottom: 20,
@@ -102,6 +111,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 10,
+        color: 'white',  // Aggiunto colore per la leggibilità
     },
     squadContainer: {
         alignItems: 'center',
@@ -116,6 +126,7 @@ const styles = StyleSheet.create({
     squadName: {
         textAlign: 'center',
         fontSize: 12,
+        color: 'white',  // Aggiunto colore per la leggibilità
     },
     columnWrapper: {
         justifyContent: 'space-between',

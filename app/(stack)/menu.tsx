@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {FlatList, StyleSheet, Text, View} from 'react-native';
 import {SafeAreaProvider} from "react-native-safe-area-context";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import Navbar from "./Navbar"
+
 const playersFlatList = () => {
     const [leagues, setLeagues] = useState({});
     const [yourTeam, setYourTeam] = useState({});
@@ -39,8 +39,6 @@ const playersFlatList = () => {
     return (
         <SafeAreaProvider>
             <View style={styles.container}>
-                <Navbar/>
-
                     <View style={styles.scrollView}>
                     {yourTeam.calciatori && yourTeam.calciatori.length > 0 ? (
                         <FlatList

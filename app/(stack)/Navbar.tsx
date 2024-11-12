@@ -1,8 +1,8 @@
-import { Image, StyleSheet, Text, View } from 'react-native';
-import { SafeAreaProvider } from "react-native-safe-area-context";
-import { Link } from "expo-router";
-import { Entypo, FontAwesome, FontAwesome5, Ionicons, MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
-import { useEffect, useState } from "react";
+import {Image, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaProvider} from "react-native-safe-area-context";
+import {Link} from "expo-router";
+import {Entypo, FontAwesome, FontAwesome5, Ionicons, MaterialCommunityIcons, MaterialIcons} from "@expo/vector-icons";
+import {useEffect, useState} from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const Navbar = () => {

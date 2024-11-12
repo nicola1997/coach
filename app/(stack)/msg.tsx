@@ -1,7 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 import {ThemedText} from '@/components/ThemedText';
 import {ThemedView} from '@/components/ThemedView';
-import Navbar from "@/app/(stack)/Navbar";
 import React from "react";
 
 const msg = () => {
@@ -11,7 +10,6 @@ const msg = () => {
                 <Text style={styles.navbarText}>E-Mail</Text>
                 {/* Puoi aggiungere altre icone o elementi nella navbar */}
             </View>
-            <Navbar/>
             <ThemedText>
                 Caro allenatore,
 
