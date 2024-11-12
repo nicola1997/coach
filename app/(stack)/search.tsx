@@ -7,8 +7,6 @@ import Navbar from "@/app/(stack)/Navbar";
 const search = () => {
     return (
         <ThemedView style={styles.container}>
-            <Navbar/>
-
             <ThemedText>
                 Caro allenatore,
                 SEARCH

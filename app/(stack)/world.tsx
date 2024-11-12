@@ -7,8 +7,6 @@ import Navbar from "@/app/(stack)/Navbar";
 const world = () => {
     return (
         <ThemedView style={styles.container}>
-            <Navbar/>
-
             <ThemedText>
                 WORLD
             </ThemedText>

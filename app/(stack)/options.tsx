@@ -7,8 +7,6 @@ import Navbar from "@/app/(stack)/Navbar";
 const options = () => {
     return (
         <ThemedView style={styles.container}>
-            <Navbar/>
-
             <ThemedText>
                 Caro allenatore,
                 IMPOSTAZIONI

@@ -1,8 +1,7 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
-import {SafeAreaProvider} from "react-native-safe-area-context";
-import {Link} from "expo-router";
-import {Entypo, FontAwesome, FontAwesome5, Ionicons, MaterialCommunityIcons, MaterialIcons} from "@expo/vector-icons";
-import {useEffect, useState} from "react";
+import { View, Text, StyleSheet, Image, Platform, StatusBar } from 'react-native';
+import { Link } from "expo-router";
+import { FontAwesome, FontAwesome5, Ionicons, MaterialCommunityIcons, MaterialIcons, Entypo } from "@expo/vector-icons";
+import { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const Navbar = () => {
@@ -36,41 +35,38 @@ const Navbar = () => {
     }, []);
 
     return (
-        <SafeAreaProvider>
-            <View style={styles.container}>
-                <View style={styles.navbar}>
-                    {navLinks.map((link, index) => (
-                        <Link key={index} style={styles.navButton} href={link.route}>
-                            {link.icon}
-                        </Link>
-                    ))}
-                    {yourTeam.pathImmagine ? (
-                        <Image source={yourTeam.pathImmagine} style={styles.squadImage} />
-                    ) : (
-                        <Text style={styles.squadText}>TEAM</Text>
-                    )}
-                </View>
+        <View style={styles.container}>
+            <View style={styles.navbar}>
+                {navLinks.map((link, index) => (
+                    <Link key={index} style={styles.navButton} href={link.route}>
+                        {link.icon}
+                    </Link>
+                ))}
+                {yourTeam.pathImmagine ? (
+                    <Image source={yourTeam.pathImmagine} style={styles.squadImage} />
+                ) : (
+                    <Text style={styles.squadText}>TEAM</Text>
+                )}
             </View>
-        </SafeAreaProvider>
+        </View>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection: 'row',
     },
     navbar: {
-        position: 'absolute',
+        position: 'absolute', // Usa fixed per evitare il problema dell'absolute
         top: 0,
         left: 0,
-        bottom: 0,
         width: 60,
         backgroundColor: '#073e75',
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        paddingVertical: 0,
-        paddingTop: 10,
+        height: '100%',  // La navbar occupa tutta l'altezza
+        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 40, // Rispetta l'area sicura
+        paddingBottom: 10, // Aggiungi un po' di padding inferiore per migliorare il layout
     },
     navButton: {
         alignItems: 'center',

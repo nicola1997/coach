@@ -7,8 +7,6 @@ import Navbar from "@/app/(stack)/Navbar";
 const manager = () => {
     return (
         <ThemedView style={styles.container}>
-            <Navbar/>
-
             <ThemedText>
                 Caro allenatore,
                 MANAGER!!

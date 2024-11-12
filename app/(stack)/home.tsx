@@ -7,8 +7,6 @@ import Navbar from "@/app/(stack)/Navbar";
 const home = () => {
     return (
         <ThemedView style={styles.container}>
-            <Navbar/>
-
             <ThemedText>
                 HOME
             </ThemedText>
