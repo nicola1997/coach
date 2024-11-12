@@ -39,7 +39,7 @@ const playersFlatList = () => {
     return (
         <SafeAreaProvider>
             <View style={styles.container}>
-                    <View style={styles.scrollView}>
+                <View style={styles.scrollView}>
                     {yourTeam.calciatori && yourTeam.calciatori.length > 0 ? (
                         <FlatList
                             data={yourTeam.calciatori}

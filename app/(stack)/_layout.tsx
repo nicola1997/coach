@@ -9,6 +9,7 @@ export default function StackLayout() {
         <Stack
             screenOptions={{
                 headerShown: false, // Nasconde l'header di navigazione, se desiderato
+                animation:'none'
             }}
         >
             {/* Schermata Home */}
@@ -16,7 +17,6 @@ export default function StackLayout() {
                 name="index"
                 options={{
                     title: 'Home',
-                    // Puoi rimuovere `tabBarIcon` poiché non ci sono più tab
                 }}
             />
 
@@ -39,6 +39,42 @@ export default function StackLayout() {
                 name="msg"
                 options={{
                     title: 'Msg',
+                }}
+            />
+            <Stack.Screen
+                name="home"
+                options={{
+                    title: 'home',
+                }}
+            />
+            <Stack.Screen
+                name="manager"
+                options={{
+                    title: 'manager',
+                }}
+            />
+            <Stack.Screen
+                name="search"
+                options={{
+                    title: 'search',
+                }}
+            />
+            <Stack.Screen
+                name="options"
+                options={{
+                    title: 'options',
+                }}
+            />
+            <Stack.Screen
+                name="world"
+                options={{
+                    title: 'world',
+                }}
+            />
+            <Stack.Screen
+                name="HomeView"
+                options={{
+                    title: 'HomeView',
                 }}
             />
         </Stack>

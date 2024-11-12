@@ -4,22 +4,14 @@ import {ThemedView} from '@/components/ThemedView';
 import React from "react";
 import Navbar from "@/app/(stack)/Navbar";
 
-const msg = () => {
+const HomeView = () => {
     return (
         <ThemedView style={styles.container}>
-            <Navbar/>
+         <Navbar/>
 
             <ThemedText>
                 Caro allenatore,
-
-                Siamo molto felici di darti il benvenuto nella nostra squadra! Siamo entusiasti di lavorare sotto la tua
-                guida e di imparare ogni giorno da te.
-
-                Grazie per la tua fiducia in noi, e per aver scelto di far parte della nostra squadra. Siamo pronti per
-                iniziare questo nuovo capitolo insieme!
-
-                Con entusiasmo,
-                La tua squadra {}
+                HOMEVIEW
             </ThemedText>
         </ThemedView>
     );
@@ -48,4 +40,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default msg;
+export default HomeView;

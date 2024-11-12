@@ -80,7 +80,7 @@ const App = () => {
                         <Link
                             style={[styles.button, styles.buttonConferm]}
                             onPress={() => { setModalVisible(false); saveData("yourTeam", yourTeam); }}
-                            href="/menu"
+                            href="/HomeView"
                         >
                             <Text style={styles.textStyle}>CONFERMA</Text>
                         </Link>

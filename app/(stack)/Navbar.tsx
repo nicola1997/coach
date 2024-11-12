@@ -9,11 +9,11 @@ const Navbar = () => {
     let [yourTeam, setYourTeam] = useState({});
 
     const navLinks = [
-        {icon: <FontAwesome name="gear" size={24} color="white" />, route: "/menu"},
-        {icon: <FontAwesome5 name="search" size={24} color="white" />, route: "/menu"},
-        {icon: <Ionicons name="earth-sharp" size={24} color="white" />, route: "/menu"},
-        {icon: <MaterialCommunityIcons name="account-tie" size={24} color="white" />, route: "/menu"},
-        {icon: <Entypo name="home" size={24} color="white" />, route: "/menu"},
+        {icon: <FontAwesome name="gear" size={24} color="white" />, route: "/options"},
+        {icon: <FontAwesome5 name="search" size={24} color="white" />, route: "/search"},
+        {icon: <Ionicons name="earth-sharp" size={24} color="white" />, route: "/world"},
+        {icon: <MaterialCommunityIcons name="account-tie" size={24} color="white" />, route: "/manager"},
+        {icon: <Entypo name="home" size={24} color="white" />, route: "/home"},
         {icon: <MaterialIcons name="email" size={24} color="white" />, route: "/msg"},
     ];
 
