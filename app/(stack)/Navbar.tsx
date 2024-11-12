@@ -65,7 +65,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-evenly',
         alignItems: 'center',
         height: '100%',  // La navbar occupa tutta l'altezza
-        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 40, // Rispetta l'area sicura
         paddingBottom: 10, // Aggiungi un po' di padding inferiore per migliorare il layout
     },
     navButton: {
