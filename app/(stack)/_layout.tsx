@@ -8,7 +8,7 @@ export default function StackLayout() {
     const currentScreen = segments[segments.length - 1]; // Prende solo l'ultimo segmento del percorso
 
     // Array di schermate che dovrebbero avere la Navbar
-    const screensWithNavbar = ["menu", "msg", "manager","search", "options", "world", "HomeView","home"];
+    const screensWithNavbar = ["menu", "msg", "manager","search", "options", "world", "home"];
 
     // Funzione per verificare se la navbar dovrebbe essere visibile
     const shouldShowNavbar = screensWithNavbar.includes(currentScreen);
@@ -34,7 +34,6 @@ export default function StackLayout() {
                 <Stack.Screen name="search" options={{ title: 'Search' }} />
                 <Stack.Screen name="options" options={{ title: 'Options' }} />
                 <Stack.Screen name="world" options={{ title: 'World' }} />
-                <Stack.Screen name="HomeView" options={{ title: 'HomeView' }} />
             </Stack>
 
         </View>
@@ -45,20 +44,5 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: "row",
-    },
-    navbar: {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        bottom: 0,
-        width: 60,
-        backgroundColor: '#073e75',
-        justifyContent: 'space-evenly',
-        alignItems: 'center',
-        paddingVertical: 0,
-        paddingTop: 10,
-    },
-    navButton: {
-        alignItems: 'center',
-    },
+    }
 });
