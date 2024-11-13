@@ -233,7 +233,7 @@ export const leghe = {
                     pathImmagine: require("../../assets/images/fulham.png")
                 },
             {
-                nome: "Ipswich Town",
+                nome: "Ipswich",
 
                     calciatori: [
                         {nome: "Vaclav Hladky", posizione: "PO", eta: 33, livelloAbilita: 78},
@@ -257,7 +257,7 @@ export const leghe = {
                     pathImmagine: require("../../assets/images/ipswich.png")
                },
             {
-                nome: "Leicester City",
+                nome: "Leicester",
                     calciatori: [
                         {nome: "Daniel Iversen", posizione: "PO", eta: 26, livelloAbilita: 79},
                         {nome: "Kasper Schmeichel", posizione: "PO", eta: 37, livelloAbilita: 81},
@@ -388,7 +388,7 @@ export const leghe = {
                     pathImmagine: require("../../assets/images/newcastle.png")
                   },
             {
-                nome: "Nottingham Forest",
+                nome: "Nottingham",
 
                     calciatori: [
                         {nome: "Keylor Navas", posizione: "PO", eta: 37, livelloAbilita: 86},
@@ -478,7 +478,7 @@ export const leghe = {
                     pathImmagine: require("../../assets/images/westham.png")
                 },
             {
-                nome: "Wolverhampton",
+                nome: "Wolves",
 
                     calciatori: [
                         {nome: "José Sá", posizione: "PO", eta: 31, livelloAbilita: 82},
@@ -507,7 +507,7 @@ export const leghe = {
         nome: "Bundesliga",
         squadre: [
             {
-                nome: "FC Augsburg",
+                nome: "Augsburg",
                 calciatori: [
                     { nome: "Florian Niederlechner", posizione: "AT", eta: 32, livelloAbilita: "75" },
                     { nome: "Rani Khedira", posizione: "CN", eta: 30, livelloAbilita: "75" },
@@ -552,7 +552,7 @@ export const leghe = {
                 pathImmagine: require("../../assets/images/bayern.png")
             },
             {
-                nome: "VfL Bochum",
+                nome: "Bochum",
                 calciatori: [
                     { nome: "Simon Zoller", posizione: "AT", eta: 32, livelloAbilita: "72" },
                     { nome: "Oliver Neuville", posizione: "CN", eta: 39, livelloAbilita: "75" },
@@ -616,7 +616,7 @@ export const leghe = {
                 pathImmagine: require("../../assets/images/dortmund.png")
             },
             {
-                nome: "Eintracht Francoforte",
+                nome: "Francoforte",
                 calciatori: [
                     { nome: "Rafael Santos Borré", posizione: "AT", eta: 28, livelloAbilita: 82 },
                     { nome: "Daichi Kamada", posizione: "CN", eta: 28, livelloAbilita: 84 },
@@ -637,7 +637,7 @@ export const leghe = {
                 pathImmagine: require("../../assets/images/francoforte.png")
             },
             {
-                nome: "SC Friburgo",
+                nome: "Friburgo",
                 calciatori: [
                     { nome: "Vincenzo Grifo", posizione: "CN", eta: 30, livelloAbilita: 84 },
                     { nome: "Nils Petersen", posizione: "AT", eta: 35, livelloAbilita: 80 },
@@ -658,7 +658,7 @@ export const leghe = {
                 pathImmagine: require("../../assets/images/friburgo.png")
             },
             {
-                nome: "FC Heidenheim",
+                nome: "Heidenheim",
                 calciatori: [
                     { nome: "Tim Kleindienst", posizione: "AT", eta: 27, livelloAbilita: 78 },
                     { nome: "Marten Schmidt", posizione: "DF", eta: 28, livelloAbilita: 75 },
@@ -698,7 +698,7 @@ export const leghe = {
                 pathImmagine: require("../../assets/images/hoffenheim.png")
             },
             {
-                nome: "Holstein Kiel",
+                nome: "Kiel",
                 calciatori: [
                     { nome: "Janni-Luca Weichert", posizione: "DF", eta: 27, livelloAbilita: 72 },
                     { nome: "Fin Bartels", posizione: "AT", eta: 36, livelloAbilita: 75 },
@@ -858,7 +858,7 @@ export const leghe = {
                 pathImmagine: require("../../assets/images/unionberlino.png")
             },
             {
-                nome: "VfL Wolfsburg",
+                nome: "Wolfsburg",
                 calciatori: [
                     { nome: "Max Kruse", posizione: "AT", eta: 35, livelloAbilita: 82 },
                     { nome: "Josuha Guilavogui", posizione: "CN", eta: 33, livelloAbilita: 80 },

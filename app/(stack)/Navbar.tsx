@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
         width: 50,
         height: 50,
         marginBottom: 5,
-        borderRadius: 20,
+        borderRadius: 10,
         resizeMode: 'contain',
         overflow: 'hidden',
     },

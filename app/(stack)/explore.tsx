@@ -121,11 +121,11 @@ const styles = StyleSheet.create({
     squadImage: {
         width: 50,
         height: 50,
-        marginBottom: 5,
+        marginBottom: 4,
     },
     squadName: {
         textAlign: 'center',
-        fontSize: 12,
+        fontSize: 9,
         color: 'white',  // Aggiunto colore per la leggibilità
     },
     columnWrapper: {
