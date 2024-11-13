@@ -1,35 +1,35 @@
-export const leghe = {
-    PremierLeague: {
+export const leghe = [
+    {
         nome: "Premier League",
         squadre: [
             {
-                        nome: "Arsenal",
-                        calciatori: [
-                            { nome: "William Saliba", posizione: "DF", eta: 23, livelloAbilita: 86 },
-                            { nome: "Kieran Tierney", posizione: "DF", eta: 26, livelloAbilita: 82 },
-                            { nome: "Ben White", posizione: "DF", eta: 26, livelloAbilita: 84 },
-                            { nome: "Thomas Partey", posizione: "CN", eta: 31, livelloAbilita: 83 },
-                            { nome: "Gabriel Magalhães", posizione: "DF", eta: 26, livelloAbilita: 85 },
-                            { nome: "Bukayo Saka", posizione: "FW", eta: 22, livelloAbilita: 88 },
-                            { nome: "Martin Ødegaard", posizione: "CN", eta: 25, livelloAbilita: 87 },
-                            { nome: "Gabriel Jesus", posizione: "FW", eta: 27, livelloAbilita: 85 },
-                            { nome: "Gabriel Martinelli", posizione: "FW", eta: 23, livelloAbilita: 83 },
-                            { nome: "Jurrien Timber", posizione: "DF", eta: 23, livelloAbilita: 81 },
-                            { nome: "Jakub Kiwior", posizione: "DF", eta: 24, livelloAbilita: 80 },
-                            { nome: "Takehiro Tomiyasu", posizione: "DF", eta: 25, livelloAbilita: 81 },
-                            { nome: "Leandro Trossard", posizione: "FW", eta: 29, livelloAbilita: 82 },
-                            { nome: "Jorginho", posizione: "CN", eta: 32, livelloAbilita: 84 },
-                            { nome: "David Raya", posizione: "GK", eta: 28, livelloAbilita: 83 },
-                            { nome: "Mikel Merino", posizione: "CN", eta: 28, livelloAbilita: 83 },
-                            { nome: "Kai Havertz", posizione: "FW", eta: 25, livelloAbilita: 84 },
-                            { nome: "Raheem Sterling", posizione: "FW", eta: 29, livelloAbilita: 85 },
-                            { nome: "Neto", posizione: "GK", eta: 34, livelloAbilita: 81 },
-                            { nome: "Riccardo Calafiori", posizione: "DF", eta: 22, livelloAbilita: 78 },
-                            { nome: "Oleksandr Zinchenko", posizione: "DF", eta: 27, livelloAbilita: 84 },
-                            { nome: "Declan Rice", posizione: "CN", eta: 25, livelloAbilita: 85 },
-                            { nome: "Myles Lewis-Skelly", posizione: "CN", eta: 18, livelloAbilita: 77 },
-                            { nome: "Ethan Nwaneri", posizione: "CN", eta: 17, livelloAbilita: 75 }
-                        ],
+                nome: "Arsenal",
+                calciatori: [
+                    {nome: "William Saliba", posizione: "DF", eta: 23, livelloAbilita: 86},
+                    {nome: "Kieran Tierney", posizione: "DF", eta: 26, livelloAbilita: 82},
+                    {nome: "Ben White", posizione: "DF", eta: 26, livelloAbilita: 84},
+                    {nome: "Thomas Partey", posizione: "CN", eta: 31, livelloAbilita: 83},
+                    {nome: "Gabriel Magalhães", posizione: "DF", eta: 26, livelloAbilita: 85},
+                    {nome: "Bukayo Saka", posizione: "FW", eta: 22, livelloAbilita: 88},
+                    {nome: "Martin Ødegaard", posizione: "CN", eta: 25, livelloAbilita: 87},
+                    {nome: "Gabriel Jesus", posizione: "FW", eta: 27, livelloAbilita: 85},
+                    {nome: "Gabriel Martinelli", posizione: "FW", eta: 23, livelloAbilita: 83},
+                    {nome: "Jurrien Timber", posizione: "DF", eta: 23, livelloAbilita: 81},
+                    {nome: "Jakub Kiwior", posizione: "DF", eta: 24, livelloAbilita: 80},
+                    {nome: "Takehiro Tomiyasu", posizione: "DF", eta: 25, livelloAbilita: 81},
+                    {nome: "Leandro Trossard", posizione: "FW", eta: 29, livelloAbilita: 82},
+                    {nome: "Jorginho", posizione: "CN", eta: 32, livelloAbilita: 84},
+                    {nome: "David Raya", posizione: "GK", eta: 28, livelloAbilita: 83},
+                    {nome: "Mikel Merino", posizione: "CN", eta: 28, livelloAbilita: 83},
+                    {nome: "Kai Havertz", posizione: "FW", eta: 25, livelloAbilita: 84},
+                    {nome: "Raheem Sterling", posizione: "FW", eta: 29, livelloAbilita: 85},
+                    {nome: "Neto", posizione: "GK", eta: 34, livelloAbilita: 81},
+                    {nome: "Riccardo Calafiori", posizione: "DF", eta: 22, livelloAbilita: 78},
+                    {nome: "Oleksandr Zinchenko", posizione: "DF", eta: 27, livelloAbilita: 84},
+                    {nome: "Declan Rice", posizione: "CN", eta: 25, livelloAbilita: 85},
+                    {nome: "Myles Lewis-Skelly", posizione: "CN", eta: 18, livelloAbilita: 77},
+                    {nome: "Ethan Nwaneri", posizione: "CN", eta: 17, livelloAbilita: 75}
+                ],
                 pathImmagine: require("../../assets/images/arsenal.png")
 
             },
@@ -57,453 +57,452 @@ export const leghe = {
             },
             {
                 nome: "Bournemouth",
-                    calciatori: [
-                        {nome: "Neto", posizione: "PO", eta: 34, livelloAbilita: 80},
-                        {nome: "Mark Travers", posizione: "PO", eta: 25, livelloAbilita: 75},
-                        {nome: "Adam Smith", posizione: "DF", eta: 32, livelloAbilita: 78},
-                        {nome: "Jefferson Lerma", posizione: "CN", eta: 29, livelloAbilita: 81},
-                        {nome: "Marcos Senesi", posizione: "DF", eta: 27, livelloAbilita: 82},
-                        {nome: "Lewis Cook", posizione: "CN", eta: 26, livelloAbilita: 77},
-                        {nome: "Philip Billing", posizione: "CN", eta: 28, livelloAbilita: 80},
-                        {nome: "Jaidon Anthony", posizione: "AT", eta: 24, livelloAbilita: 75},
-                        {nome: "Dominic Solanke", posizione: "AT", eta: 26, livelloAbilita: 82},
-                        {nome: "Dango Ouattara", posizione: "AT", eta: 21, livelloAbilita: 79},
-                        {nome: "Ryan Christie", posizione: "CN", eta: 29, livelloAbilita: 78},
-                        {nome: "Marcus Tavernier", posizione: "CN", eta: 25, livelloAbilita: 80},
-                        {nome: "Philipp Zinckernagel", posizione: "CN", eta: 28, livelloAbilita: 76},
-                        {nome: "Emiliano Marcondes", posizione: "CN", eta: 28, livelloAbilita: 75},
-                        {nome: "Illya Zabarnyi", posizione: "DF", eta: 21, livelloAbilita: 83},
-                        {nome: "Lloyd Kelly", posizione: "DF", eta: 25, livelloAbilita: 80},
-                        {nome: "Jordan Zemura", posizione: "DF", eta: 25, livelloAbilita: 77}
-                    ],
-                    pathImmagine: require("../../assets/images/bournemouth.png")
+                calciatori: [
+                    {nome: "Neto", posizione: "PO", eta: 34, livelloAbilita: 80},
+                    {nome: "Mark Travers", posizione: "PO", eta: 25, livelloAbilita: 75},
+                    {nome: "Adam Smith", posizione: "DF", eta: 32, livelloAbilita: 78},
+                    {nome: "Jefferson Lerma", posizione: "CN", eta: 29, livelloAbilita: 81},
+                    {nome: "Marcos Senesi", posizione: "DF", eta: 27, livelloAbilita: 82},
+                    {nome: "Lewis Cook", posizione: "CN", eta: 26, livelloAbilita: 77},
+                    {nome: "Philip Billing", posizione: "CN", eta: 28, livelloAbilita: 80},
+                    {nome: "Jaidon Anthony", posizione: "AT", eta: 24, livelloAbilita: 75},
+                    {nome: "Dominic Solanke", posizione: "AT", eta: 26, livelloAbilita: 82},
+                    {nome: "Dango Ouattara", posizione: "AT", eta: 21, livelloAbilita: 79},
+                    {nome: "Ryan Christie", posizione: "CN", eta: 29, livelloAbilita: 78},
+                    {nome: "Marcus Tavernier", posizione: "CN", eta: 25, livelloAbilita: 80},
+                    {nome: "Philipp Zinckernagel", posizione: "CN", eta: 28, livelloAbilita: 76},
+                    {nome: "Emiliano Marcondes", posizione: "CN", eta: 28, livelloAbilita: 75},
+                    {nome: "Illya Zabarnyi", posizione: "DF", eta: 21, livelloAbilita: 83},
+                    {nome: "Lloyd Kelly", posizione: "DF", eta: 25, livelloAbilita: 80},
+                    {nome: "Jordan Zemura", posizione: "DF", eta: 25, livelloAbilita: 77}
+                ],
+                pathImmagine: require("../../assets/images/bournemouth.png")
             },
             {
                 nome: "Brentford",
-                    calciatori: [
-                        {nome: "David Raya", posizione: "PO", eta: 28, livelloAbilita: 85},
-                        {nome: "Mark Flekken", posizione: "PO", eta: 30, livelloAbilita: 80},
-                        {nome: "Ethan Pinnock", posizione: "DF", eta: 30, livelloAbilita: 78},
-                        {nome: "Pontus Jansson", posizione: "DF", eta: 33, livelloAbilita: 80},
-                        {nome: "Ben Mee", posizione: "DF", eta: 34, livelloAbilita: 79},
-                        {nome: "Aaron Hickey", posizione: "DF", eta: 21, livelloAbilita: 81},
-                        {nome: "Christian Nørgaard", posizione: "CN", eta: 30, livelloAbilita: 80},
-                        {nome: "Vitaly Janelt", posizione: "CN", eta: 25, livelloAbilita: 79},
-                        {nome: "Mikkel Damsgaard", posizione: "CN", eta: 23, livelloAbilita: 77},
-                        {nome: "Josh Dasilva", posizione: "CN", eta: 25, livelloAbilita: 76},
-                        {nome: "Yoane Wissa", posizione: "AT", eta: 27, livelloAbilita: 78},
-                        {nome: "Ivan Toney", posizione: "AT", eta: 28, livelloAbilita: 88},
-                        {nome: "Keane Lewis-Potter", posizione: "AT", eta: 22, livelloAbilita: 77},
-                        {nome: "Bryan Mbeumo", posizione: "AT", eta: 24, livelloAbilita: 80},
-                        {nome: "Saman Ghoddos", posizione: "AT", eta: 30, livelloAbilita: 75},
-                        {nome: "Shandon Baptiste", posizione: "CN", eta: 25, livelloAbilita: 77},
-                        {nome: "Frank Onyeka", posizione: "CN", eta: 26, livelloAbilita: 78},
-                        {nome: "Sergi Canós", posizione: "AT", eta: 26, livelloAbilita: 76}
-                    ],
-                    pathImmagine: require("../../assets/images/brentford.png")
+                calciatori: [
+                    {nome: "David Raya", posizione: "PO", eta: 28, livelloAbilita: 85},
+                    {nome: "Mark Flekken", posizione: "PO", eta: 30, livelloAbilita: 80},
+                    {nome: "Ethan Pinnock", posizione: "DF", eta: 30, livelloAbilita: 78},
+                    {nome: "Pontus Jansson", posizione: "DF", eta: 33, livelloAbilita: 80},
+                    {nome: "Ben Mee", posizione: "DF", eta: 34, livelloAbilita: 79},
+                    {nome: "Aaron Hickey", posizione: "DF", eta: 21, livelloAbilita: 81},
+                    {nome: "Christian Nørgaard", posizione: "CN", eta: 30, livelloAbilita: 80},
+                    {nome: "Vitaly Janelt", posizione: "CN", eta: 25, livelloAbilita: 79},
+                    {nome: "Mikkel Damsgaard", posizione: "CN", eta: 23, livelloAbilita: 77},
+                    {nome: "Josh Dasilva", posizione: "CN", eta: 25, livelloAbilita: 76},
+                    {nome: "Yoane Wissa", posizione: "AT", eta: 27, livelloAbilita: 78},
+                    {nome: "Ivan Toney", posizione: "AT", eta: 28, livelloAbilita: 88},
+                    {nome: "Keane Lewis-Potter", posizione: "AT", eta: 22, livelloAbilita: 77},
+                    {nome: "Bryan Mbeumo", posizione: "AT", eta: 24, livelloAbilita: 80},
+                    {nome: "Saman Ghoddos", posizione: "AT", eta: 30, livelloAbilita: 75},
+                    {nome: "Shandon Baptiste", posizione: "CN", eta: 25, livelloAbilita: 77},
+                    {nome: "Frank Onyeka", posizione: "CN", eta: 26, livelloAbilita: 78},
+                    {nome: "Sergi Canós", posizione: "AT", eta: 26, livelloAbilita: 76}
+                ],
+                pathImmagine: require("../../assets/images/brentford.png")
             },
             {
                 nome: "Brighton",
-                    calciatori: [
-                        {nome: "Robert Sánchez", posizione: "PO", eta: 26, livelloAbilita: 82},
-                        {nome: "Jason Steele", posizione: "PO", eta: 33, livelloAbilita: 78},
-                        {nome: "Lewis Dunk", posizione: "DF", eta: 32, livelloAbilita: 83},
-                        {nome: "Adam Webster", posizione: "DF", eta: 28, livelloAbilita: 79},
-                        {nome: "Joel Veltman", posizione: "DF", eta: 32, livelloAbilita: 80},
-                        {nome: "Pervis Estupiñán", posizione: "DF", eta: 25, livelloAbilita: 81},
-                        {nome: "Tariq Lamptey", posizione: "DF", eta: 23, livelloAbilita: 80},
-                        {nome: "Billy Gilmour", posizione: "CN", eta: 23, livelloAbilita: 79},
-                        {nome: "Moisés Caicedo", posizione: "CN", eta: 22, livelloAbilita: 84},
-                        {nome: "Alexis Mac Allister", posizione: "CN", eta: 25, livelloAbilita: 82},
-                        {nome: "Pascal Groß", posizione: "CN", eta: 33, livelloAbilita: 80},
-                        {nome: "Leandro Trossard", posizione: "AT", eta: 29, livelloAbilita: 84},
-                        {nome: "Solly March", posizione: "AT", eta: 29, livelloAbilita: 78},
-                        {nome: "Kaoru Mitoma", posizione: "AT", eta: 26, livelloAbilita: 81},
-                        {nome: "Danny Welbeck", posizione: "AT", eta: 33, livelloAbilita: 76},
-                        {nome: "Evan Ferguson", posizione: "AT", eta: 19, livelloAbilita: 80},
-                        {nome: "Deniz Undav", posizione: "AT", eta: 27, livelloAbilita: 77}
-                    ],
-                    pathImmagine: require("../../assets/images/brighton.png")
+                calciatori: [
+                    {nome: "Robert Sánchez", posizione: "PO", eta: 26, livelloAbilita: 82},
+                    {nome: "Jason Steele", posizione: "PO", eta: 33, livelloAbilita: 78},
+                    {nome: "Lewis Dunk", posizione: "DF", eta: 32, livelloAbilita: 83},
+                    {nome: "Adam Webster", posizione: "DF", eta: 28, livelloAbilita: 79},
+                    {nome: "Joel Veltman", posizione: "DF", eta: 32, livelloAbilita: 80},
+                    {nome: "Pervis Estupiñán", posizione: "DF", eta: 25, livelloAbilita: 81},
+                    {nome: "Tariq Lamptey", posizione: "DF", eta: 23, livelloAbilita: 80},
+                    {nome: "Billy Gilmour", posizione: "CN", eta: 23, livelloAbilita: 79},
+                    {nome: "Moisés Caicedo", posizione: "CN", eta: 22, livelloAbilita: 84},
+                    {nome: "Alexis Mac Allister", posizione: "CN", eta: 25, livelloAbilita: 82},
+                    {nome: "Pascal Groß", posizione: "CN", eta: 33, livelloAbilita: 80},
+                    {nome: "Leandro Trossard", posizione: "AT", eta: 29, livelloAbilita: 84},
+                    {nome: "Solly March", posizione: "AT", eta: 29, livelloAbilita: 78},
+                    {nome: "Kaoru Mitoma", posizione: "AT", eta: 26, livelloAbilita: 81},
+                    {nome: "Danny Welbeck", posizione: "AT", eta: 33, livelloAbilita: 76},
+                    {nome: "Evan Ferguson", posizione: "AT", eta: 19, livelloAbilita: 80},
+                    {nome: "Deniz Undav", posizione: "AT", eta: 27, livelloAbilita: 77}
+                ],
+                pathImmagine: require("../../assets/images/brighton.png")
             },
             {
                 nome: "Chelsea",
-                    calciatori: [
-                        { nome: "Robert Sanchez", posizione: "PO", eta: 26, livelloAbilita: 81 },
-                        { nome: "Filip Jørgensen", posizione: "PO", eta: 22, livelloAbilita: 74 },
-                        { nome: "Marcus Bettinelli", posizione: "PO", eta: 32, livelloAbilita: 75 },
-                        { nome: "Lucas Bergström", posizione: "PO", eta: 21, livelloAbilita: 73 },
-                        { nome: "Axel Disasi", posizione: "DF", eta: 31, livelloAbilita: 82 },
-                        { nome: "Marc Cucurella", posizione: "DF", eta: 25, livelloAbilita: 79 },
-                        { nome: "Benoit Badiashile", posizione: "DF", eta: 22, livelloAbilita: 81 },
-                        { nome: "Tosin Adarabioyo", posizione: "DF", eta: 26, livelloAbilita: 79 },
-                        { nome: "Levi Colwill", posizione: "DF", eta: 21, livelloAbilita: 80 },
-                        { nome: "Ben Chilwell", posizione: "DF", eta: 27, livelloAbilita: 81 },
-                        { nome: "Reece James", posizione: "DF", eta: 24, livelloAbilita: 84 },
-                        { nome: "Malo Gusto", posizione: "DF", eta: 21, livelloAbilita: 78 },
-                        { nome: "Wesley Fofana", posizione: "DF", eta: 23, livelloAbilita: 82 },
-                        { nome: "Carney Chukwuemeka", posizione: "CN", eta: 20, livelloAbilita: 77 },
-                        { nome: "Enzo Fernández", posizione: "CN", eta: 23, livelloAbilita: 84 },
-                        { nome: "Kiernan Dewsbury-Hall", posizione: "CN", eta: 25, livelloAbilita: 77 },
-                        { nome: "Moisés Caicedo", posizione: "CN", eta: 22, livelloAbilita: 83 },
-                        { nome: "Cesare Casadei", posizione: "CN", eta: 21, livelloAbilita: 75 },
-                        { nome: "Roméo Lavia", posizione: "CN", eta: 20, livelloAbilita: 78 },
-                        { nome: "Renato Veiga", posizione: "CN", eta: 19, livelloAbilita: 75 },
-                        { nome: "Mykhailo Mudryk", posizione: "AT", eta: 23, livelloAbilita: 80 },
-                        { nome: "Noni Madueke", posizione: "AT", eta: 22, livelloAbilita: 78 },
-                        { nome: "Jadon Sancho", posizione: "AT", eta: 25, livelloAbilita: 81 },
-                        { nome: "Cole Palmer", posizione: "AT", eta: 22, livelloAbilita: 80 },
-                        { nome: "João Félix", posizione: "AT", eta: 24, livelloAbilita: 82 },
-                        { nome: "Christopher Nkunku", posizione: "AT", eta: 26, livelloAbilita: 85 },
-                        { nome: "Nicolas Jackson", posizione: "AT", eta: 23, livelloAbilita: 80 },
-                        { nome: "Marc Guiu", posizione: "AT", eta: 18, livelloAbilita: 75 },
-                        { nome: "Deivid Washington", posizione: "AT", eta: 18, livelloAbilita: 74 },
-                        { nome: "Tyrique George", posizione: "AT", eta: 21, livelloAbilita: 72 },
-                        { nome: "Omari Kellyman", posizione: "AT", eta: 19, livelloAbilita: 72 }
-                    ],
-                    pathImmagine: require("../../assets/images/chelsea.png")
+                calciatori: [
+                    {nome: "Robert Sanchez", posizione: "PO", eta: 26, livelloAbilita: 81},
+                    {nome: "Filip Jørgensen", posizione: "PO", eta: 22, livelloAbilita: 74},
+                    {nome: "Marcus Bettinelli", posizione: "PO", eta: 32, livelloAbilita: 75},
+                    {nome: "Lucas Bergström", posizione: "PO", eta: 21, livelloAbilita: 73},
+                    {nome: "Axel Disasi", posizione: "DF", eta: 31, livelloAbilita: 82},
+                    {nome: "Marc Cucurella", posizione: "DF", eta: 25, livelloAbilita: 79},
+                    {nome: "Benoit Badiashile", posizione: "DF", eta: 22, livelloAbilita: 81},
+                    {nome: "Tosin Adarabioyo", posizione: "DF", eta: 26, livelloAbilita: 79},
+                    {nome: "Levi Colwill", posizione: "DF", eta: 21, livelloAbilita: 80},
+                    {nome: "Ben Chilwell", posizione: "DF", eta: 27, livelloAbilita: 81},
+                    {nome: "Reece James", posizione: "DF", eta: 24, livelloAbilita: 84},
+                    {nome: "Malo Gusto", posizione: "DF", eta: 21, livelloAbilita: 78},
+                    {nome: "Wesley Fofana", posizione: "DF", eta: 23, livelloAbilita: 82},
+                    {nome: "Carney Chukwuemeka", posizione: "CN", eta: 20, livelloAbilita: 77},
+                    {nome: "Enzo Fernández", posizione: "CN", eta: 23, livelloAbilita: 84},
+                    {nome: "Kiernan Dewsbury-Hall", posizione: "CN", eta: 25, livelloAbilita: 77},
+                    {nome: "Moisés Caicedo", posizione: "CN", eta: 22, livelloAbilita: 83},
+                    {nome: "Cesare Casadei", posizione: "CN", eta: 21, livelloAbilita: 75},
+                    {nome: "Roméo Lavia", posizione: "CN", eta: 20, livelloAbilita: 78},
+                    {nome: "Renato Veiga", posizione: "CN", eta: 19, livelloAbilita: 75},
+                    {nome: "Mykhailo Mudryk", posizione: "AT", eta: 23, livelloAbilita: 80},
+                    {nome: "Noni Madueke", posizione: "AT", eta: 22, livelloAbilita: 78},
+                    {nome: "Jadon Sancho", posizione: "AT", eta: 25, livelloAbilita: 81},
+                    {nome: "Cole Palmer", posizione: "AT", eta: 22, livelloAbilita: 80},
+                    {nome: "João Félix", posizione: "AT", eta: 24, livelloAbilita: 82},
+                    {nome: "Christopher Nkunku", posizione: "AT", eta: 26, livelloAbilita: 85},
+                    {nome: "Nicolas Jackson", posizione: "AT", eta: 23, livelloAbilita: 80},
+                    {nome: "Marc Guiu", posizione: "AT", eta: 18, livelloAbilita: 75},
+                    {nome: "Deivid Washington", posizione: "AT", eta: 18, livelloAbilita: 74},
+                    {nome: "Tyrique George", posizione: "AT", eta: 21, livelloAbilita: 72},
+                    {nome: "Omari Kellyman", posizione: "AT", eta: 19, livelloAbilita: 72}
+                ],
+                pathImmagine: require("../../assets/images/chelsea.png")
             },
             {
                 nome: "Crystal Palace",
-                    calciatori: [
-                        {nome: "Vicente Guaita", posizione: "PO", eta: 37, livelloAbilita: 80},
-                        {nome: "Jack Butland", posizione: "PO", eta: 31, livelloAbilita: 78},
-                        {nome: "Joachim Andersen", posizione: "DF", eta: 27, livelloAbilita: 81},
-                        {nome: "Marc Guéhi", posizione: "DF", eta: 23, livelloAbilita: 80},
-                        {nome: "Tyrick Mitchell", posizione: "DF", eta: 24, livelloAbilita: 79},
-                        {nome: "Nathaniel Clyne", posizione: "DF", eta: 33, livelloAbilita: 77},
-                        {nome: "James Tomkins", posizione: "DF", eta: 35, livelloAbilita: 76},
-                        {nome: "Cheikhou Kouyaté", posizione: "CN", eta: 34, livelloAbilita: 78},
-                        {nome: "Luka Milivojević", posizione: "CN", eta: 33, livelloAbilita: 79},
-                        {nome: "Eberechi Eze", posizione: "CN", eta: 25, livelloAbilita: 82},
-                        {nome: "Jordan Ayew", posizione: "AT", eta: 32, livelloAbilita: 78},
-                        {nome: "Wilfried Zaha", posizione: "AT", eta: 31, livelloAbilita: 85},
-                        {nome: "Jean-Philippe Mateta", posizione: "AT", eta: 26, livelloAbilita: 77},
-                        {nome: "Odsonne Édouard", posizione: "AT", eta: 26, livelloAbilita: 80},
-                        {nome: "Michael Olise", posizione: "CN", eta: 22, livelloAbilita: 81},
-                        {nome: "Jeffrey Schlupp", posizione: "CN", eta: 31, livelloAbilita: 77},
-                        {nome: "Will Hughes", posizione: "CN", eta: 29, livelloAbilita: 76}
-                    ],
-                    pathImmagine: require("../../assets/images/crystalpalace.png")
-                 },
+                calciatori: [
+                    {nome: "Vicente Guaita", posizione: "PO", eta: 37, livelloAbilita: 80},
+                    {nome: "Jack Butland", posizione: "PO", eta: 31, livelloAbilita: 78},
+                    {nome: "Joachim Andersen", posizione: "DF", eta: 27, livelloAbilita: 81},
+                    {nome: "Marc Guéhi", posizione: "DF", eta: 23, livelloAbilita: 80},
+                    {nome: "Tyrick Mitchell", posizione: "DF", eta: 24, livelloAbilita: 79},
+                    {nome: "Nathaniel Clyne", posizione: "DF", eta: 33, livelloAbilita: 77},
+                    {nome: "James Tomkins", posizione: "DF", eta: 35, livelloAbilita: 76},
+                    {nome: "Cheikhou Kouyaté", posizione: "CN", eta: 34, livelloAbilita: 78},
+                    {nome: "Luka Milivojević", posizione: "CN", eta: 33, livelloAbilita: 79},
+                    {nome: "Eberechi Eze", posizione: "CN", eta: 25, livelloAbilita: 82},
+                    {nome: "Jordan Ayew", posizione: "AT", eta: 32, livelloAbilita: 78},
+                    {nome: "Wilfried Zaha", posizione: "AT", eta: 31, livelloAbilita: 85},
+                    {nome: "Jean-Philippe Mateta", posizione: "AT", eta: 26, livelloAbilita: 77},
+                    {nome: "Odsonne Édouard", posizione: "AT", eta: 26, livelloAbilita: 80},
+                    {nome: "Michael Olise", posizione: "CN", eta: 22, livelloAbilita: 81},
+                    {nome: "Jeffrey Schlupp", posizione: "CN", eta: 31, livelloAbilita: 77},
+                    {nome: "Will Hughes", posizione: "CN", eta: 29, livelloAbilita: 76}
+                ],
+                pathImmagine: require("../../assets/images/crystalpalace.png")
+            },
             {
                 nome: "Everton",
-                    calciatori: [
-                        {nome: "Jordan Pickford", posizione: "PO", eta: 30, livelloAbilita: 84},
-                        {nome: "Asmir Begović", posizione: "PO", eta: 37, livelloAbilita: 79},
-                        {nome: "Ben Godfrey", posizione: "DF", eta: 26, livelloAbilita: 79},
-                        {nome: "James Tarkowski", posizione: "DF", eta: 31, livelloAbilita: 82},
-                        {nome: "Conor Coady", posizione: "DF", eta: 31, livelloAbilita: 80},
-                        {nome: "Seamus Coleman", posizione: "DF", eta: 35, livelloAbilita: 77},
-                        {nome: "Vitalii Mykolenko", posizione: "DF", eta: 24, livelloAbilita: 80},
-                        {nome: "Idrissa Gueye", posizione: "CN", eta: 34, livelloAbilita: 80},
-                        {nome: "Amadou Onana", posizione: "CN", eta: 22, livelloAbilita: 81},
-                        {nome: "Abdoulaye Doucouré", posizione: "CN", eta: 31, livelloAbilita: 79},
-                        {nome: "Alex Iwobi", posizione: "CN", eta: 27, livelloAbilita: 80},
-                        {nome: "Demarai Gray", posizione: "AT", eta: 27, livelloAbilita: 78},
-                        {nome: "Dominic Calvert-Lewin", posizione: "AT", eta: 26, livelloAbilita: 83},
-                        {nome: "Neal Maupay", posizione: "AT", eta: 27, livelloAbilita: 78},
-                        {nome: "Dwight CNNeil", posizione: "AT", eta: 24, livelloAbilita: 79},
-                        {nome: "Salomón Rondón", posizione: "AT", eta: 34, livelloAbilita: 75},
-                        {nome: "André Gomes", posizione: "CN", eta: 30, livelloAbilita: 78},
-                        {nome: "Jonjoe Kenny", posizione: "DF", eta: 26, livelloAbilita: 76}
-                    ],
-                    pathImmagine: require("../../assets/images/everton.png")
-                 },
+                calciatori: [
+                    {nome: "Jordan Pickford", posizione: "PO", eta: 30, livelloAbilita: 84},
+                    {nome: "Asmir Begović", posizione: "PO", eta: 37, livelloAbilita: 79},
+                    {nome: "Ben Godfrey", posizione: "DF", eta: 26, livelloAbilita: 79},
+                    {nome: "James Tarkowski", posizione: "DF", eta: 31, livelloAbilita: 82},
+                    {nome: "Conor Coady", posizione: "DF", eta: 31, livelloAbilita: 80},
+                    {nome: "Seamus Coleman", posizione: "DF", eta: 35, livelloAbilita: 77},
+                    {nome: "Vitalii Mykolenko", posizione: "DF", eta: 24, livelloAbilita: 80},
+                    {nome: "Idrissa Gueye", posizione: "CN", eta: 34, livelloAbilita: 80},
+                    {nome: "Amadou Onana", posizione: "CN", eta: 22, livelloAbilita: 81},
+                    {nome: "Abdoulaye Doucouré", posizione: "CN", eta: 31, livelloAbilita: 79},
+                    {nome: "Alex Iwobi", posizione: "CN", eta: 27, livelloAbilita: 80},
+                    {nome: "Demarai Gray", posizione: "AT", eta: 27, livelloAbilita: 78},
+                    {nome: "Dominic Calvert-Lewin", posizione: "AT", eta: 26, livelloAbilita: 83},
+                    {nome: "Neal Maupay", posizione: "AT", eta: 27, livelloAbilita: 78},
+                    {nome: "Dwight CNNeil", posizione: "AT", eta: 24, livelloAbilita: 79},
+                    {nome: "Salomón Rondón", posizione: "AT", eta: 34, livelloAbilita: 75},
+                    {nome: "André Gomes", posizione: "CN", eta: 30, livelloAbilita: 78},
+                    {nome: "Jonjoe Kenny", posizione: "DF", eta: 26, livelloAbilita: 76}
+                ],
+                pathImmagine: require("../../assets/images/everton.png")
+            },
             {
                 nome: "Fulham",
 
-                    calciatori: [
-                        {nome: "Bernd Leno", posizione: "PO", eta: 32, livelloAbilita: 82},
-                        {nome: "Marek Rodák", posizione: "PO", eta: 27, livelloAbilita: 77},
-                        {nome: "Tim Ream", posizione: "DF", eta: 36, livelloAbilita: 80},
-                        {nome: "Antonee Robinson", posizione: "DF", eta: 26, livelloAbilita: 79},
-                        {nome: "Tosin Adarabioyo", posizione: "DF", eta: 26, livelloAbilita: 80},
-                        {nome: "Kenny Tete", posizione: "DF", eta: 28, livelloAbilita: 78},
-                        {nome: "Harrison Reed", posizione: "CN", eta: 28, livelloAbilita: 79},
-                        {nome: "João Palhinha", posizione: "CN", eta: 29, livelloAbilita: 81},
-                        {nome: "Andreas Pereira", posizione: "CN", eta: 28, livelloAbilita: 80},
-                        {nome: "Tom Cairney", posizione: "CN", eta: 33, livelloAbilita: 78},
-                        {nome: "Bobby Decordova-Reid", posizione: "AT", eta: 31, livelloAbilita: 77},
-                        {nome: "Aleksandar Mitrović", posizione: "AT", eta: 29, livelloAbilita: 84},
-                        {nome: "Willian", posizione: "AT", eta: 35, livelloAbilita: 79},
-                        {nome: "Carlos Vinícius", posizione: "AT", eta: 29, livelloAbilita: 78},
-                        {nome: "Daniel James", posizione: "AT", eta: 26, livelloAbilita: 78},
-                        {nome: "Luis Díaz", posizione: "AT", eta: 27, livelloAbilita: 80}
-                    ],
-                    pathImmagine: require("../../assets/images/fulham.png")
-                },
+                calciatori: [
+                    {nome: "Bernd Leno", posizione: "PO", eta: 32, livelloAbilita: 82},
+                    {nome: "Marek Rodák", posizione: "PO", eta: 27, livelloAbilita: 77},
+                    {nome: "Tim Ream", posizione: "DF", eta: 36, livelloAbilita: 80},
+                    {nome: "Antonee Robinson", posizione: "DF", eta: 26, livelloAbilita: 79},
+                    {nome: "Tosin Adarabioyo", posizione: "DF", eta: 26, livelloAbilita: 80},
+                    {nome: "Kenny Tete", posizione: "DF", eta: 28, livelloAbilita: 78},
+                    {nome: "Harrison Reed", posizione: "CN", eta: 28, livelloAbilita: 79},
+                    {nome: "João Palhinha", posizione: "CN", eta: 29, livelloAbilita: 81},
+                    {nome: "Andreas Pereira", posizione: "CN", eta: 28, livelloAbilita: 80},
+                    {nome: "Tom Cairney", posizione: "CN", eta: 33, livelloAbilita: 78},
+                    {nome: "Bobby Decordova-Reid", posizione: "AT", eta: 31, livelloAbilita: 77},
+                    {nome: "Aleksandar Mitrović", posizione: "AT", eta: 29, livelloAbilita: 84},
+                    {nome: "Willian", posizione: "AT", eta: 35, livelloAbilita: 79},
+                    {nome: "Carlos Vinícius", posizione: "AT", eta: 29, livelloAbilita: 78},
+                    {nome: "Daniel James", posizione: "AT", eta: 26, livelloAbilita: 78},
+                    {nome: "Luis Díaz", posizione: "AT", eta: 27, livelloAbilita: 80}
+                ],
+                pathImmagine: require("../../assets/images/fulham.png")
+            },
             {
                 nome: "Ipswich",
 
-                    calciatori: [
-                        {nome: "Vaclav Hladky", posizione: "PO", eta: 33, livelloAbilita: 78},
-                        {nome: "Christian W80n", posizione: "PO", eta: 28, livelloAbilita: 80},
-                        {nome: "George Edmundson", posizione: "DF", eta: 26, livelloAbilita: 79},
-                        {nome: "Kieran CNKenna", posizione: "DF", eta: 32, livelloAbilita: 77},
-                        {nome: "Luke Woolfenden", posizione: "DF", eta: 26, livelloAbilita: 78},
-                        {nome: "Janoi Donacien", posizione: "DF", eta: 31, livelloAbilita: 77},
-                        {nome: "Cameron Burgess", posizione: "DF", eta: 28, livelloAbilita: 78},
-                        {nome: "Leif Davis", posizione: "DF", eta: 24, livelloAbilita: 79},
-                        {nome: "Tom Carroll", posizione: "CN", eta: 31, livelloAbilita: 78},
-                        {nome: "Sam Morsy", posizione: "CN", eta: 32, livelloAbilita: 80},
-                        {nome: "Lee Evans", posizione: "CN", eta: 28, livelloAbilita: 79},
-                        {nome: "Conor Chaplin", posizione: "AT", eta: 27, livelloAbilita: 80},
-                        {nome: "Sone Aluko", posizione: "AT", eta: 35, livelloAbilita: 77},
-                        {nome: "Freddie Ladapo", posizione: "AT", eta: 30, livelloAbilita: 78},
-                        {nome: "Tyreece John-Jules", posizione: "AT", eta: 22, livelloAbilita: 79},
-                        {nome: "Marcus Harness", posizione: "AT", eta: 28, livelloAbilita: 79},
-                        {nome: "Cameron Humphreys", posizione: "CN", eta: 19, livelloAbilita: 77}
-                    ],
-                    pathImmagine: require("../../assets/images/ipswich.png")
-               },
+                calciatori: [
+                    {nome: "Vaclav Hladky", posizione: "PO", eta: 33, livelloAbilita: 78},
+                    {nome: "Christian W80n", posizione: "PO", eta: 28, livelloAbilita: 80},
+                    {nome: "George Edmundson", posizione: "DF", eta: 26, livelloAbilita: 79},
+                    {nome: "Kieran CNKenna", posizione: "DF", eta: 32, livelloAbilita: 77},
+                    {nome: "Luke Woolfenden", posizione: "DF", eta: 26, livelloAbilita: 78},
+                    {nome: "Janoi Donacien", posizione: "DF", eta: 31, livelloAbilita: 77},
+                    {nome: "Cameron Burgess", posizione: "DF", eta: 28, livelloAbilita: 78},
+                    {nome: "Leif Davis", posizione: "DF", eta: 24, livelloAbilita: 79},
+                    {nome: "Tom Carroll", posizione: "CN", eta: 31, livelloAbilita: 78},
+                    {nome: "Sam Morsy", posizione: "CN", eta: 32, livelloAbilita: 80},
+                    {nome: "Lee Evans", posizione: "CN", eta: 28, livelloAbilita: 79},
+                    {nome: "Conor Chaplin", posizione: "AT", eta: 27, livelloAbilita: 80},
+                    {nome: "Sone Aluko", posizione: "AT", eta: 35, livelloAbilita: 77},
+                    {nome: "Freddie Ladapo", posizione: "AT", eta: 30, livelloAbilita: 78},
+                    {nome: "Tyreece John-Jules", posizione: "AT", eta: 22, livelloAbilita: 79},
+                    {nome: "Marcus Harness", posizione: "AT", eta: 28, livelloAbilita: 79},
+                    {nome: "Cameron Humphreys", posizione: "CN", eta: 19, livelloAbilita: 77}
+                ],
+                pathImmagine: require("../../assets/images/ipswich.png")
+            },
             {
                 nome: "Leicester",
-                    calciatori: [
-                        {nome: "Daniel Iversen", posizione: "PO", eta: 26, livelloAbilita: 79},
-                        {nome: "Kasper Schmeichel", posizione: "PO", eta: 37, livelloAbilita: 81},
-                        {nome: "Wout Faes", posizione: "DF", eta: 25, livelloAbilita: 80},
-                        {nome: "Jonny Evans", posizione: "DF", eta: 36, livelloAbilita: 79},
-                        {nome: "Timothy Castagne", posizione: "DF", eta: 28, livelloAbilita: 80},
-                        {nome: "Ricardo Pereira", posizione: "DF", eta: 30, livelloAbilita: 81},
-                        {nome: "Harvey Barnes", posizione: "AT", eta: 26, livelloAbilita: 80},
-                        {nome: "Wilfred Ndidi", posizione: "CN", eta: 27, livelloAbilita: 82},
-                        {nome: "Youri Tielemans", posizione: "CN", eta: 26, livelloAbilita: 81},
-                        {nome: "James Maddison", posizione: "CN", eta: 27, livelloAbilita: 84},
-                        {nome: "Boubakary Soumaré", posizione: "CN", eta: 24, livelloAbilita: 79},
-                        {nome: "Kiernan Dewsbury-Hall", posizione: "CN", eta: 26, livelloAbilita: 79},
-                        {nome: "Jamie Vardy", posizione: "AT", eta: 37, livelloAbilita: 83},
-                        {nome: "Patson Daka", posizione: "AT", eta: 25, livelloAbilita: 80},
-                        {nome: "Kelechi Iheanacho", posizione: "AT", eta: 27, livelloAbilita: 80},
-                        {nome: "Ayoze Pérez", posizione: "AT", eta: 30, livelloAbilita: 78},
-                        {nome: "Vontae Daley-Campbell", posizione: "DF", eta: 22, livelloAbilita: 77}
-                    ],
-                    pathImmagine: require("../../assets/images/leicester.png")
-              },
+                calciatori: [
+                    {nome: "Daniel Iversen", posizione: "PO", eta: 26, livelloAbilita: 79},
+                    {nome: "Kasper Schmeichel", posizione: "PO", eta: 37, livelloAbilita: 81},
+                    {nome: "Wout Faes", posizione: "DF", eta: 25, livelloAbilita: 80},
+                    {nome: "Jonny Evans", posizione: "DF", eta: 36, livelloAbilita: 79},
+                    {nome: "Timothy Castagne", posizione: "DF", eta: 28, livelloAbilita: 80},
+                    {nome: "Ricardo Pereira", posizione: "DF", eta: 30, livelloAbilita: 81},
+                    {nome: "Harvey Barnes", posizione: "AT", eta: 26, livelloAbilita: 80},
+                    {nome: "Wilfred Ndidi", posizione: "CN", eta: 27, livelloAbilita: 82},
+                    {nome: "Youri Tielemans", posizione: "CN", eta: 26, livelloAbilita: 81},
+                    {nome: "James Maddison", posizione: "CN", eta: 27, livelloAbilita: 84},
+                    {nome: "Boubakary Soumaré", posizione: "CN", eta: 24, livelloAbilita: 79},
+                    {nome: "Kiernan Dewsbury-Hall", posizione: "CN", eta: 26, livelloAbilita: 79},
+                    {nome: "Jamie Vardy", posizione: "AT", eta: 37, livelloAbilita: 83},
+                    {nome: "Patson Daka", posizione: "AT", eta: 25, livelloAbilita: 80},
+                    {nome: "Kelechi Iheanacho", posizione: "AT", eta: 27, livelloAbilita: 80},
+                    {nome: "Ayoze Pérez", posizione: "AT", eta: 30, livelloAbilita: 78},
+                    {nome: "Vontae Daley-Campbell", posizione: "DF", eta: 22, livelloAbilita: 77}
+                ],
+                pathImmagine: require("../../assets/images/leicester.png")
+            },
             {
                 nome: "Liverpool",
 
-                    calciatori: [
-                        { nome: "Alisson Becker", posizione: "PO", eta: 31, livelloAbilita: 89 },
-                        { nome: "Vitezslav Jaros", posizione: "PO", eta: 24, livelloAbilita: 75 },
-                        { nome: "Caoimhin Kelleher", posizione: "PO", eta: 25, livelloAbilita: 78 },
-                        { nome: "Joe Gomez", posizione: "DF", eta: 27, livelloAbilita: 81 },
-                        { nome: "Virgil van Dijk", posizione: "DF", eta: 33, livelloAbilita: 87 },
-                        { nome: "Ibrahima Konaté", posizione: "DF", eta: 25, livelloAbilita: 84 },
-                        { nome: "Kostas Tsimikas", posizione: "DF", eta: 28, livelloAbilita: 80 },
-                        { nome: "Andy Robertson", posizione: "DF", eta: 30, livelloAbilita: 85 },
-                        { nome: "Trent Alexander-Arnold", posizione: "DF", eta: 26, livelloAbilita: 87 },
-                        { nome: "Jarell Quansah", posizione: "DF", eta: 20, livelloAbilita: 74 },
-                        { nome: "Conor Bradley", posizione: "DF", eta: 21, livelloAbilita: 78 },
-                        { nome: "Wataru Endo", posizione: "CN", eta: 30, livelloAbilita: 80 },
-                        { nome: "Dominik Szoboszlai", posizione: "CN", eta: 23, livelloAbilita: 84 },
-                        { nome: "Alexis Mac Allister", posizione: "CN", eta: 25, livelloAbilita: 85 },
-                        { nome: "Curtis Jones", posizione: "CN", eta: 23, livelloAbilita: 80 },
-                        { nome: "Harvey Elliott", posizione: "CN", eta: 21, livelloAbilita: 81 },
-                        { nome: "Ryan Gravenberch", posizione: "CN", eta: 22, livelloAbilita: 82 },
-                        { nome: "Luis Díaz", posizione: "AT", eta: 27, livelloAbilita: 84 },
-                        { nome: "Darwin Núñez", posizione: "AT", eta: 24, livelloAbilita: 82 },
-                        { nome: "Mohamed Salah", posizione: "AT", eta: 32, livelloAbilita: 90 },
-                        { nome: "Federico Chiesa", posizione: "AT", eta: 26, livelloAbilita: 83 },
-                        { nome: "Cody Gakpo", posizione: "AT", eta: 25, livelloAbilita: 81 },
-                        { nome: "Diogo Jota", posizione: "AT", eta: 27, livelloAbilita: 80 }
-                    ],
-                    pathImmagine: require("../../assets/images/liverpool.png")
-               },
+                calciatori: [
+                    {nome: "Alisson Becker", posizione: "PO", eta: 31, livelloAbilita: 89},
+                    {nome: "Vitezslav Jaros", posizione: "PO", eta: 24, livelloAbilita: 75},
+                    {nome: "Caoimhin Kelleher", posizione: "PO", eta: 25, livelloAbilita: 78},
+                    {nome: "Joe Gomez", posizione: "DF", eta: 27, livelloAbilita: 81},
+                    {nome: "Virgil van Dijk", posizione: "DF", eta: 33, livelloAbilita: 87},
+                    {nome: "Ibrahima Konaté", posizione: "DF", eta: 25, livelloAbilita: 84},
+                    {nome: "Kostas Tsimikas", posizione: "DF", eta: 28, livelloAbilita: 80},
+                    {nome: "Andy Robertson", posizione: "DF", eta: 30, livelloAbilita: 85},
+                    {nome: "Trent Alexander-Arnold", posizione: "DF", eta: 26, livelloAbilita: 87},
+                    {nome: "Jarell Quansah", posizione: "DF", eta: 20, livelloAbilita: 74},
+                    {nome: "Conor Bradley", posizione: "DF", eta: 21, livelloAbilita: 78},
+                    {nome: "Wataru Endo", posizione: "CN", eta: 30, livelloAbilita: 80},
+                    {nome: "Dominik Szoboszlai", posizione: "CN", eta: 23, livelloAbilita: 84},
+                    {nome: "Alexis Mac Allister", posizione: "CN", eta: 25, livelloAbilita: 85},
+                    {nome: "Curtis Jones", posizione: "CN", eta: 23, livelloAbilita: 80},
+                    {nome: "Harvey Elliott", posizione: "CN", eta: 21, livelloAbilita: 81},
+                    {nome: "Ryan Gravenberch", posizione: "CN", eta: 22, livelloAbilita: 82},
+                    {nome: "Luis Díaz", posizione: "AT", eta: 27, livelloAbilita: 84},
+                    {nome: "Darwin Núñez", posizione: "AT", eta: 24, livelloAbilita: 82},
+                    {nome: "Mohamed Salah", posizione: "AT", eta: 32, livelloAbilita: 90},
+                    {nome: "Federico Chiesa", posizione: "AT", eta: 26, livelloAbilita: 83},
+                    {nome: "Cody Gakpo", posizione: "AT", eta: 25, livelloAbilita: 81},
+                    {nome: "Diogo Jota", posizione: "AT", eta: 27, livelloAbilita: 80}
+                ],
+                pathImmagine: require("../../assets/images/liverpool.png")
+            },
             {
                 nome: "Manchester City",
-                    calciatori: [
-                        { nome: "Ederson", posizione: "PO", eta: 31, livelloAbilita: 88 },
-                        { nome: "Stefan Ortega", posizione: "PO", eta: 31, livelloAbilita: 75 },
-                        { nome: "Kyle Walker", posizione: "DF", eta: 34, livelloAbilita: 80 },
-                        { nome: "Rúben Dias", posizione: "DF", eta: 27, livelloAbilita: 88 },
-                        { nome: "John Stones", posizione: "DF", eta: 30, livelloAbilita: 86 },
-                        { nome: "Josko Gvardiol", posizione: "DF", eta: 23, livelloAbilita: 83 },
-                        { nome: "Manuel Akanji", posizione: "DF", eta: 29, livelloAbilita: 82 },
-                        { nome: "Nathan Aké", posizione: "DF", eta: 29, livelloAbilita: 81 },
-                        { nome: "Kevin De Bruyne", posizione: "CN", eta: 33, livelloAbilita: 89 },
-                        { nome: "Rodri", posizione: "CN", eta: 28, livelloAbilita: 87 },
-                        { nome: "Bernardo Silva", posizione: "CN", eta: 30, livelloAbilita: 86 },
-                        { nome: "Phil Foden", posizione: "CN", eta: 24, livelloAbilita: 84 },
-                        { nome: "Mateo Kovacic", posizione: "CN", eta: 30, livelloAbilita: 83 },
-                        { nome: "Matheus Nunes", posizione: "CN", eta: 26, livelloAbilita: 81 },
-                        { nome: "Erling Haaland", posizione: "AT", eta: 24, livelloAbilita: 91 },
-                        { nome: "Jérémy Doku", posizione: "AT", eta: 23, livelloAbilita: 80 },
-                        { nome: "Jack Grealish", posizione: "AT", eta: 29, livelloAbilita: 84 },
-                        { nome: "Savinho", posizione: "AT", eta: 20, livelloAbilita: 76 }
-                    ],
+                calciatori: [
+                    {nome: "Ederson", posizione: "PO", eta: 31, livelloAbilita: 88},
+                    {nome: "Stefan Ortega", posizione: "PO", eta: 31, livelloAbilita: 75},
+                    {nome: "Kyle Walker", posizione: "DF", eta: 34, livelloAbilita: 80},
+                    {nome: "Rúben Dias", posizione: "DF", eta: 27, livelloAbilita: 88},
+                    {nome: "John Stones", posizione: "DF", eta: 30, livelloAbilita: 86},
+                    {nome: "Josko Gvardiol", posizione: "DF", eta: 23, livelloAbilita: 83},
+                    {nome: "Manuel Akanji", posizione: "DF", eta: 29, livelloAbilita: 82},
+                    {nome: "Nathan Aké", posizione: "DF", eta: 29, livelloAbilita: 81},
+                    {nome: "Kevin De Bruyne", posizione: "CN", eta: 33, livelloAbilita: 89},
+                    {nome: "Rodri", posizione: "CN", eta: 28, livelloAbilita: 87},
+                    {nome: "Bernardo Silva", posizione: "CN", eta: 30, livelloAbilita: 86},
+                    {nome: "Phil Foden", posizione: "CN", eta: 24, livelloAbilita: 84},
+                    {nome: "Mateo Kovacic", posizione: "CN", eta: 30, livelloAbilita: 83},
+                    {nome: "Matheus Nunes", posizione: "CN", eta: 26, livelloAbilita: 81},
+                    {nome: "Erling Haaland", posizione: "AT", eta: 24, livelloAbilita: 91},
+                    {nome: "Jérémy Doku", posizione: "AT", eta: 23, livelloAbilita: 80},
+                    {nome: "Jack Grealish", posizione: "AT", eta: 29, livelloAbilita: 84},
+                    {nome: "Savinho", posizione: "AT", eta: 20, livelloAbilita: 76}
+                ],
 
-                    pathImmagine: require("../../assets/images/manchestercity.png")
+                pathImmagine: require("../../assets/images/manchestercity.png")
             },
             {
                 nome: "Manchester United",
 
-                    calciatori: [
-                        { nome: "André Onana", posizione: "PO", eta: 27, livelloAbilita: 85 },
-                        { nome: "Altay Bayindir", posizione: "PO", eta: 25, livelloAbilita: 80 },
-                        { nome: "Diogo Dalot", posizione: "DF", eta: 24, livelloAbilita: 80 },
-                        { nome: "Lisandro Martínez", posizione: "DF", eta: 25, livelloAbilita: 85 },
-                        { nome: "Matthijs de Ligt", posizione: "DF", eta: 24, livelloAbilita: 86 },
-                        { nome: "Victor Lindelöf", posizione: "DF", eta: 29, livelloAbilita: 81 },
-                        { nome: "Harry Maguire", posizione: "DF", eta: 30, livelloAbilita: 79 },
-                        { nome: "Luke Shaw", posizione: "DF", eta: 28, livelloAbilita: 82 },
-                        { nome: "Tyrell Malacia", posizione: "DF", eta: 24, livelloAbilita: 79 },
-                        { nome: "Noussair Mazraoui", posizione: "DF", eta: 25, livelloAbilita: 80 },
-                        { nome: "Bruno Fernandes", posizione: "CN", eta: 29, livelloAbilita: 87 },
-                        { nome: "Casemiro", posizione: "CN", eta: 32, livelloAbilita: 84 },
-                        { nome: "Christian Eriksen", posizione: "CN", eta: 32, livelloAbilita: 81 },
-                        { nome: "Amad Diallo", posizione: "AT", eta: 21, livelloAbilita: 80 },
-                        { nome: "Alejandro Garnacho", posizione: "AT", eta: 19, livelloAbilita: 80 },
-                        { nome: "Marcus Rashford", posizione: "AT", eta: 26, livelloAbilita: 85 },
-                        { nome: "Antony", posizione: "AT", eta: 24, livelloAbilita: 82 },
-                        { nome: "Rasmus Højlund", posizione: "AT", eta: 21, livelloAbilita: 81 },
-                        { nome: "Joshua Zirkzee", posizione: "AT", eta: 23, livelloAbilita: 79 },
-                        { nome: "Tom Heaton", posizione: "PO", eta: 37, livelloAbilita: 75 },
-                        { nome: "Jonny Evans", posizione: "DF", eta: 35, livelloAbilita: 78 },
-                        { nome: "Hubert Graczyk", posizione: "PO", eta: 20, livelloAbilita: 70 }
-                    ],
-                    pathImmagine: require("../../assets/images/manchesterunited.png")
-                },
+                calciatori: [
+                    {nome: "André Onana", posizione: "PO", eta: 27, livelloAbilita: 85},
+                    {nome: "Altay Bayindir", posizione: "PO", eta: 25, livelloAbilita: 80},
+                    {nome: "Diogo Dalot", posizione: "DF", eta: 24, livelloAbilita: 80},
+                    {nome: "Lisandro Martínez", posizione: "DF", eta: 25, livelloAbilita: 85},
+                    {nome: "Matthijs de Ligt", posizione: "DF", eta: 24, livelloAbilita: 86},
+                    {nome: "Victor Lindelöf", posizione: "DF", eta: 29, livelloAbilita: 81},
+                    {nome: "Harry Maguire", posizione: "DF", eta: 30, livelloAbilita: 79},
+                    {nome: "Luke Shaw", posizione: "DF", eta: 28, livelloAbilita: 82},
+                    {nome: "Tyrell Malacia", posizione: "DF", eta: 24, livelloAbilita: 79},
+                    {nome: "Noussair Mazraoui", posizione: "DF", eta: 25, livelloAbilita: 80},
+                    {nome: "Bruno Fernandes", posizione: "CN", eta: 29, livelloAbilita: 87},
+                    {nome: "Casemiro", posizione: "CN", eta: 32, livelloAbilita: 84},
+                    {nome: "Christian Eriksen", posizione: "CN", eta: 32, livelloAbilita: 81},
+                    {nome: "Amad Diallo", posizione: "AT", eta: 21, livelloAbilita: 80},
+                    {nome: "Alejandro Garnacho", posizione: "AT", eta: 19, livelloAbilita: 80},
+                    {nome: "Marcus Rashford", posizione: "AT", eta: 26, livelloAbilita: 85},
+                    {nome: "Antony", posizione: "AT", eta: 24, livelloAbilita: 82},
+                    {nome: "Rasmus Højlund", posizione: "AT", eta: 21, livelloAbilita: 81},
+                    {nome: "Joshua Zirkzee", posizione: "AT", eta: 23, livelloAbilita: 79},
+                    {nome: "Tom Heaton", posizione: "PO", eta: 37, livelloAbilita: 75},
+                    {nome: "Jonny Evans", posizione: "DF", eta: 35, livelloAbilita: 78},
+                    {nome: "Hubert Graczyk", posizione: "PO", eta: 20, livelloAbilita: 70}
+                ],
+                pathImmagine: require("../../assets/images/manchesterunited.png")
+            },
             {
                 nome: "Newcastle",
 
-                    calciatori: [
-                        {nome: "Nick Pope", posizione: "PO", eta: 32, livelloAbilita: 85},
-                        {nome: "Martin Dúbravka", posizione: "PO", eta: 35, livelloAbilita: 80},
-                        {nome: "Kieran Trippier", posizione: "DF", eta: 34, livelloAbilita: 86},
-                        {nome: "Sven Botman", posizione: "DF", eta: 24, livelloAbilita: 83},
-                        {nome: "Fabian Schär", posizione: "DF", eta: 32, livelloAbilita: 82},
-                        {nome: "Dan Burn", posizione: "DF", eta: 32, livelloAbilita: 81},
-                        {nome: "Matt Targett", posizione: "DF", eta: 28, livelloAbilita: 80},
-                        {nome: "Bruno Guimarães", posizione: "CN", eta: 26, livelloAbilita: 86},
-                        {nome: "Joelinton", posizione: "CN", eta: 27, livelloAbilita: 83},
-                        {nome: "Sean Longstaff", posizione: "CN", eta: 26, livelloAbilita: 78},
-                        {nome: "Miguel Almirón", posizione: "CN", eta: 30, livelloAbilita: 81},
-                        {nome: "Allan Saint-Maximin", posizione: "AT", eta: 26, livelloAbilita: 84},
-                        {nome: "Callum Wilson", posizione: "AT", eta: 31, livelloAbilita: 82},
-                        {nome: "Alexander Isak", posizione: "AT", eta: 24, livelloAbilita: 85},
-                        {nome: "Jacob Murphy", posizione: "AT", eta: 29, livelloAbilita: 77},
-                        {nome: "Chris Wood", posizione: "AT", eta: 32, livelloAbilita: 78},
-                        {nome: "Ryan Fraser", posizione: "AT", eta: 30, livelloAbilita: 79}
-                    ],
-                    pathImmagine: require("../../assets/images/newcastle.png")
-                  },
+                calciatori: [
+                    {nome: "Nick Pope", posizione: "PO", eta: 32, livelloAbilita: 85},
+                    {nome: "Martin Dúbravka", posizione: "PO", eta: 35, livelloAbilita: 80},
+                    {nome: "Kieran Trippier", posizione: "DF", eta: 34, livelloAbilita: 86},
+                    {nome: "Sven Botman", posizione: "DF", eta: 24, livelloAbilita: 83},
+                    {nome: "Fabian Schär", posizione: "DF", eta: 32, livelloAbilita: 82},
+                    {nome: "Dan Burn", posizione: "DF", eta: 32, livelloAbilita: 81},
+                    {nome: "Matt Targett", posizione: "DF", eta: 28, livelloAbilita: 80},
+                    {nome: "Bruno Guimarães", posizione: "CN", eta: 26, livelloAbilita: 86},
+                    {nome: "Joelinton", posizione: "CN", eta: 27, livelloAbilita: 83},
+                    {nome: "Sean Longstaff", posizione: "CN", eta: 26, livelloAbilita: 78},
+                    {nome: "Miguel Almirón", posizione: "CN", eta: 30, livelloAbilita: 81},
+                    {nome: "Allan Saint-Maximin", posizione: "AT", eta: 26, livelloAbilita: 84},
+                    {nome: "Callum Wilson", posizione: "AT", eta: 31, livelloAbilita: 82},
+                    {nome: "Alexander Isak", posizione: "AT", eta: 24, livelloAbilita: 85},
+                    {nome: "Jacob Murphy", posizione: "AT", eta: 29, livelloAbilita: 77},
+                    {nome: "Chris Wood", posizione: "AT", eta: 32, livelloAbilita: 78},
+                    {nome: "Ryan Fraser", posizione: "AT", eta: 30, livelloAbilita: 79}
+                ],
+                pathImmagine: require("../../assets/images/newcastle.png")
+            },
             {
                 nome: "Nottingham",
 
-                    calciatori: [
-                        {nome: "Keylor Navas", posizione: "PO", eta: 37, livelloAbilita: 86},
-                        {nome: "Dean Henderson", posizione: "PO", eta: 27, livelloAbilita: 81},
-                        {nome: "Neco Williams", posizione: "DF", eta: 23, livelloAbilita: 80},
-                        {nome: "Scott CNKenna", posizione: "DF", eta: 27, livelloAbilita: 81},
-                        {nome: "Moussa Niakhaté", posizione: "DF", eta: 27, livelloAbilita: 82},
-                        {nome: "Joe Worrall", posizione: "DF", eta: 26, livelloAbilita: 79},
-                        {nome: "Renan Lodi", posizione: "DF", eta: 25, livelloAbilita: 84},
-                        {nome: "Omar Richards", posizione: "DF", eta: 26, livelloAbilita: 77},
-                        {nome: "Jack Colback", posizione: "CN", eta: 34, livelloAbilita: 79},
-                        {nome: "Lewis O'Brien", posizione: "CN", eta: 25, livelloAbilita: 78},
-                        {nome: "Ryan Yates", posizione: "CN", eta: 26, livelloAbilita: 80},
-                        {nome: "Morgan Gibbs-White", posizione: "CN", eta: 24, livelloAbilita: 82},
-                        {nome: "Taiwo Awoniyi", posizione: "AT", eta: 26, livelloAbilita: 83},
-                        {nome: "Brennan Johnson", posizione: "AT", eta: 22, livelloAbilita: 81},
-                        {nome: "Emmanuel Dennis", posizione: "AT", eta: 26, livelloAbilita: 78},
-                        {nome: "Sam Surridge", posizione: "AT", eta: 25, livelloAbilita: 77},
-                        {nome: "Cheikhou Kouyaté", posizione: "CN", eta: 34, livelloAbilita: 80}
-                    ],
-                    pathImmagine: require("../../assets/images/nottingham.png")
-               },
+                calciatori: [
+                    {nome: "Keylor Navas", posizione: "PO", eta: 37, livelloAbilita: 86},
+                    {nome: "Dean Henderson", posizione: "PO", eta: 27, livelloAbilita: 81},
+                    {nome: "Neco Williams", posizione: "DF", eta: 23, livelloAbilita: 80},
+                    {nome: "Scott CNKenna", posizione: "DF", eta: 27, livelloAbilita: 81},
+                    {nome: "Moussa Niakhaté", posizione: "DF", eta: 27, livelloAbilita: 82},
+                    {nome: "Joe Worrall", posizione: "DF", eta: 26, livelloAbilita: 79},
+                    {nome: "Renan Lodi", posizione: "DF", eta: 25, livelloAbilita: 84},
+                    {nome: "Omar Richards", posizione: "DF", eta: 26, livelloAbilita: 77},
+                    {nome: "Jack Colback", posizione: "CN", eta: 34, livelloAbilita: 79},
+                    {nome: "Lewis O'Brien", posizione: "CN", eta: 25, livelloAbilita: 78},
+                    {nome: "Ryan Yates", posizione: "CN", eta: 26, livelloAbilita: 80},
+                    {nome: "Morgan Gibbs-White", posizione: "CN", eta: 24, livelloAbilita: 82},
+                    {nome: "Taiwo Awoniyi", posizione: "AT", eta: 26, livelloAbilita: 83},
+                    {nome: "Brennan Johnson", posizione: "AT", eta: 22, livelloAbilita: 81},
+                    {nome: "Emmanuel Dennis", posizione: "AT", eta: 26, livelloAbilita: 78},
+                    {nome: "Sam Surridge", posizione: "AT", eta: 25, livelloAbilita: 77},
+                    {nome: "Cheikhou Kouyaté", posizione: "CN", eta: 34, livelloAbilita: 80}
+                ],
+                pathImmagine: require("../../assets/images/nottingham.png")
+            },
             {
                 nome: "Southampton",
 
-                    calciatori: [
-                        {nome: "Gavin Bazunu", posizione: "PO", eta: 22, livelloAbilita: 80},
-                        {nome: "Alex CNCarthy", posizione: "PO", eta: 34, livelloAbilita: 77},
-                        {nome: "Kyle Walker-Peters", posizione: "DF", eta: 27, livelloAbilita: 80},
-                        {nome: "Armel Bella-Kotchap", posizione: "DF", eta: 22, livelloAbilita: 81},
-                        {nome: "Mohammed Salisu", posizione: "DF", eta: 24, livelloAbilita: 79},
-                        {nome: "Jan Bednarek", posizione: "DF", eta: 28, livelloAbilita: 78},
-                        {nome: "Romain Perraud", posizione: "DF", eta: 26, livelloAbilita: 80},
-                        {nome: "James Ward-Prowse", posizione: "CN", eta: 29, livelloAbilita: 84},
-                        {nome: "Roméo Lavia", posizione: "CN", eta: 19, livelloAbilita: 82},
-                        {nome: "Stuart Armstrong", posizione: "CN", eta: 31, livelloAbilita: 78},
-                        {nome: "Mohamed Elyounoussi", posizione: "CN", eta: 29, livelloAbilita: 79},
-                        {nome: "Che Adams", posizione: "AT", eta: 27, livelloAbilita: 80},
-                        {nome: "Adam Armstrong", posizione: "AT", eta: 26, livelloAbilita: 77},
-                        {nome: "Sekou Mara", posizione: "AT", eta: 21, livelloAbilita: 79},
-                        {nome: "Theo Walcott", posizione: "AT", eta: 34, livelloAbilita: 78}
-                    ],
-                    pathImmagine: require("../../assets/images/southampton.png")
-                  },
+                calciatori: [
+                    {nome: "Gavin Bazunu", posizione: "PO", eta: 22, livelloAbilita: 80},
+                    {nome: "Alex CNCarthy", posizione: "PO", eta: 34, livelloAbilita: 77},
+                    {nome: "Kyle Walker-Peters", posizione: "DF", eta: 27, livelloAbilita: 80},
+                    {nome: "Armel Bella-Kotchap", posizione: "DF", eta: 22, livelloAbilita: 81},
+                    {nome: "Mohammed Salisu", posizione: "DF", eta: 24, livelloAbilita: 79},
+                    {nome: "Jan Bednarek", posizione: "DF", eta: 28, livelloAbilita: 78},
+                    {nome: "Romain Perraud", posizione: "DF", eta: 26, livelloAbilita: 80},
+                    {nome: "James Ward-Prowse", posizione: "CN", eta: 29, livelloAbilita: 84},
+                    {nome: "Roméo Lavia", posizione: "CN", eta: 19, livelloAbilita: 82},
+                    {nome: "Stuart Armstrong", posizione: "CN", eta: 31, livelloAbilita: 78},
+                    {nome: "Mohamed Elyounoussi", posizione: "CN", eta: 29, livelloAbilita: 79},
+                    {nome: "Che Adams", posizione: "AT", eta: 27, livelloAbilita: 80},
+                    {nome: "Adam Armstrong", posizione: "AT", eta: 26, livelloAbilita: 77},
+                    {nome: "Sekou Mara", posizione: "AT", eta: 21, livelloAbilita: 79},
+                    {nome: "Theo Walcott", posizione: "AT", eta: 34, livelloAbilita: 78}
+                ],
+                pathImmagine: require("../../assets/images/southampton.png")
+            },
             {
                 nome: "Tottenham",
 
-                    calciatori: [
-                        {nome: "Hugo Lloris", posizione: "PO", eta: 37, livelloAbilita: 88},
-                        {nome: "Fraser Forster", posizione: "PO", eta: 36, livelloAbilita: 80},
-                        {nome: "Cristian Romero", posizione: "DF", eta: 26, livelloAbilita: 85},
-                        {nome: "Eric Dier", posizione: "DF", eta: 30, livelloAbilita: 81},
-                        {nome: "Ben Davies", posizione: "DF", eta: 31, livelloAbilita: 79},
-                        {nome: "Pedro Porro", posizione: "DF", eta: 24, livelloAbilita: 82},
-                        {nome: "Ivan Perišić", posizione: "CN", eta: 35, livelloAbilita: 84},
-                        {nome: "Pierre-Emile Højbjerg", posizione: "CN", eta: 28, livelloAbilita: 82},
-                        {nome: "Rodrigo Bentancur", posizione: "CN", eta: 26, livelloAbilita: 83},
-                        {nome: "Yves Bissouma", posizione: "CN", eta: 27, livelloAbilita: 81},
-                        {nome: "Son Heung-min", posizione: "AT", eta: 32, livelloAbilita: 88},
-                        {nome: "Harry Kane", posizione: "AT", eta: 31, livelloAbilita: 90},
-                        {nome: "Dejan Kuluševski", posizione: "AT", eta: 24, livelloAbilita: 85},
-                        {nome: "Richarlison", posizione: "AT", eta: 26, livelloAbilita: 81},
-                        {nome: "Bryan Gil", posizione: "AT", eta: 23, livelloAbilita: 78}
-                    ],
-                    pathImmagine: require("../../assets/images/tottenham.png")
-               },
+                calciatori: [
+                    {nome: "Hugo Lloris", posizione: "PO", eta: 37, livelloAbilita: 88},
+                    {nome: "Fraser Forster", posizione: "PO", eta: 36, livelloAbilita: 80},
+                    {nome: "Cristian Romero", posizione: "DF", eta: 26, livelloAbilita: 85},
+                    {nome: "Eric Dier", posizione: "DF", eta: 30, livelloAbilita: 81},
+                    {nome: "Ben Davies", posizione: "DF", eta: 31, livelloAbilita: 79},
+                    {nome: "Pedro Porro", posizione: "DF", eta: 24, livelloAbilita: 82},
+                    {nome: "Ivan Perišić", posizione: "CN", eta: 35, livelloAbilita: 84},
+                    {nome: "Pierre-Emile Højbjerg", posizione: "CN", eta: 28, livelloAbilita: 82},
+                    {nome: "Rodrigo Bentancur", posizione: "CN", eta: 26, livelloAbilita: 83},
+                    {nome: "Yves Bissouma", posizione: "CN", eta: 27, livelloAbilita: 81},
+                    {nome: "Son Heung-min", posizione: "AT", eta: 32, livelloAbilita: 88},
+                    {nome: "Harry Kane", posizione: "AT", eta: 31, livelloAbilita: 90},
+                    {nome: "Dejan Kuluševski", posizione: "AT", eta: 24, livelloAbilita: 85},
+                    {nome: "Richarlison", posizione: "AT", eta: 26, livelloAbilita: 81},
+                    {nome: "Bryan Gil", posizione: "AT", eta: 23, livelloAbilita: 78}
+                ],
+                pathImmagine: require("../../assets/images/tottenham.png")
+            },
             {
                 nome: "West Ham",
 
-                    calciatori: [
-                        {nome: "Lukasz Fabiański", posizione: "PO", eta: 38, livelloAbilita: 83},
-                        {nome: "Alphonse Areola", posizione: "PO", eta: 30, livelloAbilita: 80},
-                        {nome: "Kurt Zouma", posizione: "DF", eta: 29, livelloAbilita: 82},
-                        {nome: "Thilo Kehrer", posizione: "DF", eta: 27, livelloAbilita: 80},
-                        {nome: "Angelo Ogbonna", posizione: "DF", eta: 35, livelloAbilita: 81},
-                        {nome: "Vladimír Coufal", posizione: "DF", eta: 31, livelloAbilita: 79},
-                        {nome: "Aaron Cresswell", posizione: "DF", eta: 34, livelloAbilita: 80},
-                        {nome: "Declan Rice", posizione: "CN", eta: 25, livelloAbilita: 87},
-                        {nome: "Tomas Souček", posizione: "CN", eta: 29, livelloAbilita: 81},
-                        {nome: "Pablo Fornals", posizione: "CN", eta: 28, livelloAbilita: 82},
-                        {nome: "Lucas Paquetá", posizione: "CN", eta: 26, livelloAbilita: 84},
-                        {nome: "Jarrod Bowen", posizione: "AT", eta: 27, livelloAbilita: 83},
-                        {nome: "Mickaël Antonio", posizione: "AT", eta: 34, livelloAbilita: 80},
-                        {nome: "Danny Ings", posizione: "AT", eta: 31, livelloAbilita: 79},
-                        {nome: "Maxwel Cornet", posizione: "AT", eta: 27, livelloAbilita: 78}
-                    ],
-                    pathImmagine: require("../../assets/images/westham.png")
-                },
+                calciatori: [
+                    {nome: "Lukasz Fabiański", posizione: "PO", eta: 38, livelloAbilita: 83},
+                    {nome: "Alphonse Areola", posizione: "PO", eta: 30, livelloAbilita: 80},
+                    {nome: "Kurt Zouma", posizione: "DF", eta: 29, livelloAbilita: 82},
+                    {nome: "Thilo Kehrer", posizione: "DF", eta: 27, livelloAbilita: 80},
+                    {nome: "Angelo Ogbonna", posizione: "DF", eta: 35, livelloAbilita: 81},
+                    {nome: "Vladimír Coufal", posizione: "DF", eta: 31, livelloAbilita: 79},
+                    {nome: "Aaron Cresswell", posizione: "DF", eta: 34, livelloAbilita: 80},
+                    {nome: "Declan Rice", posizione: "CN", eta: 25, livelloAbilita: 87},
+                    {nome: "Tomas Souček", posizione: "CN", eta: 29, livelloAbilita: 81},
+                    {nome: "Pablo Fornals", posizione: "CN", eta: 28, livelloAbilita: 82},
+                    {nome: "Lucas Paquetá", posizione: "CN", eta: 26, livelloAbilita: 84},
+                    {nome: "Jarrod Bowen", posizione: "AT", eta: 27, livelloAbilita: 83},
+                    {nome: "Mickaël Antonio", posizione: "AT", eta: 34, livelloAbilita: 80},
+                    {nome: "Danny Ings", posizione: "AT", eta: 31, livelloAbilita: 79},
+                    {nome: "Maxwel Cornet", posizione: "AT", eta: 27, livelloAbilita: 78}
+                ],
+                pathImmagine: require("../../assets/images/westham.png")
+            },
             {
                 nome: "Wolves",
 
-                    calciatori: [
-                        {nome: "José Sá", posizione: "PO", eta: 31, livelloAbilita: 82},
-                        {nome: "Matija Šarkić", posizione: "PO", eta: 26, livelloAbilita: 77},
-                        {nome: "Max Kilman", posizione: "DF", eta: 26, livelloAbilita: 81},
-                        {nome: "Nathan Collins", posizione: "DF", eta: 23, livelloAbilita: 80},
-                        {nome: "Conor Coady", posizione: "DF", eta: 31, livelloAbilita: 82},
-                        {nome: "Toti Gomes", posizione: "DF", eta: 25, livelloAbilita: 78},
-                        {nome: "Jonny Castro Otto", posizione: "DF", eta: 30, livelloAbilita: 80},
-                        {nome: "Rúben Neves", posizione: "CN", eta: 27, livelloAbilita: 85},
-                        {nome: "João Moutinho", posizione: "CN", eta: 37, livelloAbilita: 83},
-                        {nome: "Leander Dendoncker", posizione: "CN", eta: 29, livelloAbilita: 80},
-                        {nome: "Matheus Nunes", posizione: "CN", eta: 25, livelloAbilita: 82},
-                        {nome: "Adama Traoré", posizione: "AT", eta: 28, livelloAbilita: 80},
-                        {nome: "Raúl Jiménez", posizione: "AT", eta: 33, livelloAbilita: 84},
-                        {nome: "Diego Costa", posizione: "AT", eta: 35, livelloAbilita: 78},
-                        {nome: "Daniel Podence", posizione: "AT", eta: 28, livelloAbilita: 79},
-                        {nome: "Pedro Neto", posizione: "AT", eta: 23, livelloAbilita: 81}
-                    ],
-                    pathImmagine: require("../../assets/images/wolves.png")
-                }
+                calciatori: [
+                    {nome: "José Sá", posizione: "PO", eta: 31, livelloAbilita: 82},
+                    {nome: "Matija Šarkić", posizione: "PO", eta: 26, livelloAbilita: 77},
+                    {nome: "Max Kilman", posizione: "DF", eta: 26, livelloAbilita: 81},
+                    {nome: "Nathan Collins", posizione: "DF", eta: 23, livelloAbilita: 80},
+                    {nome: "Conor Coady", posizione: "DF", eta: 31, livelloAbilita: 82},
+                    {nome: "Toti Gomes", posizione: "DF", eta: 25, livelloAbilita: 78},
+                    {nome: "Jonny Castro Otto", posizione: "DF", eta: 30, livelloAbilita: 80},
+                    {nome: "Rúben Neves", posizione: "CN", eta: 27, livelloAbilita: 85},
+                    {nome: "João Moutinho", posizione: "CN", eta: 37, livelloAbilita: 83},
+                    {nome: "Leander Dendoncker", posizione: "CN", eta: 29, livelloAbilita: 80},
+                    {nome: "Matheus Nunes", posizione: "CN", eta: 25, livelloAbilita: 82},
+                    {nome: "Adama Traoré", posizione: "AT", eta: 28, livelloAbilita: 80},
+                    {nome: "Raúl Jiménez", posizione: "AT", eta: 33, livelloAbilita: 84},
+                    {nome: "Diego Costa", posizione: "AT", eta: 35, livelloAbilita: 78},
+                    {nome: "Daniel Podence", posizione: "AT", eta: 28, livelloAbilita: 79},
+                    {nome: "Pedro Neto", posizione: "AT", eta: 23, livelloAbilita: 81}
+                ],
+                pathImmagine: require("../../assets/images/wolves.png")
+            }
         ]
-    }
-    ,
-    Bundesliga: {
+    },
+    {
         nome: "Bundesliga",
         squadre: [
             {
@@ -879,7 +878,7 @@ export const leghe = {
             }
         ]
     },
-    SerieA: {
+     {
         nome: "Serie A",
         squadre: [
             {
@@ -1324,7 +1323,7 @@ export const leghe = {
         ]
     },
 
-    Ligue1: {
+     {
         nome: "Ligue 1",
         squadre: [
             {
@@ -1720,7 +1719,7 @@ export const leghe = {
         ]
     }
     ,
-    LigaPortugal: {
+    {
         nome: "Liga Portugal",
         squadre: [
             {
@@ -2104,7 +2103,7 @@ export const leghe = {
         ]
     },
 
-    LaLiga: {
+     {
         nome: "La Liga",
         squadre: [
             {
@@ -2544,7 +2543,7 @@ export const leghe = {
             }
         ]
     },
-    SaudiLeague: {
+     {
         nome: "Saudi League",
         squadre: [
             {
@@ -2928,4 +2927,4 @@ export const leghe = {
     }
 
 
-};
+];

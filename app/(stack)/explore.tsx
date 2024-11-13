@@ -43,13 +43,13 @@ const App = () => {
     };
 
     const leaguesData = [
-        { title: "Serie A", teams: leghe.SerieA.squadre },
-        { title: "La Liga", teams: leghe.LaLiga.squadre },
-        { title: "Ligue 1", teams: leghe.Ligue1.squadre },
-        { title: "Bundesliga", teams: leghe.Bundesliga.squadre },
-        { title: "Premier League", teams: leghe.PremierLeague.squadre },
-        { title: "Liga Portugal", teams: leghe.LigaPortugal.squadre },
-        { title: "Saudi League", teams: leghe.SaudiLeague.squadre },
+        { title: "Serie A", teams: leghe[0].squadre },
+        { title: "La Liga", teams: leghe[1].squadre },
+        { title: "Ligue 1", teams: leghe[2].squadre },
+        { title: "Bundesliga", teams: leghe[3].squadre },
+        { title: "Premier League", teams: leghe[4].squadre },
+        { title: "Liga Portugal", teams: leghe[5].squadre },
+        { title: "Saudi League", teams: leghe[6].squadre },
     ];
 
     // Carica i dati delle leghe all'avvio
