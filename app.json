@@ -1,19 +1,16 @@
 {
   "expo": {
-    "name": "coach",
-    "slug": "coach",
+    "name": "Coach 24",
+    "slug": "Coach",
     "version": "1.0.0",
     "orientation": "landscape",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
-    },
-    "statusBar": {
-      "hidden": true
     },
     "ios": {
       "supportsTablet": true
@@ -24,9 +21,6 @@
         "backgroundColor": "#ffffff"
       },
       "orientation": "landscape",
-      "statusBar": {
-        "hidden": true
-      },
       "package": "com.nicola1997.coach"
     },
     "web": {

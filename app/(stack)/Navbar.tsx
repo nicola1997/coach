@@ -66,10 +66,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     squadImage: {
-        width: 50,
-        height: 50,
+        width: 45,
+        height: 45,
         marginBottom: 5,
-        borderRadius: 10,
         resizeMode: 'contain',
         overflow: 'hidden',
     },

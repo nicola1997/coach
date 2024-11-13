@@ -112,6 +112,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 10,
         color: 'white',  // Aggiunto colore per la leggibilità
+        fontStyle: "italic", // Italico per dare un effetto più "citato" al messaggio
+
     },
     squadContainer: {
         alignItems: 'center',
@@ -127,6 +129,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 9,
         color: 'white',  // Aggiunto colore per la leggibilità
+        fontStyle: "italic", // Italico per dare un effetto più "citato" al messaggio
+
     },
     columnWrapper: {
         justifyContent: 'space-between', // Spaziatura tra le colonne

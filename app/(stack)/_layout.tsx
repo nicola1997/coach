@@ -7,7 +7,7 @@ export default function StackLayout() {
     const segments = useSegments();
     const currentScreen = segments[segments.length - 1];
 
-    const screensWithNavbar = ["menu", "msg", "manager", "search", "options", "world", "home"];
+    const screensWithNavbar = [ "msg", "manager", "search", "options", "world", "home"];
 
     const shouldShowNavbar = screensWithNavbar.includes(currentScreen);
 
@@ -28,7 +28,6 @@ export default function StackLayout() {
                         <Stack.Screen name="index" options={{ title: 'Home' }} />
                         <Stack.Screen name="home" options={{ title: 'Home' }} />
                         <Stack.Screen name="explore" options={{ title: 'Explore' }} />
-                        <Stack.Screen name="menu" options={{ title: 'Menu' }} />
                         <Stack.Screen name="msg" options={{ title: 'Messages' }} />
                         <Stack.Screen name="manager" options={{ title: 'Manager' }} />
                         <Stack.Screen name="search" options={{ title: 'Search' }} />

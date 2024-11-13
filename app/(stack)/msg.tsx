@@ -1,8 +1,6 @@
 import {FlatList, ImageBackground, StyleSheet, Text, View} from 'react-native';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import {ThemedView} from '@/components/ThemedView';
 import React from "react";
-import Navbar from "@/app/(stack)/Navbar";
 import calcioFrasi from './calcioFrasi';
 
 const Msg = () => {

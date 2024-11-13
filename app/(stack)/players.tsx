@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 import {FlatList, StyleSheet, Text, View} from 'react-native';
 import {SafeAreaProvider} from "react-native-safe-area-context";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import {white} from "colorette";
 
-const playersFlatList = () => {
-    const [leagues, setLeagues] = useState({});
+const players = () => {
     const [yourTeam, setYourTeam] = useState({});
 
     const loadData = async (key) => {
@@ -19,9 +19,7 @@ const playersFlatList = () => {
 
     useEffect(() => {
         const fetchLeaguesData = async () => {
-            const leghe = await loadData('leghe');
             const yourTeamFetch = await loadData('yourTeam');
-            setLeagues(leghe);
             setYourTeam(yourTeamFetch || {});
         };
         fetchLeaguesData();
@@ -64,22 +62,10 @@ const styles = StyleSheet.create({
     navButton: {
         alignItems: 'center',
     },
-    navButtonText: {
-        color: 'white',
-        fontSize: 18,
-    },
-    squadImage: {
-        width: 50,
-        height: 50,
-        marginBottom: 5,
-        borderRadius: 20,
-        resizeMode: 'contain',
-        overflow: 'hidden',
-    },
     scrollView: {
         flex: 1,
         marginLeft: 60,
-        backgroundColor: '#161717',
+        backgroundColor: 'rgba(22,23,23,0.66)',
     },
     tableContainer: {
         padding: 12,
@@ -91,17 +77,21 @@ const styles = StyleSheet.create({
         marginBottom: 5,
         borderBottomWidth: 1,
         borderBottomColor: 'gray',
-        backgroundColor: 'white',
+        backgroundColor: 'rgba(242,244,244,0.66)'
     },
     calciatoreCell: {
         flex: 1,
         textAlign: 'center',
+        fontStyle: "italic", // Italico per dare un effetto più "citato" al messaggio
+
     },
     noPlayersText: {
         color: 'white',
         textAlign: 'center',
         marginTop: 20,
+        fontStyle: "italic", // Italico per dare un effetto più "citato" al messaggio
+
     },
 });
 
-export default playersFlatList;
+export default players;

@@ -11,7 +11,7 @@ export default function HomeScreen() {
             <View style={styles.container}>
                 {/* Colonna di sinistra per il testo e il link */}
                 <View style={styles.textContainer}>
-                    <Text style={styles.text}>COACH</Text>
+                    <Text style={styles.text}>COACH 24</Text>
                     <Link href="/explore">
                         <Text style={styles.linkText}>Nuova Partita</Text>
                     </Link>
@@ -44,11 +44,15 @@ const styles = StyleSheet.create({
         fontSize: 24,
         color: 'white',
         fontWeight: 'bold',
+        fontStyle: "italic", // Italico per dare un effetto più "citato" al messaggio
+
     },
     linkText: {
         fontSize: 18,
         color: '#fff',
         marginTop: 20,
+        fontStyle: "italic", // Italico per dare un effetto più "citato" al messaggio
+
     },
     imageBackground: {
         flex: 1, // La colonna di destra occupa metà dello schermo

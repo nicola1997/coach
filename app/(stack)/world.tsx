@@ -1,40 +1,57 @@
-import {StyleSheet, Text, View} from 'react-native';
-import {ThemedText} from '@/components/ThemedText';
-import {ThemedView} from '@/components/ThemedView';
-import React from "react";
-import Navbar from "@/app/(stack)/Navbar";
+import {FlatList, ImageBackground, StyleSheet, Text} from 'react-native';
+import React, {useEffect, useState} from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import {ThemedView} from "@/components/ThemedView";
+import Squad from "./squad";  // Assicurati che il percorso sia corretto
 
-const world = () => {
+const World = () => {
+    const [leagues, setLeagues] = useState([]);
+
+    const loadData = async (key) => {
+        try {
+            const data = await AsyncStorage.getItem(key);
+            return data ? JSON.parse(data) : [];
+        } catch (e) {
+            console.error('Errore nel caricamento dei dati:', e);
+            return [];
+        }
+    };
+
+    useEffect(() => {
+        const fetchLeaguesData = async () => {
+            const leghe = await loadData('leghe');
+            setLeagues(leghe || []);
+            console.log(leghe.nome)
+
+        };
+        fetchLeaguesData();
+    }, []);
+
+    const renderTeam = ({item}) => <Squad item={item} />;
+
     return (
         <ThemedView style={styles.container}>
-            <ThemedText>
-                WORLD
-            </ThemedText>
-        </ThemedView>
+
+                <FlatList
+                    data={leagues}  // Passa i dati caricati da AsyncStorage
+                    renderItem={renderTeam}  // Rende ogni elemento usando il componente Squad
+                    keyExtractor={(item, index) => index.toString()} // Imposta una chiave unica per ogni elemento
+                />
+         </ThemedView>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#161717', // colore di sfondo per il contenitore
+        backgroundColor: '#161717',
     },
-    navbar: {
-        flexDirection: 'row', // Allinea gli elementi orizzontalmente
-        justifyContent: 'space-between', // Spaziatura tra gli elementi
-        alignItems: 'center', // Allinea gli elementi verticalmente al centro
-        backgroundColor: '#073e75',
-        paddingHorizontal: 10, // Aggiungi un po' di spazio ai lati
-        paddingVertical: 10, // Padding superiore e inferiore
-        width: '100%', // Imposta la larghezza della navbar su tutta la larghezza dello schermo
-        top: 0,
-        left: 0,
-    },
-    navbarText: {
-        color: 'white', // Colore del testo della navbar
-        fontSize: 18,
-        fontWeight: 'bold',
+    backgroundImage: {
+        flex: 1,
+        width: '100%',
+        height: '100%',
+        resizeMode: 'cover',
     },
 });
 
-export default world;
+export default World;
