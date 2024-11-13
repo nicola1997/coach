@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, Platform, StatusBar } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import { Link } from "expo-router";
 import { FontAwesome, FontAwesome5, Ionicons, MaterialCommunityIcons, MaterialIcons, Entypo } from "@expo/vector-icons";
 import { useEffect, useState } from "react";
@@ -35,37 +35,32 @@ const Navbar = () => {
     }, []);
 
     return (
-        <View style={styles.container}>
-            <View style={styles.navbar}>
-                {navLinks.map((link, index) => (
-                    <Link key={index} style={styles.navButton} href={link.route}>
-                        {link.icon}
-                    </Link>
-                ))}
-                {yourTeam.pathImmagine ? (
-                    <Image source={yourTeam.pathImmagine} style={styles.squadImage} />
-                ) : (
-                    <Text style={styles.squadText}>TEAM</Text>
-                )}
-            </View>
+        <View style={styles.navbar}>
+            {navLinks.map((link, index) => (
+                <Link key={index} style={styles.navButton} href={link.route}>
+                    {link.icon}
+                </Link>
+            ))}
+            {yourTeam.pathImmagine ? (
+                <Image source={yourTeam.pathImmagine} style={styles.squadImage} />
+            ) : (
+                <Text style={styles.squadText}>TEAM</Text>
+            )}
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
     navbar: {
-        position: 'absolute', // Usa fixed per evitare il problema dell'absolute
+        position: 'absolute',
         top: 0,
         left: 0,
         width: 60,
-        backgroundColor: '#073e75',
+        backgroundColor: '#055e24',
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        height: '100%',  // La navbar occupa tutta l'altezza
-        paddingBottom: 10, // Aggiungi un po' di padding inferiore per migliorare il layout
+        height: '100%',
+        paddingBottom: 10,
     },
     navButton: {
         alignItems: 'center',

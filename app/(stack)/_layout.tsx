@@ -1,48 +1,53 @@
 import { Stack, useRouter, useSegments } from 'expo-router';
 import React from 'react';
 import Navbar from "@/app/(stack)/Navbar";
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, SafeAreaView } from 'react-native';
 
 export default function StackLayout() {
-    const segments = useSegments(); // Ottiene l'intero percorso della schermata attuale
-    const currentScreen = segments[segments.length - 1]; // Prende solo l'ultimo segmento del percorso
+    const segments = useSegments();
+    const currentScreen = segments[segments.length - 1];
 
-    // Array di schermate che dovrebbero avere la Navbar
-    const screensWithNavbar = ["menu", "msg", "manager","search", "options", "world", "home"];
+    const screensWithNavbar = ["menu", "msg", "manager", "search", "options", "world", "home"];
 
-    // Funzione per verificare se la navbar dovrebbe essere visibile
     const shouldShowNavbar = screensWithNavbar.includes(currentScreen);
 
     return (
-        <View style={styles.container}>
-            {/* Mostra Navbar solo se shouldShowNavbar è true */}
-            {shouldShowNavbar && <Navbar />}
+        <SafeAreaView style={{ flex: 1 }}>
+            <View style={styles.container}>
+                {/* Show Navbar only if shouldShowNavbar is true */}
+                {shouldShowNavbar && <Navbar />}
 
-            {/* Stack Navigator */}
-            <Stack
-                screenOptions={{
-                    headerShown: false, // Nasconde l'header di navigazione di default
-                    animation: 'none', // Disabilita l'animazione di transizione di default
-                }}
-            >
-                <Stack.Screen name="index" options={{ title: 'Home' }} />
-                <Stack.Screen name="home" options={{ title: 'Home' }} />
-                <Stack.Screen name="explore" options={{ title: 'Explore' }} />
-                <Stack.Screen name="menu" options={{ title: 'Menu' }} />
-                <Stack.Screen name="msg" options={{ title: 'Messages' }} />
-                <Stack.Screen name="manager" options={{ title: 'Manager' }} />
-                <Stack.Screen name="search" options={{ title: 'Search' }} />
-                <Stack.Screen name="options" options={{ title: 'Options' }} />
-                <Stack.Screen name="world" options={{ title: 'World' }} />
-            </Stack>
-
-        </View>
+                {/* Main content section that will be shown on the right */}
+                <View style={styles.mainContent}>
+                    <Stack
+                        screenOptions={{
+                            headerShown: false,
+                            animation: 'none',
+                        }}
+                    >
+                        <Stack.Screen name="index" options={{ title: 'Home' }} />
+                        <Stack.Screen name="home" options={{ title: 'Home' }} />
+                        <Stack.Screen name="explore" options={{ title: 'Explore' }} />
+                        <Stack.Screen name="menu" options={{ title: 'Menu' }} />
+                        <Stack.Screen name="msg" options={{ title: 'Messages' }} />
+                        <Stack.Screen name="manager" options={{ title: 'Manager' }} />
+                        <Stack.Screen name="search" options={{ title: 'Search' }} />
+                        <Stack.Screen name="options" options={{ title: 'Options' }} />
+                        <Stack.Screen name="world" options={{ title: 'World' }} />
+                    </Stack>
+                </View>
+            </View>
+        </SafeAreaView>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection: "row",
+        flexDirection: 'row', // Ensure navbar is on the left and content is on the right
+    },
+    mainContent: {
+        flex: 1, // Take the remaining space to the right of the navbar
+        marginLeft: 60, // Offset content to the right to account for the navbar width
     }
 });

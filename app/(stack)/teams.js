@@ -44,7 +44,7 @@ export const leghe = {
                     {nome: "Tyrone Mings", posizione: "DF", eta: 31, livelloAbilita: 81},
                     {nome: "Lucas Digne", posizione: "DF", eta: 30, livelloAbilita: 82},
                     {nome: "Boubacar Kamara", posizione: "CN", eta: 24, livelloAbilita: 84},
-                    {nome: "John McGinn", posizione: "CN", eta: 30, livelloAbilita: 83},
+                    {nome: "John CNGinn", posizione: "CN", eta: 30, livelloAbilita: 83},
                     {nome: "Douglas Luiz", posizione: "CN", eta: 26, livelloAbilita: 82},
                     {nome: "Jacob Ramsey", posizione: "CN", eta: 23, livelloAbilita: 81},
                     {nome: "Philippe Coutinho", posizione: "CN", eta: 31, livelloAbilita: 80},
@@ -202,7 +202,7 @@ export const leghe = {
                         {nome: "Demarai Gray", posizione: "AT", eta: 27, livelloAbilita: 78},
                         {nome: "Dominic Calvert-Lewin", posizione: "AT", eta: 26, livelloAbilita: 83},
                         {nome: "Neal Maupay", posizione: "AT", eta: 27, livelloAbilita: 78},
-                        {nome: "Dwight McNeil", posizione: "AT", eta: 24, livelloAbilita: 79},
+                        {nome: "Dwight CNNeil", posizione: "AT", eta: 24, livelloAbilita: 79},
                         {nome: "Salomón Rondón", posizione: "AT", eta: 34, livelloAbilita: 75},
                         {nome: "André Gomes", posizione: "CN", eta: 30, livelloAbilita: 78},
                         {nome: "Jonjoe Kenny", posizione: "DF", eta: 26, livelloAbilita: 76}
@@ -239,7 +239,7 @@ export const leghe = {
                         {nome: "Vaclav Hladky", posizione: "PO", eta: 33, livelloAbilita: 78},
                         {nome: "Christian W80n", posizione: "PO", eta: 28, livelloAbilita: 80},
                         {nome: "George Edmundson", posizione: "DF", eta: 26, livelloAbilita: 79},
-                        {nome: "Kieran McKenna", posizione: "DF", eta: 32, livelloAbilita: 77},
+                        {nome: "Kieran CNKenna", posizione: "DF", eta: 32, livelloAbilita: 77},
                         {nome: "Luke Woolfenden", posizione: "DF", eta: 26, livelloAbilita: 78},
                         {nome: "Janoi Donacien", posizione: "DF", eta: 31, livelloAbilita: 77},
                         {nome: "Cameron Burgess", posizione: "DF", eta: 28, livelloAbilita: 78},
@@ -394,7 +394,7 @@ export const leghe = {
                         {nome: "Keylor Navas", posizione: "PO", eta: 37, livelloAbilita: 86},
                         {nome: "Dean Henderson", posizione: "PO", eta: 27, livelloAbilita: 81},
                         {nome: "Neco Williams", posizione: "DF", eta: 23, livelloAbilita: 80},
-                        {nome: "Scott McKenna", posizione: "DF", eta: 27, livelloAbilita: 81},
+                        {nome: "Scott CNKenna", posizione: "DF", eta: 27, livelloAbilita: 81},
                         {nome: "Moussa Niakhaté", posizione: "DF", eta: 27, livelloAbilita: 82},
                         {nome: "Joe Worrall", posizione: "DF", eta: 26, livelloAbilita: 79},
                         {nome: "Renan Lodi", posizione: "DF", eta: 25, livelloAbilita: 84},
@@ -416,7 +416,7 @@ export const leghe = {
 
                     calciatori: [
                         {nome: "Gavin Bazunu", posizione: "PO", eta: 22, livelloAbilita: 80},
-                        {nome: "Alex McCarthy", posizione: "PO", eta: 34, livelloAbilita: 77},
+                        {nome: "Alex CNCarthy", posizione: "PO", eta: 34, livelloAbilita: 77},
                         {nome: "Kyle Walker-Peters", posizione: "DF", eta: 27, livelloAbilita: 80},
                         {nome: "Armel Bella-Kotchap", posizione: "DF", eta: 22, livelloAbilita: 81},
                         {nome: "Mohammed Salisu", posizione: "DF", eta: 24, livelloAbilita: 79},
@@ -899,7 +899,7 @@ export const leghe = {
                     { nome: "Nicolò Fagioli", posizione: "CM", eta: 23, livelloAbilita: 82 },
                     { nome: "Teun Koopmeiners", posizione: "CM", eta: 26, livelloAbilita: 84 },
                     { nome: "Manuel Locatelli", posizione: "CM", eta: 26, livelloAbilita: 83 },
-                    { nome: "Weston McKennie", posizione: "CM", eta: 26, livelloAbilita: 81 },
+                    { nome: "Weston CNKennie", posizione: "CM", eta: 26, livelloAbilita: 81 },
                     { nome: "Khéphren Thuram", posizione: "CM", eta: 23, livelloAbilita: 80 },
                     { nome: "Paul Pogba", posizione: "CM", eta: 31, livelloAbilita: 85 },
                     { nome: "Timothy Weah", posizione: "RW", eta: 24, livelloAbilita: 79 },
@@ -1198,7 +1198,7 @@ export const leghe = {
                     { nome: "Leonardo Spinazzola", posizione: "DF", eta: 30, livelloAbilita: 75 },
                     { nome: "Pasquale Mazzocchi", posizione: "DF, M", eta: 28, livelloAbilita: 73 },
                     { nome: "Rafael Marín", posizione: "DF", eta: 21, livelloAbilita: 76 },
-                    { nome: "Scott McTominay", posizione: "CN", eta: 27, livelloAbilita: 85 },
+                    { nome: "Scott CNTominay", posizione: "CN", eta: 27, livelloAbilita: 85 },
                     { nome: "André Zambo Anguissa", posizione: "CN", eta: 28, livelloAbilita: 80 },
                     { nome: "Stanislav Lobotka", posizione: "CN", eta: 29, livelloAbilita: 81 },
                     { nome: "David Neres", posizione: "AM", eta: 27, livelloAbilita: 74 },
@@ -1278,6 +1278,48 @@ export const leghe = {
                     { nome: "Enzo Ebosse", posizione: "DF", eta: 25, livelloAbilita: 76 }
                 ],
                 pathImmagine: require("../../assets/images/udinese.png")
+            },
+            {
+                nome: "Venezia",
+                calciatori: [
+                    { nome: "Jesse Joronen", posizione: "PO", eta: 31, livelloAbilita: 81 },
+                    { nome: "Giorgio Altare", posizione: "DF", eta: 26, livelloAbilita: 79 },
+                    { nome: "Franco Carboni", posizione: "CN", eta: 21, livelloAbilita: 80 },
+                    { nome: "Gianluca Busio", posizione: "CN", eta: 22, livelloAbilita: 78 },
+                    { nome: "Christian Gytkjær", posizione: "AT", eta: 34, livelloAbilita: 76 },
+                    { nome: "Joel Pohjanpalo", posizione: "AT", eta: 30, livelloAbilita: 79 },
+                    { nome: "Mikael Ellertsson", posizione: "CN", eta: 22, livelloAbilita: 77 },
+                    { nome: "Antonio Raimondo", posizione: "AT", eta: 20, livelloAbilita: 75 },
+                    { nome: "Issa Doumbia", posizione: "CN", eta: 21, livelloAbilita: 76 },
+                    { nome: "Alfred Duncan", posizione: "CN", eta: 31, livelloAbilita: 80 },
+                    { nome: "Zaccaria Rioda", posizione: "DF", eta: 18, livelloAbilita: 70 },
+                    { nome: "Francesco Zampano", posizione: "DF", eta: 31, livelloAbilita: 77 },
+                    { nome: "Michael Svoboda", posizione: "DF", eta: 26, livelloAbilita: 78 },
+                    { nome: "Jay Idzes", posizione: "DF", eta: 24, livelloAbilita: 75 },
+                    { nome: "Domen Črnigoj", posizione: "CN", eta: 28, livelloAbilita: 79 },
+                ],
+                pathImmagine: require("../../assets/images/venezia.png")
+            },
+            {
+                nome: "Parma",
+                calciatori: [
+                    { nome: "Woyo Coulibaly", posizione: "DF", eta: 25, livelloAbilita: 77 },
+                    { nome: "Enrico Del Prato", posizione: "DF", eta: 25, livelloAbilita: 78 },
+                    { nome: "Antoine Hainaut", posizione: "DF", eta: 22, livelloAbilita: 74 },
+                    { nome: "Giovanni Leoni", posizione: "DF", eta: 17, livelloAbilita: 70 },
+                    { nome: "Botond Balogh", posizione: "DF", eta: 22, livelloAbilita: 78 },
+                    { nome: "Alessandro Circati", posizione: "DF", eta: 21, livelloAbilita: 75 },
+                    { nome: "Yordan Osorio", posizione: "DF", eta: 30, livelloAbilita: 80 },
+                    { nome: "Lautaro Valenti", posizione: "DF", eta: 25, livelloAbilita: 80 },
+                    { nome: "Hernani", posizione: "CN", eta: 30, livelloAbilita: 77 },
+                    { nome: "Adrián Bernabé", posizione: "CN", eta: 23, livelloAbilita: 76 },
+                    { nome: "Nahuel Estévez", posizione: "CN", eta: 28, livelloAbilita: 77 },
+                    { nome: "Mandela Keita", posizione: "CN", eta: 22, livelloAbilita: 78 },
+                    { nome: "Moussa Kone", posizione: "CN", eta: 23, livelloAbilita: 75 },
+                    { nome: "Dennis Man", posizione: "ATT", eta: 26, livelloAbilita: 80 },
+                    { nome: "Ange-Yoan Bonny", posizione: "ATT", eta: 21, livelloAbilita: 79 }
+                ],
+                pathImmagine: require("../../assets/images/parma.png")
             }
         ]
     },

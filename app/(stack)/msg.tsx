@@ -1,24 +1,27 @@
-import {StyleSheet, Text, View} from 'react-native';
-import {ThemedText} from '@/components/ThemedText';
-import {ThemedView} from '@/components/ThemedView';
+import {FlatList, ImageBackground, StyleSheet, Text, View} from 'react-native';
+import { ThemedText } from '@/components/ThemedText';
+import { ThemedView } from '@/components/ThemedView';
 import React from "react";
 import Navbar from "@/app/(stack)/Navbar";
+import calcioFrasi from './calcioFrasi';
 
-const msg = () => {
+const Msg = () => {
     return (
         <ThemedView style={styles.container}>
-            <ThemedText>
-                Caro allenatore,
+            <ImageBackground  source={require("../../assets/images/ufficio.jpg")}
+            >
 
-                Siamo molto felici di darti il benvenuto nella nostra squadra! Siamo entusiasti di lavorare sotto la tua
-                guida e di imparare ogni giorno da te.
+            <FlatList
+                data={calcioFrasi}
+                keyExtractor={(item) => item.id}
+                renderItem={({ item }) => (
+                    <View style={styles.msgBox}>
+                        <Text style={styles.msgText}>{item.text}</Text>
+                    </View>
+                )}
+            />
+            </ImageBackground>
 
-                Grazie per la tua fiducia in noi, e per aver scelto di far parte della nostra squadra. Siamo pronti per
-                iniziare questo nuovo capitolo insieme!
-
-                Con entusiasmo,
-                La tua squadra {}
-            </ThemedText>
         </ThemedView>
     );
 };
@@ -26,24 +29,23 @@ const msg = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#161717', // colore di sfondo per il contenitore
+        backgroundColor: 'rgba(22,23,23,0.69)', // Colore di sfondo scuro per un look moderno
+        paddingHorizontal: 16, // Aggiunta di padding orizzontale per un migliore margine sui lati
     },
-    navbar: {
-        flexDirection: 'row', // Allinea gli elementi orizzontalmente
-        justifyContent: 'space-between', // Spaziatura tra gli elementi
-        alignItems: 'center', // Allinea gli elementi verticalmente al centro
-        backgroundColor: '#073e75',
-        paddingHorizontal: 10, // Aggiungi un po' di spazio ai lati
-        paddingVertical: 10, // Padding superiore e inferiore
-        width: '100%', // Imposta la larghezza della navbar su tutta la larghezza dello schermo
-        top: 0,
-        left: 0,
+    msgBox: {
+        backgroundColor: 'rgba(14,29,78,0.17)', // Sfondo semitrasparente per il box dei messaggi
+        marginVertical: 8, // Margine verticale tra i messaggi
+        padding: 12, // Aggiunta di padding per dare respiro al testo
+        borderRadius: 8, // Raggio di curvatura aumentato per un aspetto più morbido
+        borderWidth: 1, // Border per dare risalto ai box
+        borderColor: "rgba(255,255,255,0.3)", // Colore del bordo bianco trasparente per un effetto elegante
     },
-    navbarText: {
-        color: 'white', // Colore del testo della navbar
-        fontSize: 18,
-        fontWeight: 'bold',
+    msgText: {
+        fontSize: 16,
+        color: "white", // Testo bianco per contrasto sullo sfondo scuro
+        fontStyle: "italic", // Italico per dare un effetto più "citato" al messaggio
+        lineHeight: 22, // Aggiunta di line-height per una migliore leggibilità
     },
 });
 
-export default msg;
+export default Msg;

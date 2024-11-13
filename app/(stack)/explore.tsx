@@ -119,8 +119,8 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     squadImage: {
-        width: 80,
-        height: 80,
+        width: 50,
+        height: 50,
         marginBottom: 5,
     },
     squadName: {
