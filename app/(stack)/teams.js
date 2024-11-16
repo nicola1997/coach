@@ -1,10 +1,11 @@
 export const leghe = [
     {
         nome: "Premier League",
+        pathImmagine: require("../../assets/images/premierleague.png"),
         squadre: [
             {
                 nome: "Arsenal",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "William Saliba", posizione: "DF", eta: 23, livelloAbilita: 86},
                     {nome: "Kieran Tierney", posizione: "DF", eta: 26, livelloAbilita: 82},
                     {nome: "Ben White", posizione: "DF", eta: 26, livelloAbilita: 84},
@@ -36,7 +37,7 @@ export const leghe = [
 
             {
                 nome: "Aston Villa",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Emiliano Martínez", posizione: "PO", eta: 31, livelloAbilita: 86},
                     {nome: "Robin Olsen", posizione: "PO", eta: 34, livelloAbilita: 78},
                     {nome: "Matty Cash", posizione: "DF", eta: 26, livelloAbilita: 80},
@@ -57,7 +58,7 @@ export const leghe = [
             },
             {
                 nome: "Bournemouth",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Neto", posizione: "PO", eta: 34, livelloAbilita: 80},
                     {nome: "Mark Travers", posizione: "PO", eta: 25, livelloAbilita: 75},
                     {nome: "Adam Smith", posizione: "DF", eta: 32, livelloAbilita: 78},
@@ -80,7 +81,7 @@ export const leghe = [
             },
             {
                 nome: "Brentford",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "David Raya", posizione: "PO", eta: 28, livelloAbilita: 85},
                     {nome: "Mark Flekken", posizione: "PO", eta: 30, livelloAbilita: 80},
                     {nome: "Ethan Pinnock", posizione: "DF", eta: 30, livelloAbilita: 78},
@@ -104,7 +105,7 @@ export const leghe = [
             },
             {
                 nome: "Brighton",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Robert Sánchez", posizione: "PO", eta: 26, livelloAbilita: 82},
                     {nome: "Jason Steele", posizione: "PO", eta: 33, livelloAbilita: 78},
                     {nome: "Lewis Dunk", posizione: "DF", eta: 32, livelloAbilita: 83},
@@ -127,7 +128,7 @@ export const leghe = [
             },
             {
                 nome: "Chelsea",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Robert Sanchez", posizione: "PO", eta: 26, livelloAbilita: 81},
                     {nome: "Filip Jørgensen", posizione: "PO", eta: 22, livelloAbilita: 74},
                     {nome: "Marcus Bettinelli", posizione: "PO", eta: 32, livelloAbilita: 75},
@@ -164,7 +165,7 @@ export const leghe = [
             },
             {
                 nome: "Crystal Palace",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Vicente Guaita", posizione: "PO", eta: 37, livelloAbilita: 80},
                     {nome: "Jack Butland", posizione: "PO", eta: 31, livelloAbilita: 78},
                     {nome: "Joachim Andersen", posizione: "DF", eta: 27, livelloAbilita: 81},
@@ -187,7 +188,7 @@ export const leghe = [
             },
             {
                 nome: "Everton",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Jordan Pickford", posizione: "PO", eta: 30, livelloAbilita: 84},
                     {nome: "Asmir Begović", posizione: "PO", eta: 37, livelloAbilita: 79},
                     {nome: "Ben Godfrey", posizione: "DF", eta: 26, livelloAbilita: 79},
@@ -212,7 +213,7 @@ export const leghe = [
             {
                 nome: "Fulham",
 
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Bernd Leno", posizione: "PO", eta: 32, livelloAbilita: 82},
                     {nome: "Marek Rodák", posizione: "PO", eta: 27, livelloAbilita: 77},
                     {nome: "Tim Ream", posizione: "DF", eta: 36, livelloAbilita: 80},
@@ -235,7 +236,7 @@ export const leghe = [
             {
                 nome: "Ipswich",
 
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Vaclav Hladky", posizione: "PO", eta: 33, livelloAbilita: 78},
                     {nome: "Christian W80n", posizione: "PO", eta: 28, livelloAbilita: 80},
                     {nome: "George Edmundson", posizione: "DF", eta: 26, livelloAbilita: 79},
@@ -258,7 +259,7 @@ export const leghe = [
             },
             {
                 nome: "Leicester",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Daniel Iversen", posizione: "PO", eta: 26, livelloAbilita: 79},
                     {nome: "Kasper Schmeichel", posizione: "PO", eta: 37, livelloAbilita: 81},
                     {nome: "Wout Faes", posizione: "DF", eta: 25, livelloAbilita: 80},
@@ -282,7 +283,7 @@ export const leghe = [
             {
                 nome: "Liverpool",
 
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Alisson Becker", posizione: "PO", eta: 31, livelloAbilita: 89},
                     {nome: "Vitezslav Jaros", posizione: "PO", eta: 24, livelloAbilita: 75},
                     {nome: "Caoimhin Kelleher", posizione: "PO", eta: 25, livelloAbilita: 78},
@@ -311,7 +312,7 @@ export const leghe = [
             },
             {
                 nome: "Manchester City",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Ederson", posizione: "PO", eta: 31, livelloAbilita: 88},
                     {nome: "Stefan Ortega", posizione: "PO", eta: 31, livelloAbilita: 75},
                     {nome: "Kyle Walker", posizione: "DF", eta: 34, livelloAbilita: 80},
@@ -337,7 +338,7 @@ export const leghe = [
             {
                 nome: "Manchester United",
 
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "André Onana", posizione: "PO", eta: 27, livelloAbilita: 85},
                     {nome: "Altay Bayindir", posizione: "PO", eta: 25, livelloAbilita: 80},
                     {nome: "Diogo Dalot", posizione: "DF", eta: 24, livelloAbilita: 80},
@@ -366,7 +367,7 @@ export const leghe = [
             {
                 nome: "Newcastle",
 
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Nick Pope", posizione: "PO", eta: 32, livelloAbilita: 85},
                     {nome: "Martin Dúbravka", posizione: "PO", eta: 35, livelloAbilita: 80},
                     {nome: "Kieran Trippier", posizione: "DF", eta: 34, livelloAbilita: 86},
@@ -390,7 +391,7 @@ export const leghe = [
             {
                 nome: "Nottingham",
 
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Keylor Navas", posizione: "PO", eta: 37, livelloAbilita: 86},
                     {nome: "Dean Henderson", posizione: "PO", eta: 27, livelloAbilita: 81},
                     {nome: "Neco Williams", posizione: "DF", eta: 23, livelloAbilita: 80},
@@ -414,7 +415,7 @@ export const leghe = [
             {
                 nome: "Southampton",
 
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Gavin Bazunu", posizione: "PO", eta: 22, livelloAbilita: 80},
                     {nome: "Alex CNCarthy", posizione: "PO", eta: 34, livelloAbilita: 77},
                     {nome: "Kyle Walker-Peters", posizione: "DF", eta: 27, livelloAbilita: 80},
@@ -436,7 +437,7 @@ export const leghe = [
             {
                 nome: "Tottenham",
 
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Hugo Lloris", posizione: "PO", eta: 37, livelloAbilita: 88},
                     {nome: "Fraser Forster", posizione: "PO", eta: 36, livelloAbilita: 80},
                     {nome: "Cristian Romero", posizione: "DF", eta: 26, livelloAbilita: 85},
@@ -458,7 +459,7 @@ export const leghe = [
             {
                 nome: "West Ham",
 
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Lukasz Fabiański", posizione: "PO", eta: 38, livelloAbilita: 83},
                     {nome: "Alphonse Areola", posizione: "PO", eta: 30, livelloAbilita: 80},
                     {nome: "Kurt Zouma", posizione: "DF", eta: 29, livelloAbilita: 82},
@@ -480,7 +481,7 @@ export const leghe = [
             {
                 nome: "Wolves",
 
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "José Sá", posizione: "PO", eta: 31, livelloAbilita: 82},
                     {nome: "Matija Šarkić", posizione: "PO", eta: 26, livelloAbilita: 77},
                     {nome: "Max Kilman", posizione: "DF", eta: 26, livelloAbilita: 81},
@@ -504,10 +505,11 @@ export const leghe = [
     },
     {
         nome: "Bundesliga",
+        pathImmagine: require("../../assets/images/bundesliga.png"),
         squadre: [
             {
                 nome: "Augsburg",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Florian Niederlechner", posizione: "AT", eta: 32, livelloAbilita: "75" },
                     { nome: "Rani Khedira", posizione: "CN", eta: 30, livelloAbilita: "75" },
                     { nome: "André Hahn", posizione: "CN", eta: 33, livelloAbilita: "75" },
@@ -527,7 +529,7 @@ export const leghe = [
             },
             {
                 nome: "Bayern Monaco",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Manuel Neuer", posizione: "PO", eta: 38, livelloAbilita: 85 },
                     { nome: "Dayot Upamecano", posizione: "DF", eta: 26, livelloAbilita: 84 },
                     { nome: "Kim Min-jae", posizione: "DF", eta: 27, livelloAbilita: 83 },
@@ -552,7 +554,7 @@ export const leghe = [
             },
             {
                 nome: "Bochum",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Simon Zoller", posizione: "AT", eta: 32, livelloAbilita: "72" },
                     { nome: "Oliver Neuville", posizione: "CN", eta: 39, livelloAbilita: "75" },
                     { nome: "Christopher Antwi-Adjei", posizione: "AT", eta: 29, livelloAbilita: "70" },
@@ -573,7 +575,7 @@ export const leghe = [
             },
             {
                 nome: "Werder Brema",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Niclas Füllkrug", posizione: "AT", eta: 31, livelloAbilita: "80" },
                     { nome: "Maximilian Eggestein", posizione: "CN", eta: 27, livelloAbilita: "80" },
                     { nome: "Milos Veljkovic", posizione: "CN", eta: 28, livelloAbilita: "75" },
@@ -594,7 +596,7 @@ export const leghe = [
             },
             {
                 nome: "Borussia Dortmund",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Gregor Kobel", posizione: "PO", eta: 26, livelloAbilita: 85 },
                     { nome: "Niklas Süle", posizione: "DF", eta: 29, livelloAbilita: 84 },
                     { nome: "Emre Can", posizione: "CN", eta: 30, livelloAbilita: 82 },
@@ -616,7 +618,7 @@ export const leghe = [
             },
             {
                 nome: "Francoforte",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Rafael Santos Borré", posizione: "AT", eta: 28, livelloAbilita: 82 },
                     { nome: "Daichi Kamada", posizione: "CN", eta: 28, livelloAbilita: 84 },
                     { nome: "Evan Ndicka", posizione: "DF", eta: 24, livelloAbilita: 85 },
@@ -637,7 +639,7 @@ export const leghe = [
             },
             {
                 nome: "Friburgo",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Vincenzo Grifo", posizione: "CN", eta: 30, livelloAbilita: 84 },
                     { nome: "Nils Petersen", posizione: "AT", eta: 35, livelloAbilita: 80 },
                     { nome: "Christian Günter", posizione: "DF", eta: 31, livelloAbilita: 85 },
@@ -658,7 +660,7 @@ export const leghe = [
             },
             {
                 nome: "Heidenheim",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Tim Kleindienst", posizione: "AT", eta: 27, livelloAbilita: 78 },
                     { nome: "Marten Schmidt", posizione: "DF", eta: 28, livelloAbilita: 75 },
                     { nome: "Stefan Schimmer", posizione: "AT", eta: 28, livelloAbilita: 74 },
@@ -678,7 +680,7 @@ export const leghe = [
             },
             {
                 nome: "Hoffenheim",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Andrej Kramaric", posizione: "AT", eta: 33, livelloAbilita: 84 },
                     { nome: "Florian Grillitsch", posizione: "CN", eta: 29, livelloAbilita: 80 },
                     { nome: "Ihlas Bebou", posizione: "AT", eta: 29, livelloAbilita: 81 },
@@ -698,7 +700,7 @@ export const leghe = [
             },
             {
                 nome: "Kiel",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Janni-Luca Weichert", posizione: "DF", eta: 27, livelloAbilita: 72 },
                     { nome: "Fin Bartels", posizione: "AT", eta: 36, livelloAbilita: 75 },
                     { nome: "Steven Skrzybski", posizione: "AT", eta: 29, livelloAbilita: 76 },
@@ -718,7 +720,7 @@ export const leghe = [
             },
             {
                 nome: "Bayer Leverkusen",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Patrik Schick", posizione: "AT", eta: 28, livelloAbilita: 86 },
                     { nome: "Moussa Diaby", posizione: "CN", eta: 24, livelloAbilita: 88 },
                     { nome: "Charles Aránguiz", posizione: "CN", eta: 34, livelloAbilita: 81 },
@@ -738,7 +740,7 @@ export const leghe = [
             },
             {
                 nome: "RB Lipsia",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Christopher Nkunku", posizione: "AT", eta: 26, livelloAbilita: 87 },
                     { nome: "Emil Forsberg", posizione: "CN", eta: 32, livelloAbilita: 80 },
                     { nome: "Timo Werner", posizione: "AT", eta: 28, livelloAbilita: 84 },
@@ -758,7 +760,7 @@ export const leghe = [
             },
             {
                 nome: "Magonza",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Karim Onisiwo", posizione: "AT", eta: 31, livelloAbilita: 78 },
                     { nome: "Leandro Barreiro", posizione: "CN", eta: 23, livelloAbilita: 75 },
                     { nome: "Jonathan Burkardt", posizione: "AT", eta: 23, livelloAbilita: 77 },
@@ -778,7 +780,7 @@ export const leghe = [
             },
             {
                 nome: "Mönchengladbach",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Alassane Pléa", posizione: "AT", eta: 30, livelloAbilita: 82 },
                     { nome: "Lars Stindl", posizione: "CN", eta: 35, livelloAbilita: 80 },
                     { nome: "Breel Embolo", posizione: "AT", eta: 26, livelloAbilita: 84 },
@@ -798,7 +800,7 @@ export const leghe = [
             },
             {
                 nome: "VfB Stoccarda",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Sasa Kalajdzic", posizione: "AT", eta: 26, livelloAbilita: 80 },
                     { nome: "Wataru Endo", posizione: "CN", eta: 30, livelloAbilita: 82 },
                     { nome: "Khalid Khelifi", posizione: "AT", eta: 23, livelloAbilita: 75 },
@@ -818,7 +820,7 @@ export const leghe = [
             },
             {
                 nome: "FC St. Pauli",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Marvin Knoll", posizione: "CN", eta: 32, livelloAbilita: 75 },
                     { nome: "Daniel-Kofi Kyereh", posizione: "AT", eta: 28, livelloAbilita: 76 },
                     { nome: "Guido Burgstaller", posizione: "AT", eta: 34, livelloAbilita: 78 },
@@ -838,7 +840,7 @@ export const leghe = [
             },
             {
                 nome: "Union Berlino",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Taiwo Awoniyi", posizione: "AT", eta: 26, livelloAbilita: 80 },
                     { nome: "Christopher Trimmel", posizione: "DF", eta: 33, livelloAbilita: 79 },
                     { nome: "Sheraldo Becker", posizione: "AT", eta: 28, livelloAbilita: 81 },
@@ -858,7 +860,7 @@ export const leghe = [
             },
             {
                 nome: "Wolfsburg",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Max Kruse", posizione: "AT", eta: 35, livelloAbilita: 82 },
                     { nome: "Josuha Guilavogui", posizione: "CN", eta: 33, livelloAbilita: 80 },
                     { nome: "Wout Weghorst", posizione: "AT", eta: 32, livelloAbilita: 84 },
@@ -880,10 +882,11 @@ export const leghe = [
     },
      {
         nome: "Serie A",
-        squadre: [
+         pathImmagine: require("../../assets/images/seriea.png"),
+         squadre: [
             {
                 nome: "Juventus",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Mattia Perin", posizione: "PO", eta: 31, livelloAbilita: 80 },
                     { nome: "Carlo Pinsoglio", posizione: "PO", eta: 34, livelloAbilita: 75 },
                     { nome: "Bremer", posizione: "DF", eta: 27, livelloAbilita: 85 },
@@ -913,7 +916,7 @@ export const leghe = [
             },
             {
                 nome: "Inter",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Yann Sommer", posizione: "PO", eta: 35, livelloAbilita: 79 },
                     { nome: "Samir Handanovic", posizione: "PO", eta: 40, livelloAbilita: 77 },
                     { nome: "Denzel DuCNries", posizione: "DF", eta: 28, livelloAbilita: 80 },
@@ -939,7 +942,7 @@ export const leghe = [
             },
             {
                 nome: "Atalanta",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Luis Muriel", posizione: "AT", eta: 33, livelloAbilita: 82 },
                     { nome: "Duvan Zapata", posizione: "AT", eta: 33, livelloAbilita: 84 },
                     { nome: "Mario Pasalic", posizione: "CN", eta: 29, livelloAbilita: 80 },
@@ -959,7 +962,7 @@ export const leghe = [
             },
             {
                 nome: "Bologna",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Musa Barrow", posizione: "AT", eta: 26, livelloAbilita: 80 },
                     { nome: "Marko Arnautovic", posizione: "AT", eta: 35, livelloAbilita: 82 },
                     { nome: "Riccardo Orsolini", posizione: "AT", eta: 27, livelloAbilita: 78 },
@@ -979,7 +982,7 @@ export const leghe = [
             },
             {
                 nome: "Cagliari",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Leonardo Pavoletti", posizione: "AT", eta: 34, livelloAbilita: 78 },
                     { nome: "Nahitan Nandez", posizione: "CN", eta: 29, livelloAbilita: 80 },
                     { nome: "Alessandro Deiola", posizione: "CN", eta: 26, livelloAbilita: 77 },
@@ -999,7 +1002,7 @@ export const leghe = [
             },
             {
                 nome: "Como",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Patrick Cutrone", posizione: "AT", eta: 27, livelloAbilita: 77 },
                     { nome: "Simone Andrea Ganz", posizione: "AT", eta: 28, livelloAbilita: 76 },
                     { nome: "Fabio Cimini", posizione: "CN", eta: 30, livelloAbilita: 75 },
@@ -1019,7 +1022,7 @@ export const leghe = [
             },
             {
                 nome: "Empoli",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Fabiano Parisi", posizione: "DF", eta: 25, livelloAbilita: 79 },
                     { nome: "Nedim Bajrami", posizione: "CN", eta: 26, livelloAbilita: 81 },
                     { nome: "Tommaso Baldanzi", posizione: "CN", eta: 20, livelloAbilita: 78 },
@@ -1039,7 +1042,7 @@ export const leghe = [
             },
             {
                 nome: "Fiorentina",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Nikola Milenkovic", posizione: "DF", eta: 27, livelloAbilita: 82 },
                     { nome: "Luca Jovic", posizione: "AT", eta: 27, livelloAbilita: 81 },
                     { nome: "Dusan Vlahovic", posizione: "AT", eta: 25, livelloAbilita: 85 },
@@ -1059,7 +1062,7 @@ export const leghe = [
             },
             {
                 nome: "Genoa",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Mattia Destro", posizione: "AT", eta: 33, livelloAbilita: 77 },
                     { nome: "Kelvin Yeboah", posizione: "AT", eta: 23, livelloAbilita: 78 },
                     { nome: "Andreas Granqvist", posizione: "DF", eta: 35, livelloAbilita: 80 },
@@ -1079,7 +1082,7 @@ export const leghe = [
             },
             {
                 nome: "Hellas Verona",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Giovanni Simeone", posizione: "AT", eta: 28, livelloAbilita: 79 },
                     { nome: "Samuel Di Carmine", posizione: "AT", eta: 34, livelloAbilita: 77 },
                     { nome: "Milan Djuric", posizione: "AT", eta: 31, livelloAbilita: 76 },
@@ -1099,7 +1102,7 @@ export const leghe = [
             },
             {
                 nome: "Lazio",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Ciro Immobile", posizione: "AT", eta: 35, livelloAbilita: 84 },
                     { nome: "Felipe Anderson", posizione: "AT", eta: 32, livelloAbilita: 81 },
                     { nome: "Sergej Milinkovic-Savic", posizione: "CN", eta: 30, livelloAbilita: 85 },
@@ -1119,7 +1122,7 @@ export const leghe = [
             },
             {
                 nome: "Lecce",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Gabriel Strefezza", posizione: "AT", eta: 27, livelloAbilita: 78 },
                     { nome: "Michele Di Mariano", posizione: "CN", eta: 30, livelloAbilita: 76 },
                     { nome: "Assan Ceesay", posizione: "AT", eta: 29, livelloAbilita: 77 },
@@ -1139,7 +1142,7 @@ export const leghe = [
             },
             {
                 nome: "Milan",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Mike Maignan", posizione: "PO", eta: 29, livelloAbilita: 87 },
                     { nome: "Ciprian Tătărușanu", posizione: "PO", eta: 38, livelloAbilita: 80 },
                     { nome: "Antonio Mirante", posizione: "PO", eta: 41, livelloAbilita: 79 },
@@ -1167,7 +1170,7 @@ export const leghe = [
             },
             {
                 nome: "Monza",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Andrea Petagna", posizione: "AT", eta: 29, livelloAbilita: 77 },
                     { nome: "Kevin-Prince Boateng", posizione: "CN", eta: 38, livelloAbilita: 75 },
                     { nome: "Danilo D'Ambrosio", posizione: "DF", eta: 36, livelloAbilita: 77 },
@@ -1187,7 +1190,7 @@ export const leghe = [
             },
             {
                 nome: "Napoli",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Alex Meret", posizione: "PO", eta: 26, livelloAbilita: 82 },
                     { nome: "Giovanni Di Lorenzo", posizione: "DF", eta: 30, livelloAbilita: 83 },
                     { nome: "Amir Rrahmani", posizione: "DF", eta: 29, livelloAbilita: 82 },
@@ -1211,7 +1214,7 @@ export const leghe = [
             },
             {
                 nome: "Roma",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Rui Patrício", posizione: "PO", eta: 36, livelloAbilita: 82 },
                     { nome: "Matić", posizione: "CN", eta: 36, livelloAbilita: 80 },
                     { nome: "Ebrima Darboe", posizione: "CN", eta: 23, livelloAbilita: 74 },
@@ -1238,7 +1241,7 @@ export const leghe = [
             },
             {
                 nome: "Torino",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Antonio Sanabria", posizione: "AT", eta: 29, livelloAbilita: 78 },
                     { nome: "Nemanja Radonjić", posizione: "CN", eta: 29, livelloAbilita: 77 },
                     { nome: "Alessandro Buongiorno", posizione: "DF", eta: 26, livelloAbilita: 79 },
@@ -1259,7 +1262,7 @@ export const leghe = [
             },
             {
                 nome: "Udinese",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Beto", posizione: "AT", eta: 27, livelloAbilita: 81 },
                     { nome: "Roberto Pereyra", posizione: "CN", eta: 34, livelloAbilita: 78 },
                     { nome: "Lazar Samardžić", posizione: "CN", eta: 23, livelloAbilita: 80 },
@@ -1280,7 +1283,7 @@ export const leghe = [
             },
             {
                 nome: "Venezia",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Jesse Joronen", posizione: "PO", eta: 31, livelloAbilita: 81 },
                     { nome: "Giorgio Altare", posizione: "DF", eta: 26, livelloAbilita: 79 },
                     { nome: "Franco Carboni", posizione: "CN", eta: 21, livelloAbilita: 80 },
@@ -1301,7 +1304,7 @@ export const leghe = [
             },
             {
                 nome: "Parma",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Woyo Coulibaly", posizione: "DF", eta: 25, livelloAbilita: 77 },
                     { nome: "Enrico Del Prato", posizione: "DF", eta: 25, livelloAbilita: 78 },
                     { nome: "Antoine Hainaut", posizione: "DF", eta: 22, livelloAbilita: 74 },
@@ -1325,10 +1328,11 @@ export const leghe = [
 
      {
         nome: "Ligue 1",
-        squadre: [
+         pathImmagine: require("../../assets/images/ligue1.png"),
+         squadre: [
             {
                 nome: "Angers",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Paul Bernardoni", posizione: "PO", eta: 26, livelloAbilita: 80},
                     {nome: "Ismaël Traoré", posizione: "DF", eta: 36, livelloAbilita: 78},
                     {nome: "Romain Thomas", posizione: "DF", eta: 32, livelloAbilita: 79},
@@ -1350,7 +1354,7 @@ export const leghe = [
             {
 
                     nome: "AJ Auxerre",
-                    calciatori: [
+                    w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                         {nome: "Rémy Riou", posizione: "PO", eta: 36, livelloAbilita: 77},
                         {nome: "Jérémy Brechet", posizione: "DF", eta: 31, livelloAbilita: 80},
                         {nome: "Gédéon Kalulu", posizione: "DF", eta: 23, livelloAbilita: 78},
@@ -1371,7 +1375,7 @@ export const leghe = [
                 },
             {
                 nome: "Brest",
-                    calciatori: [
+                    w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                         {nome: "Gautier Larsonneur", posizione: "PO", eta: 26, livelloAbilita: 80},
                         {nome: "Pierre-Gabriel", posizione: "DF", eta: 26, livelloAbilita: 79},
                         {nome: "Julien Faussurier", posizione: "DF", eta: 35, livelloAbilita: 77},
@@ -1394,7 +1398,7 @@ export const leghe = [
             {
                 nome: "Le Havre",
 
-                    calciatori: [
+                    w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                         {nome: "Mathieu Gorgelin", posizione: "PO", eta: 31, livelloAbilita: 78},
                         {nome: "Cedric Yambere", posizione: "DF", eta: 30, livelloAbilita: 79},
                         {nome: "Sacha Boey", posizione: "DF", eta: 23, livelloAbilita: 80},
@@ -1416,7 +1420,7 @@ export const leghe = [
 
             {
                 nome: "Lens",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Jean-Louis Leca", posizione: "PO", eta: 37, livelloAbilita: 81},
                     {nome: "Salis Abdul Samed", posizione: "CN", eta: 23, livelloAbilita: 79},
                     {nome: "Jonathan Clauss", posizione: "DF", eta: 31, livelloAbilita: 82},
@@ -1437,7 +1441,7 @@ export const leghe = [
             },
             {
                 nome: "Lille",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Léo Jardim", posizione: "PO", eta: 28, livelloAbilita: 80},
                     {nome: "José Fonte", posizione: "DF", eta: 40, livelloAbilita: 82},
                     {nome: "Sven Botman", posizione: "DF", eta: 23, livelloAbilita: 84},
@@ -1458,7 +1462,7 @@ export const leghe = [
             },
             {
                 nome: "Lione",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Anthony Lopes", posizione: "PO", eta: 33, livelloAbilita: 83},
                     {nome: "Marcelo", posizione: "DF", eta: 36, livelloAbilita: 79},
                     {nome: "Jason Denayer", posizione: "DF", eta: 29, livelloAbilita: 80},
@@ -1479,7 +1483,7 @@ export const leghe = [
             },
             {
                 nome: "Marsiglia",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Steve Mandanda", posizione: "PO", eta: 38, livelloAbilita: 84},
                     {nome: "Dimitri Payet", posizione: "CN", eta: 36, livelloAbilita: 82},
                     {nome: "Mattéo Guendouzi", posizione: "CN", eta: 25, livelloAbilita: 83},
@@ -1500,7 +1504,7 @@ export const leghe = [
             },
             {
                 nome: "Monaco",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Alexander Nübel", posizione: "PO", eta: 27, livelloAbilita: 82},
                     {nome: "Axel Disasi", posizione: "DF", eta: 26, livelloAbilita: 81},
                     {nome: "Krépin Diatta", posizione: "CN", eta: 25, livelloAbilita: 80},
@@ -1521,7 +1525,7 @@ export const leghe = [
             },
             {
                 nome: "Montpellier",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Jonas Omlin", posizione: "PO", eta: 29, livelloAbilita: 81},
                     {nome: "Pedro Mendes", posizione: "DF", eta: 28, livelloAbilita: 80},
                     {nome: "Nicolas Cozza", posizione: "DF", eta: 25, livelloAbilita: 79},
@@ -1542,7 +1546,7 @@ export const leghe = [
             },
             {
                 nome: "Nantes",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Alban Lafont", posizione: "PO", eta: 25, livelloAbilita: 82},
                     {nome: "Waldemar Kryszalowicz", posizione: "CN", eta: 24, livelloAbilita: 80},
                     {nome: "Jean-Charles Castelletto", posizione: "DF", eta: 28, livelloAbilita: 81},
@@ -1563,7 +1567,7 @@ export const leghe = [
             },
             {
                 nome: "Nizza",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Walter Benítez", posizione: "PO", eta: 31, livelloAbilita: 83},
                     {nome: "Jean-Clair Todibo", posizione: "DF", eta: 24, livelloAbilita: 82},
                     {nome: "Hicham Boudaoui", posizione: "CN", eta: 24, livelloAbilita: 80},
@@ -1584,7 +1588,7 @@ export const leghe = [
             },
             {
                 nome: "PSG",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Gianluigi Donnarumma", posizione: "PO", eta: 25, livelloAbilita: 89 },
                     { nome: "Matvei Safonov", posizione: "PO", eta: 25, livelloAbilita: 80 },
                     { nome: "Arnau Tenas", posizione: "PO", eta: 23, livelloAbilita: 78 },
@@ -1613,7 +1617,7 @@ export const leghe = [
             },
             {
                 nome: "Reims",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Yehvann Diouf", posizione: "PO", eta: 24, livelloAbilita: 79},
                     {nome: "Wout Faes", posizione: "DF", eta: 25, livelloAbilita: 80},
                     {nome: "Hugo Ekitike", posizione: "AT", eta: 22, livelloAbilita: 81},
@@ -1634,7 +1638,7 @@ export const leghe = [
             },
             {
                 nome: "Rennes",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Steve Mandanda", posizione: "PO", eta: 39, livelloAbilita: 85},
                     {nome: "Hamari Traoré", posizione: "DF", eta: 32, livelloAbilita: 80},
                     {nome: "Jeremy Doku", posizione: "AT", eta: 21, livelloAbilita: 81},
@@ -1655,7 +1659,7 @@ export const leghe = [
             },
             {
                 nome: "Saint-Étienne",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Etienne Green", posizione: "PO", eta: 22, livelloAbilita: 78},
                     {nome: "Adil Aouchiche", posizione: "CN", eta: 21, livelloAbilita: 79},
                     {nome: "Mahdi Camara", posizione: "CN", eta: 25, livelloAbilita: 80},
@@ -1676,7 +1680,7 @@ export const leghe = [
             },
             {
                 nome: "Strasburgo",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Matz Sels", posizione: "PO", eta: 31, livelloAbilita: 81},
                     {nome: "Lamine Koné", posizione: "DF", eta: 33, livelloAbilita: 80},
                     {nome: "Abdallah Ndour", posizione: "DF", eta: 25, livelloAbilita: 79},
@@ -1697,7 +1701,7 @@ export const leghe = [
             },
             {
                 nome: "Tolosa",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     {nome: "Maxime Dupé", posizione: "PO", eta: 28, livelloAbilita: 77},
                     {nome: "Rasmus Nicolaisen", posizione: "DF", eta: 26, livelloAbilita: 80},
                     {nome: "Ado Onaiwu", posizione: "AT", eta: 27, livelloAbilita: 79},
@@ -1721,10 +1725,11 @@ export const leghe = [
     ,
     {
         nome: "Liga Portugal",
+        pathImmagine: require("../../assets/images/portugalliga.png"),
         squadre: [
             {
                 nome: "Arouca",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Antony Alves", posizione: "AT", eta: 25, livelloAbilita: 77 },
                     { nome: "David Simão", posizione: "CN", eta: 34, livelloAbilita: 75 },
                     { nome: "João Basso", posizione: "DF", eta: 27, livelloAbilita: 76 },
@@ -1745,7 +1750,7 @@ export const leghe = [
             },
             {
                 nome: "AVIS",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Luis Diaz", posizione: "AT", eta: 28, livelloAbilita: 79 },
                     { nome: "Sebastião Fernandes", posizione: "CN", eta: 23, livelloAbilita: 76 },
                     { nome: "André Almeida", posizione: "DF", eta: 31, livelloAbilita: 77 },
@@ -1766,7 +1771,7 @@ export const leghe = [
             },
             {
                 nome: "Benfica",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Gonçalo Ramos", posizione: "AT", eta: 24, livelloAbilita: 84 },
                     { nome: "João Mario", posizione: "CN", eta: 32, livelloAbilita: 81 },
                     { nome: "Nicolás Otamendi", posizione: "DF", eta: 37, livelloAbilita: 78 },
@@ -1787,7 +1792,7 @@ export const leghe = [
             },
             {
                 nome: "Boavista",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Yusupha Njie", posizione: "AT", eta: 32, livelloAbilita: 76 },
                     { nome: "Sebastián Pérez", posizione: "CN", eta: 32, livelloAbilita: 77 },
                     { nome: "Reggie Cannon", posizione: "DF", eta: 27, livelloAbilita: 76 },
@@ -1808,7 +1813,7 @@ export const leghe = [
             },
             {
                 nome: "Braga",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Ricardo Horta", posizione: "AT", eta: 30, livelloAbilita: 82 },
                     { nome: "Al Musrati", posizione: "CN", eta: 28, livelloAbilita: 80 },
                     { nome: "Vítor Tormena", posizione: "DF", eta: 29, livelloAbilita: 77 },
@@ -1829,7 +1834,7 @@ export const leghe = [
             },
             {
                 nome: "Casapía",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Rafael Martins", posizione: "AT", eta: 36, livelloAbilita: 72 },
                     { nome: "Neto", posizione: "DF", eta: 27, livelloAbilita: 74 },
                     { nome: "Fernando Varela", posizione: "DF", eta: 36, livelloAbilita: 73 },
@@ -1850,7 +1855,7 @@ export const leghe = [
             },
             {
                 nome: "Estoril",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Tiago Gouveia", posizione: "AT", eta: 24, livelloAbilita: 76 },
                     { nome: "Francisco Geraldes", posizione: "CN", eta: 30, livelloAbilita: 75 },
                     { nome: "Pedro Álvaro", posizione: "DF", eta: 25, livelloAbilita: 74 },
@@ -1871,7 +1876,7 @@ export const leghe = [
             },
             {
                 nome: "Estrela",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Rodrigo Conceição", posizione: "CN", eta: 25, livelloAbilita: 76 },
                     { nome: "David Tavares", posizione: "CN", eta: 25, livelloAbilita: 75 },
                     { nome: "Zé Valente", posizione: "AT", eta: 29, livelloAbilita: 74 },
@@ -1892,7 +1897,7 @@ export const leghe = [
             },
             {
                 nome: "Famalicão",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Iván Jaime", posizione: "CN", eta: 24, livelloAbilita: 77 },
                     { nome: "Pablo Felipe", posizione: "AT", eta: 26, livelloAbilita: 75 },
                     { nome: "Charles Pickel", posizione: "CN", eta: 28, livelloAbilita: 74 },
@@ -1913,7 +1918,7 @@ export const leghe = [
             },
             {
                 nome: "Farense",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Marco Matias", posizione: "AT", eta: 36, livelloAbilita: 72 },
                     { nome: "Mattheus Oliveira", posizione: "CN", eta: 30, livelloAbilita: 74 },
                     { nome: "Alvarinho", posizione: "AT", eta: 27, livelloAbilita: 75 },
@@ -1934,7 +1939,7 @@ export const leghe = [
             },
             {
                 nome: "Gil Vicente",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Fran Navarro", posizione: "AT", eta: 26, livelloAbilita: 78 },
                     { nome: "Murilo", posizione: "AT", eta: 30, livelloAbilita: 76 },
                     { nome: "Vítor Carvalho", posizione: "CN", eta: 27, livelloAbilita: 75 },
@@ -1955,7 +1960,7 @@ export const leghe = [
             },
             {
                 nome: "Guimarães",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Tiago Silva", posizione: "CN", eta: 32, livelloAbilita: 77 },
                     { nome: "Nelson Da Luz", posizione: "AT", eta: 27, livelloAbilita: 76 },
                     { nome: "André Amaro", posizione: "DF", eta: 24, livelloAbilita: 75 },
@@ -1976,7 +1981,7 @@ export const leghe = [
             },
             {
                 nome: "Moreirense",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "André Luis", posizione: "AT", eta: 27, livelloAbilita: 74 },
                     { nome: "Frimpong", posizione: "DF", eta: 25, livelloAbilita: 76 },
                     { nome: "Walterson Silva", posizione: "CN", eta: 30, livelloAbilita: 75 },
@@ -1997,7 +2002,7 @@ export const leghe = [
             },
             {
                 nome: "Nacional",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Ruben Micael", posizione: "CN", eta: 38, livelloAbilita: 68 },
                     { nome: "Camacho", posizione: "DF", eta: 33, livelloAbilita: 70 },
                     { nome: "Vincent Thill", posizione: "CN", eta: 25, livelloAbilita: 75 },
@@ -2018,7 +2023,7 @@ export const leghe = [
             },
             {
                 nome: "Porto",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Pepe", posizione: "DF", eta: 42, livelloAbilita: 70 },
                     { nome: "Mehdi Taremi", posizione: "AT", eta: 33, livelloAbilita: 78 },
                     { nome: "Diogo Costa", posizione: "PO", eta: 26, livelloAbilita: 80 },
@@ -2039,7 +2044,7 @@ export const leghe = [
             },
             {
                 nome: "Rio Ave",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Guga", posizione: "DF", eta: 28, livelloAbilita: 73 },
                     { nome: "Aderllan Santos", posizione: "DF", eta: 36, livelloAbilita: 70 },
                     { nome: "André Pereira", posizione: "AT", eta: 29, livelloAbilita: 74 },
@@ -2060,7 +2065,7 @@ export const leghe = [
             },
             {
                 nome: "Santa Clara",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Costinha", posizione: "CN", eta: 26, livelloAbilita: 72 },
                     { nome: "Gabriel Silva", posizione: "AT", eta: 25, livelloAbilita: 73 },
                     { nome: "Paulo Henrique", posizione: "DF", eta: 30, livelloAbilita: 71 },
@@ -2081,7 +2086,7 @@ export const leghe = [
             },
             {
                 nome: "Sporting Lisbona",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Pedro Gonçalves", posizione: "CN", eta: 26, livelloAbilita: 80 },
                     { nome: "Paulinho", posizione: "AT", eta: 32, livelloAbilita: 76 },
                     { nome: "Sebastián Coates", posizione: "DF", eta: 34, livelloAbilita: 75 },
@@ -2105,10 +2110,11 @@ export const leghe = [
 
      {
         nome: "La Liga",
-        squadre: [
+         pathImmagine: require("../../assets/images/laliga.png"),
+         squadre: [
             {
                 nome: "Alavés",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Luis Rioja", posizione: "AT", eta: 31, livelloAbilita: 73 },
                     { nome: "Toni Moya", posizione: "CN", eta: 27, livelloAbilita: 72 },
                     { nome: "Ruben Duarte", posizione: "DF", eta: 29, livelloAbilita: 74 },
@@ -2129,7 +2135,7 @@ export const leghe = [
             },
             {
                 nome: "Athletic Bilbao",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Iñaki Williams", posizione: "AT", eta: 31, livelloAbilita: 76 },
                     { nome: "Unai Simón", posizione: "PO", eta: 27, livelloAbilita: 78 },
                     { nome: "Iker Muniain", posizione: "CN", eta: 32, livelloAbilita: 74 },
@@ -2150,7 +2156,7 @@ export const leghe = [
             },
             {
                 nome: "Atlético Madrid",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Jan Oblak", posizione: "PO", eta: 31, livelloAbilita: 89 },
                     { nome: "José Giménez", posizione: "DF", eta: 29, livelloAbilita: 85 },
                     { nome: "Stefan Savić", posizione: "DF", eta: 33, livelloAbilita: 82 },
@@ -2176,7 +2182,7 @@ export const leghe = [
             },
             {
                 nome: "Barcelona",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Robert Lewandowski", posizione: "AT", eta: 37, livelloAbilita: 88 },
                     { nome: "Pedri", posizione: "CN", eta: 22, livelloAbilita: 85 },
                     { nome: "Frenkie de Jong", posizione: "CN", eta: 27, livelloAbilita: 84 },
@@ -2201,7 +2207,7 @@ export const leghe = [
             },
             {
                 nome: "Leganes",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Juan Muñoz", posizione: "AT", eta: 30, livelloAbilita: 71 },
                     { nome: "Rubén Pardo", posizione: "CN", eta: 31, livelloAbilita: 73 },
                     { nome: "Sergio González", posizione: "DF", eta: 29, livelloAbilita: 70 },
@@ -2222,7 +2228,7 @@ export const leghe = [
             },
             {
                 nome: "Celta Vigo",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Iago Aspas", posizione: "AT", eta: 37, livelloAbilita: 78 },
                     { nome: "Gabri Veiga", posizione: "CN", eta: 23, livelloAbilita: 77 },
                     { nome: "Joseph Aidoo", posizione: "DF", eta: 29, livelloAbilita: 74 },
@@ -2243,7 +2249,7 @@ export const leghe = [
             },
             {
                 nome: "Las Palmas",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Jonathan Viera", posizione: "CN", eta: 35, livelloAbilita: 73 },
                     { nome: "Alberto Moleiro", posizione: "CN", eta: 22, livelloAbilita: 75 },
                     { nome: "Sandro Ramírez", posizione: "AT", eta: 29, livelloAbilita: 74 },
@@ -2264,7 +2270,7 @@ export const leghe = [
             },
             {
                 nome: "Espanyol",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Joselu", posizione: "AT", eta: 35, livelloAbilita: 76 },
                     { nome: "Sergi Darder", posizione: "CN", eta: 31, livelloAbilita: 77 },
                     { nome: "Raúl de Tomás", posizione: "AT", eta: 30, livelloAbilita: 78 },
@@ -2285,7 +2291,7 @@ export const leghe = [
             },
             {
                 nome: "Getafe",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Enes Ünal", posizione: "AT", eta: 27, livelloAbilita: 75 },
                     { nome: "Mauro Arambarri", posizione: "CN", eta: 28, livelloAbilita: 76 },
                     { nome: "Damián Suárez", posizione: "DF", eta: 34, livelloAbilita: 73 },
@@ -2306,7 +2312,7 @@ export const leghe = [
             },
             {
                 nome: "Girona",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Cristhian Stuani", posizione: "AT", eta: 38, livelloAbilita: 77 },
                     { nome: "Santi Bueno", posizione: "DF", eta: 26, livelloAbilita: 75 },
                     { nome: "Alex García", posizione: "CN", eta: 27, livelloAbilita: 74 },
@@ -2327,7 +2333,7 @@ export const leghe = [
             },
             {
                 nome: "Mallorca",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Vedat Muriqi", posizione: "AT", eta: 29, livelloAbilita: 77 },
                     { nome: "Antonio Raíllo", posizione: "DF", eta: 31, livelloAbilita: 75 },
                     { nome: "Salva Sevilla", posizione: "CN", eta: 38, livelloAbilita: 72 },
@@ -2348,7 +2354,7 @@ export const leghe = [
             },
             {
                 nome: "Osasuna",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Chimy Ávila", posizione: "AT", eta: 31, livelloAbilita: 76 },
                     { nome: "David García", posizione: "DF", eta: 33, livelloAbilita: 74 },
                     { nome: "Aimar Oroz", posizione: "CN", eta: 23, livelloAbilita: 73 },
@@ -2369,7 +2375,7 @@ export const leghe = [
             },
             {
                 nome: "Rayo Vallecano",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Radamel Falcao", posizione: "AT", eta: 39, livelloAbilita: 77 },
                     { nome: "Isi Palazón", posizione: "AT", eta: 28, livelloAbilita: 74 },
                     { nome: "Alvaro García", posizione: "AT", eta: 30, livelloAbilita: 73 },
@@ -2390,7 +2396,7 @@ export const leghe = [
             },
             {
                 nome: "Real Betis",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Nabil Fekir", posizione: "CN", eta: 31, livelloAbilita: 78 },
                     { nome: "Sergio Canales", posizione: "CN", eta: 33, livelloAbilita: 76 },
                     { nome: "Borja Iglesias", posizione: "AT", eta: 31, livelloAbilita: 75 },
@@ -2411,7 +2417,7 @@ export const leghe = [
             },
             {
                 nome: "Real Madrid",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Vinícius Júnior", posizione: "AT", eta: 24, livelloAbilita: 86 },
                     { nome: "Kylian Mbappé", posizione: "AT", eta: 25, livelloAbilita: 89 },
                     { nome: "Rodrygo", posizione: "AT", eta: 23, livelloAbilita: 81 },
@@ -2435,7 +2441,7 @@ export const leghe = [
             },
             {
                 nome: "Real Sociedad",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Mikel Oyarzabal", posizione: "AT", eta: 27, livelloAbilita: 80 },
                     { nome: "David Silva", posizione: "CN", eta: 39, livelloAbilita: 83 },
                     { nome: "Alexander Isak", posizione: "AT", eta: 26, livelloAbilita: 81 },
@@ -2456,7 +2462,7 @@ export const leghe = [
             },
             {
                 nome: "Sevilla",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Bono", posizione: "PO", eta: 32, livelloAbilita: 80 },
                     { nome: "Jesús Navas", posizione: "DF", eta: 38, livelloAbilita: 80 },
                     { nome: "Marcão", posizione: "DF", eta: 28, livelloAbilita: 77 },
@@ -2480,7 +2486,7 @@ export const leghe = [
             },
             {
                 nome: "Valencia",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Carlos Soler", posizione: "CN", eta: 27, livelloAbilita: 78 },
                     { nome: "Gonçalo Guedes", posizione: "AT", eta: 27, livelloAbilita: 77 },
                     { nome: "José Luis Gayà", posizione: "DF", eta: 29, livelloAbilita: 79 },
@@ -2501,7 +2507,7 @@ export const leghe = [
             },
             {
                 nome: "Valladolid",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Sergi Guardiola", posizione: "AT", eta: 32, livelloAbilita: 74 },
                     { nome: "Javi Sánchez", posizione: "DF", eta: 26, livelloAbilita: 77 },
                     { nome: "Shon Weissman", posizione: "AT", eta: 28, livelloAbilita: 75 },
@@ -2522,7 +2528,7 @@ export const leghe = [
             },
             {
                 nome: "Villarreal",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Gerard Moreno", posizione: "AT", eta: 32, livelloAbilita: 83 },
                     { nome: "Pau Torres", posizione: "DF", eta: 27, livelloAbilita: 82 },
                     { nome: "Manu Trigueros", posizione: "CN", eta: 32, livelloAbilita: 79 },
@@ -2545,10 +2551,12 @@ export const leghe = [
     },
      {
         nome: "Saudi League",
-        squadre: [
+         pathImmagine: require("../../assets/images/saudiarabia.png"),
+
+         squadre: [
             {
                 nome: "Al Hilal",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Neymar", posizione: "AT", eta: 31, livelloAbilita: 90 },
                     { nome: "Luis Rioja", posizione: "AT", eta: 31, livelloAbilita: 73 },
                     { nome: "Toni Moya", posizione: "CN", eta: 27, livelloAbilita: 72 },
@@ -2570,7 +2578,7 @@ export const leghe = [
             },
             {
                 nome: "Al Ittihad",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Karim Benzema", posizione: "AT", eta: 37, livelloAbilita: 90 },
                     { nome: "N'Golo Kanté", posizione: "CN", eta: 33, livelloAbilita: 85 },
                     { nome: "Fabinho", posizione: "CN", eta: 31, livelloAbilita: 84 },
@@ -2591,7 +2599,7 @@ export const leghe = [
             },
             {
                 nome: "Al Nassr",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Cristiano Ronaldo", posizione: "AT", eta: 39, livelloAbilita: 91 },
                     { nome: "Seko Fofana", posizione: "CN", eta: 29, livelloAbilita: 85 },
                     { nome: "Talisca", posizione: "AT", eta: 30, livelloAbilita: 83 },
@@ -2610,7 +2618,7 @@ export const leghe = [
             },
             {
                 nome: "Al Shabab",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Odion Ighalo", posizione: "AT", eta: 34, livelloAbilita: 80 },
                     { nome: "Ever Banega", posizione: "CN", eta: 35, livelloAbilita: 83 },
                     { nome: "Anderson Talisca", posizione: "AT", eta: 30, livelloAbilita: 82 },
@@ -2632,7 +2640,7 @@ export const leghe = [
             },
             {
                 nome: "Al Taawoun",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Lassana Diarra", posizione: "CN", eta: 36, livelloAbilita: 78 },
                     { nome: "Fawaz Al-Muwallad", posizione: "DF", eta: 29, livelloAbilita: 77 },
                     { nome: "Abdulaziz Al-Dawsari", posizione: "CN", eta: 28, livelloAbilita: 75 },
@@ -2653,7 +2661,7 @@ export const leghe = [
             },
             {
                 nome: "Al Ettifaq",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Jordan Henderson", posizione: "CN", eta: 34, livelloAbilita: 81 },
                     { nome: "Demarai Gray", posizione: "AT", eta: 27, livelloAbilita: 78 },
                     { nome: "Steven Taylor", posizione: "DF", eta: 31, livelloAbilita: 76 },
@@ -2674,7 +2682,7 @@ export const leghe = [
             },
             {
                 nome: "Al Fayha",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Riyad Mahrez", posizione: "AT", eta: 33, livelloAbilita: 83 },
                     { nome: "Pape Abou Cissé", posizione: "DF", eta: 28, livelloAbilita: 78 },
                     { nome: "Abdullah Al-Najai", posizione: "CN", eta: 27, livelloAbilita: 75 },
@@ -2695,7 +2703,7 @@ export const leghe = [
             },
             {
                 nome: "Al Khaleej",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Mohammed Al-Dosari", posizione: "PO", eta: 29, livelloAbilita: 75 },
                     { nome: "Majed Al-Muwallad", posizione: "DF", eta: 27, livelloAbilita: 74 },
                     { nome: "Ahmed Al-Farhan", posizione: "CN", eta: 28, livelloAbilita: 73 },
@@ -2716,7 +2724,7 @@ export const leghe = [
             },
             {
                 nome: "Al Fateh",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Santiago Caseres", posizione: "CN", eta: 26, livelloAbilita: 77 },
                     { nome: "Mohammed Al-Afasi", posizione: "DF", eta: 28, livelloAbilita: 76 },
                     { nome: "Ayman Al-Hamdan", posizione: "CN", eta: 27, livelloAbilita: 75 },
@@ -2736,7 +2744,7 @@ export const leghe = [
             },
             {
                 nome: "Al Wehda",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Khaled Al-Ghamdi", posizione: "PO", eta: 30, livelloAbilita: 76 },
                     { nome: "Tarek Hegazi", posizione: "DF", eta: 30, livelloAbilita: 78 },
                     { nome: "Riyad Mahrez", posizione: "AT", eta: 33, livelloAbilita: 83 },
@@ -2757,7 +2765,7 @@ export const leghe = [
             },
             {
                 nome: "Damac",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Abdulaziz Al-Dawsari", posizione: "CN", eta: 28, livelloAbilita: 77 },
                     { nome: "Fahad Al-Muwallad", posizione: "AT", eta: 29, livelloAbilita: 75 },
                     { nome: "Yahya Al-Shehri", posizione: "DF", eta: 30, livelloAbilita: 73 },
@@ -2778,7 +2786,7 @@ export const leghe = [
             },
             {
                 nome: "Al Raed",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Mohammed Al-Qarni", posizione: "PO", eta: 30, livelloAbilita: 74 },
                     { nome: "Salem Al-Fawzan", posizione: "DF", eta: 27, livelloAbilita: 75 },
                     { nome: "Ahmed Fathi", posizione: "DF", eta: 36, livelloAbilita: 77 },
@@ -2799,7 +2807,7 @@ export const leghe = [
             },
             {
                 nome: "Al Riyadh",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Mohammed Al-Dosari", posizione: "PO", eta: 29, livelloAbilita: 76 },
                     { nome: "Yasir Al-Fahad", posizione: "DF", eta: 27, livelloAbilita: 75 },
                     { nome: "Ahmed Al-Muwallad", posizione: "CN", eta: 28, livelloAbilita: 73 },
@@ -2820,7 +2828,7 @@ export const leghe = [
             },
             {
                 nome: "Al Orubah",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Yasir Al-Basha", posizione: "AT", eta: 28, livelloAbilita: 75 },
                     { nome: "Abdullah Al-Rashed", posizione: "CN", eta: 29, livelloAbilita: 74 },
                     { nome: "Abdulrahman Al-Ghamdi", posizione: "DF", eta: 30, livelloAbilita: 74 },
@@ -2841,7 +2849,7 @@ export const leghe = [
             },
             {
                 nome: "Al Qadsiah",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Khaled Al-Saleh", posizione: "PO", eta: 30, livelloAbilita: 77 },
                     { nome: "Saad Al-Saleh", posizione: "DF", eta: 28, livelloAbilita: 76 },
                     { nome: "Mohammed Al-Breik", posizione: "CN", eta: 27, livelloAbilita: 75 },
@@ -2862,7 +2870,7 @@ export const leghe = [
             },
             {
                 nome: "Al Kholood",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Abdullah Al-Ghamdi", posizione: "PO", eta: 28, livelloAbilita: 74 },
                     { nome: "Mohammed Al-Muwallad", posizione: "DF", eta: 29, livelloAbilita: 75 },
                     { nome: "Ahmed Al-Dossari", posizione: "CN", eta: 27, livelloAbilita: 73 },
@@ -2883,7 +2891,7 @@ export const leghe = [
             },
             {
                 nome: "Al Okhdood",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Mohammed Al-Saleh", posizione: "PO", eta: 28, livelloAbilita: 74 },
                     { nome: "Ahmed Al-Breik", posizione: "DF", eta: 29, livelloAbilita: 75 },
                     { nome: "Abdallah Al-Rashed", posizione: "CN", eta: 30, livelloAbilita: 73 },
@@ -2904,7 +2912,7 @@ export const leghe = [
             },
             {
                 nome: "Al Ahli",
-                calciatori: [
+                w:0,d:0,l:0,gf:0,gs:0,pti:0, calciatori: [
                     { nome: "Riyad Mahrez", posizione: "AT", eta: 33, livelloAbilita: 83 },
                     { nome: "Eduardo Vargas", posizione: "AT", eta: 34, livelloAbilita: 77 },
                     { nome: "Matheus Pereira", posizione: "CN", eta: 29, livelloAbilita: 80 },

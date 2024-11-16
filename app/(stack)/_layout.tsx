@@ -16,7 +16,6 @@ export default function StackLayout() {
             <View style={styles.container}>
                 {/* Show Navbar only if shouldShowNavbar is true */}
                 {shouldShowNavbar && <Navbar />}
-
                 {/* Main content section that will be shown on the right */}
                 <View style={styles.mainContent}>
                     <Stack
